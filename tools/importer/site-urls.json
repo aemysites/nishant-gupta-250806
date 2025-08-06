@@ -1,0 +1,3783 @@
+{
+  "originUrl": "https://www.marutisuzukidrivingschool.com",
+  "lastCrawled": "https://www.marutisuzukidrivingschool.com/",
+  "urls": [
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/",
+      "source": "SITEMAPS",
+      "targetPath": "/",
+      "id": "bf10079830df8670116691549b0ef03b50385ff2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/about-us",
+      "source": "SITEMAPS",
+      "targetPath": "/about-us",
+      "id": "9c4bfc035a0eb28a48866b8cea15ba35e2116f19"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog",
+      "source": "SITEMAPS",
+      "targetPath": "/blog",
+      "id": "94a013b68308624932013e46e82e4da8beb245cc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/driving-school-why-is-it-important",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-school/driving-school-why-is-it-important",
+      "id": "ad61e7f56245d320b98d2291f0e777a5d917a4c4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/journey-of-msds-where-we-are-where-we-are-going",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-school/journey-of-msds-where-we-are-where-we-are-going",
+      "id": "19d6512755b0a050caf60208314be4b03af53c8b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/maruti-suzuki-driving-school-vs-others",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-school/maruti-suzuki-driving-school-vs-others",
+      "id": "b69961bef16ed4639d30fd5c3a3c134d51c37606"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/presenting-the-maruti-suzuki-driving-school",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-school/presenting-the-maruti-suzuki-driving-school",
+      "id": "30fe39167f1f6ad90335d290706ca00baf6841c6"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/why-you-should-learn-driving-from-a-professional-driving-school",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-school/why-you-should-learn-driving-from-a-professional-driving-school",
+      "id": "5b48188369f84e432387787a353940bffcd69014"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/10-practices-that-make-you-a-safer-driver",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/10-practices-that-make-you-a-safer-driver",
+      "id": "e754bbf130b148e555729a354812717fe8170b99"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/5-car-driving-tips-that-make-you-a-better-driver",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/5-car-driving-tips-that-make-you-a-better-driver",
+      "id": "04cc452e7b5d10e67a7ff644d894af2624920b67"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/are-you-driving-right",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/are-you-driving-right",
+      "id": "ddec395702c0f3a7bb036095342b395372c2a7a1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/how-a-simulator-helps-you-before-you-start-driving",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/how-a-simulator-helps-you-before-you-start-driving",
+      "id": "92f689bb5e1c0f39dae5b159f6247e9da898f245"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/top-10-road-safety-tips-you-should-know",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/top-10-road-safety-tips-you-should-know",
+      "id": "a0e745216f2ba8f2170e90742a519a3587a6c0fd"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/why-theory-is-as-important-as-practical-to-learn-driving",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/driving-tips/why-theory-is-as-important-as-practical-to-learn-driving",
+      "id": "dcd102b9769cb729c5d85c2bc6696347b3e4b704"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/all-you-need-to-know-about-a-driving-license-in-india",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/learn-how-to-get-a-licence/all-you-need-to-know-about-a-driving-license-in-india",
+      "id": "2b665819572cb324160fb81ad2661add5ee477b3"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/how-to-obtain-a-commercial-driving-licence-in-india",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/learn-how-to-get-a-licence/how-to-obtain-a-commercial-driving-licence-in-india",
+      "id": "8445a9d4500da6736d37c24c8c6f77d57d6929c2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/how-to-obtain-a-driving-license-in-india",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/learn-how-to-get-a-licence/how-to-obtain-a-driving-license-in-india",
+      "id": "06171077acf73cad33e22b2d08ca47eecab6429c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/international-driving-license-here-what-you-need-to-know",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/learn-how-to-get-a-licence/international-driving-license-here-what-you-need-to-know",
+      "id": "d7ab19a0f12987c624c20503acc72bf534a277d9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/blog/road-safety-signage/road-safety-signage",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/road-safety-signage/road-safety-signage",
+      "id": "b7bdcb241ad323ac515c43b2e091d16ac532075b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/contact-us",
+      "source": "SITEMAPS",
+      "targetPath": "/contact-us",
+      "id": "279db51b84ce8a710a7bfc4ce74201516ccb6a7d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses",
+      "source": "SITEMAPS",
+      "targetPath": "/courses",
+      "id": "deb9e64d5f94e6e04cfabd64a79f78a4d16ff796"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/advance-courses/advanced-course",
+      "source": "SITEMAPS",
+      "targetPath": "/courses/advance-courses/advanced-course",
+      "id": "6d5db2da0fad2370675535e963b1e4c09fdc2e7e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/corporate-courses/corporate-course",
+      "source": "SITEMAPS",
+      "targetPath": "/courses/corporate-courses/corporate-course",
+      "id": "4ae19aec53008c10a84788eb11e4662c65905e21"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/learner-courses/learner-standard-track-course",
+      "source": "SITEMAPS",
+      "targetPath": "/courses/learner-courses/learner-standard-track-course",
+      "id": "94003aaec15340e978377216aaeee1c5cc927337"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/learner-detailed-track-course/learner-dt-course",
+      "source": "SITEMAPS",
+      "targetPath": "/courses/learner-detailed-track-course/learner-dt-course",
+      "id": "26c716900ad9504dad2071a2c869f0bd25966924"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/learner-extended-track-course/learner-et-course",
+      "source": "SITEMAPS",
+      "targetPath": "/courses/learner-extended-track-course/learner-et-course",
+      "id": "87fbd1519ff0cd5d345d6ae09c649b668a4afb2e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/faq",
+      "source": "SITEMAPS",
+      "targetPath": "/faq",
+      "id": "d0d39c42a24bde26dfa44150712048a83fce7c3b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media",
+      "source": "SITEMAPS",
+      "targetPath": "/media",
+      "id": "bb83b76e3924edfa0520ecd06b07581b128a2390"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/10000-tribal-youth-benefit-from-maruti-suzuki-and-gujarat-government-driving-training-initiative",
+      "source": "SITEMAPS",
+      "targetPath": "/media/10000-tribal-youth-benefit-from-maruti-suzuki-and-gujarat-government-driving-training-initiative",
+      "id": "bdafea1c0fb3efb8176cf6a391134e89894297f0"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/a-green-milestone--maruti-suzuki-achieves-five-lakh-cumulative-cng-vehicle-sales",
+      "source": "SITEMAPS",
+      "targetPath": "/media/a-green-milestone-maruti-suzuki-achieves-five-lakh-cumulative-cng-vehicle-sales",
+      "id": "31c0892f74c8f28994dd4de40456e634fdd34725"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/all-new-dzire-scores-the-fastest-1lakh-sales-mark-in-indian-automobile-history",
+      "source": "SITEMAPS",
+      "targetPath": "/media/all-new-dzire-scores-the-fastest-1lakh-sales-mark-in-indian-automobile-history",
+      "id": "2b2b85265ffb4a35364df6d4a0e23e4b119a1d73"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/coming-to-you-maruti-suzuki-nextgenertiga-in-a-completely",
+      "source": "SITEMAPS",
+      "targetPath": "/media/coming-to-you-maruti-suzuki-nextgenertiga-in-a-completely",
+      "id": "cb6e2966e9b128403de72d171cb8f1c65ed77f38"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/global-debut-of-maruti-suzuki-mid-size-premium-sedan-ciaz",
+      "source": "SITEMAPS",
+      "targetPath": "/media/global-debut-of-maruti-suzuki-mid-size-premium-sedan-ciaz",
+      "id": "490a518c8872b962f677f34b4b19ec98379214cd"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/india-highest-selling-mpv-maruti-suzuki-ertiga",
+      "source": "SITEMAPS",
+      "targetPath": "/media/india-highest-selling-mpv-maruti-suzuki-ertiga",
+      "id": "dedf51386f9500da98afea60174a522311b29709"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-free-check-up-camp-to-offer-range-of-services-to-customers",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-free-check-up-camp-to-offer-range-of-services-to-customers",
+      "id": "1cf49953e1f7c7bb20051361f7874241830304dc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-adds-more-safety-features-to-celerio-range",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-adds-more-safety-features-to-celerio-range",
+      "id": "eabb5e37512c49b5a7a50bbba1c53e1a60661f37"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-alto-associates-with--ms-dhoni--the-untold-story",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-alto-associates-with-ms-dhoni-the-untold-story",
+      "id": "fdeab10be0faceed50e259cb7f463b438bf530dc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-announces-rs-1-crore",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-announces-rs-1-crore",
+      "id": "bf4fdc4420677b155fcda6fb7544c788ae5100bc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-baleno-clocks-fastest-5-lakh-sales",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-baleno-clocks-fastest-5-lakh-sales",
+      "id": "e7e1b10d9dd2f61a822b81bff4e70330a955cb8e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-best-sellers-swift-and-dzire-now-with-added-safety-features",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-best-sellers-swift-and-dzire-now-with-added-safety-features",
+      "id": "05db96e44a7df0434fb2d5e982a1aac99e7545ee"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-collaborates-with-ola-to-create-a-pool-of-skilled-drivers-and-promote-entrepreneurship",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-collaborates-with-ola-to-create-a-pool-of-skilled-drivers-and-promote-entrepreneurship",
+      "id": "659e1b19923a3d52cb037766431650d864b5f598"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-donates-rs-2-crore-for-flood-victims-of-tamil-nadu",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-donates-rs-2-crore-for-flood-victims-of-tamil-nadu",
+      "id": "ead6325b9d3a9dc7412be1661ca85f21cf0a2674"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-donates-rs-2-crore-to-prime-minister-national-relief-fund",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-donates-rs-2-crore-to-prime-minister-national-relief-fund",
+      "id": "6f84d05bbcee2c734fb4663c4b4bd4c6e87a0536"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-drives-in-the-all-new-s-cross",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-drives-in-the-all-new-s-cross",
+      "id": "d642297a6a30cb421090c74404ba51e973dcd5be"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-driving-school-msds-successfully-trains-over",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-driving-school-msds-successfully-trains-over",
+      "id": "efc7f777076deb98178303de28ac21fa487af45c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-driving-school-network-expands-to-45",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-driving-school-network-expands-to-45",
+      "id": "fe391daa9c2134ca9ebe139e933d7b8b69676ba3"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-expands-the-celerio-family-adds-bold-sporty-and-trendy-celeriox",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-expands-the-celerio-family-adds-bold-sporty-and-trendy-celeriox",
+      "id": "a3c941d2b7f5428503c2315301f3399e25796de9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-goes-greener",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-goes-greener",
+      "id": "358cade0150e50f706b90d8684dda4e75828d91b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-new-true-value-now-250",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-new-true-value-now-250",
+      "id": "110f976c015527c23cb1160c36b06d2c89892329"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-offers-5-year",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-offers-5-year",
+      "id": "446fb05933f9db7c9b2904c14ed7cc69ca2dcdae"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-ramps-up-vitara-brezza-production",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-ramps-up-vitara-brezza-production",
+      "id": "d3175ac416b9cc2fc60ea85fe94b93f8b78c02cc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-receives-cii-itc-sustainability-award-for-csr",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-receives-cii-itc-sustainability-award-for-csr",
+      "id": "a9711d930836fdb0a27ac5b50dd11efe88052cc4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-sales-in-november-2014",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-sales-in-november-2014",
+      "id": "5a2233f5d0ca2c8a7493a69c9ed8ab577dcc230a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-sales-in-november-2015",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-sales-in-november-2015",
+      "id": "ca56cf45cc4f9234abcd31dd989a654ce8816899"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-swift-now-with-10-improved-fuel-efficiency-with-refined",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-swift-now-with-10-improved-fuel-efficiency-with-refined",
+      "id": "1052bcfec62ea512ffd3772f4c845fb0ca871934"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-to-set-up-12--automated-driving-test-centers-in-the-capital",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-to-set-up-12-automated-driving-test-centers-in-the-capital",
+      "id": "04c3cde095ee907ca629d6f4ccd0e025cb638b2d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-to-set-up-a--japan-india-institute-of-manufacturing",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-to-set-up-a-japan-india-institute-of-manufacturing",
+      "id": "0f4ccefe21f4e4ce8b4623ea49a79993a0bb05ab"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-urges-all-car-occupants-to-wear-the-seat-belt",
+      "source": "SITEMAPS",
+      "targetPath": "/media/maruti-suzuki-urges-all-car-occupants-to-wear-the-seat-belt",
+      "id": "efc2ad49603f1066f417cae5f3e310a395af5903"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/opens-bookings-xl6",
+      "source": "SITEMAPS",
+      "targetPath": "/media/opens-bookings-xl6",
+      "id": "abc9fa4415e4b08e01b9d7eb17afadba7d4cb872"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/the-all-new-swift-awarded-indian-car-of-the-year-2019",
+      "source": "SITEMAPS",
+      "targetPath": "/media/the-all-new-swift-awarded-indian-car-of-the-year-2019",
+      "id": "cb14a47ba25267e363698769df19694214c89315"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/media/wagonr-now-offered-with-auto-gear-shift-dual-airbags-and-abs",
+      "source": "SITEMAPS",
+      "targetPath": "/media/wagonr-now-offered-with-auto-gear-shift-dual-airbags-and-abs",
+      "id": "a5cadd1f57411ca12c547cec4d6e83752c262be5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator",
+      "id": "549737a02048724de675e6accbd62a1e5304287f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-agra",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-agra",
+      "id": "08f621e2756cced812959ca5945b36f1b63285e5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ahmedabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ahmedabad",
+      "id": "104df1d09ecad27d07060fb2a4b51c860b6fd675"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ajmer",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ajmer",
+      "id": "dcb26cf8f3ca36c5b4f8abbe53e9c0da692de16c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-alappuzha",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-alappuzha",
+      "id": "2d42f04e22a01ced4fa579519d3a92bb905cf07c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-aligarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-aligarh",
+      "id": "a82f6a59b95a1a28ab4438b1109d1e19883dc23c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-alwar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-alwar",
+      "id": "054fa13c7fe385bbf0604871d36d03e0cc0ae79c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambala",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ambala",
+      "id": "d14e1a38b993849c7096f8270ffe456ea18605d5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amravati",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-amravati",
+      "id": "c5764e7182fdab4cc5b4ac8209f7452099eb3fd1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amritsar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-amritsar",
+      "id": "76e1c4269b59c1bc31e161e1bb060e6998e6ce63"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anand",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-anand",
+      "id": "c75c1fff61146f7bd8ff66db9204ccea5820d668"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anantapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-anantapur",
+      "id": "ddb0dcaa3495c2940765a6b9bacb221b172137e8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-angul",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-angul",
+      "id": "268ca5021b5a4821146bbc9cd22fb95c7d025af8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ankleshwar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ankleshwar",
+      "id": "5c2a9dbdfdb624bf844ccb334eaf277a9c939598"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-aurangabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-aurangabad",
+      "id": "a9e3cdde749a03dd999bbc8740d406843feb8658"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-azamgarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-azamgarh",
+      "id": "cc5e717531cda3c58f037866aeb065c6a75a64a4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bankura",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bankura",
+      "id": "1e8c95b86dfa9e416b3a09b5d2a9c060a710ce1f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baramati",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-baramati",
+      "id": "3dce2dfaeef6afdb102ac2ac2ede09b16f64fb32"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barasat",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-barasat",
+      "id": "6e5639b90df338e7b7f3939c72bbb3afc872d86e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bareilly",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bareilly",
+      "id": "e762b0102e5310d84ba7827dd5ab070bb89ff55c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barpeta",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-barpeta",
+      "id": "9ab28f0365c5315f460b154232e6a7a71ccb6ede"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-batala",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-batala",
+      "id": "75dc673e74931a5a09043f168f19a47db614dfab"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bathinda",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bathinda",
+      "id": "fce45311860f3411fa8a3ffefdcb6a7f446aef20"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bengaluru",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bengaluru",
+      "id": "d643040e8bfd4aa79c6f983fe39924b532f67b41"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bharuch",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bharuch",
+      "id": "62fe2353796ed6b4bb25f108379607f0e3578698"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhavnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhavnagar",
+      "id": "b969067a968543031d2696e9bbe94fa4107db232"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhilai",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhilai",
+      "id": "d9b0239f9073aefa7d9dd70681a62923665082ea"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhilwara",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhilwara",
+      "id": "f6bbd556419f8bf4c1b7c435d7777f5a23aff9a9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhimavaram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhimavaram",
+      "id": "3b42e97910c1c0f8fadb2dff736ff5769665d9e9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhiwadi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhiwadi",
+      "id": "50ae65ceb3e5e10e155c6021078dfbf8d0dc2323"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhiwani",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhiwani",
+      "id": "43656a1e991869362acc827a2df0f35250572321"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhopal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhopal",
+      "id": "836699a8388ad76a2f6a992fecfa2065e4463185"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhubaneswar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhubaneswar",
+      "id": "9ecb3acaa5e74aebd6bbc469b45e95b67db58608"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhuj",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bhuj",
+      "id": "054c8b6dd21bf2ed2f26c39926983cb8e5de73df"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bijnor",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bijnor",
+      "id": "8e2b9ea56905c8955ff113472ce637336dca67f3"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bikaner",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bikaner",
+      "id": "c44aaddce27e552b54af34f42e4226d26befa942"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bilaspur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bilaspur",
+      "id": "8b166f6bbcde5fe243decaa5ddeb81568647d468"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-biswanath-charali",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-biswanath-charali",
+      "id": "f0148ef79e1cf8942632b1aecfdf70e5f959e83e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bokaro-steel-city",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bokaro-steel-city",
+      "id": "af3876cd73f1cc21636c41e7ebdbbcad62e6fc9c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bongaigaon",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bongaigaon",
+      "id": "ae379709791bfcde9cb271ecbe6b44465f6e7ff6"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bulandshahr",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-bulandshahr",
+      "id": "31f18593f5fab41266c2faa861cd124cd54ddfc6"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chandigarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-chandigarh",
+      "id": "af2a2152d0e59cf8072d8212fab0f3c33ce85e2c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chennai",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-chennai",
+      "id": "1348272a5d0aa5b1ba202eff519b20ff312d5ee2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chhatarpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-chhatarpur",
+      "id": "a9a608a7b1f4aced45a58c0e16ea6ded102e6c27"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chhindwara",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-chhindwara",
+      "id": "c079e826a27164c52e917fb1dfd756dedd3fc130"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chittorgarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-chittorgarh",
+      "id": "0e2c6c648e61fc5577622b9473e09c3f1d77475f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-coimbatore",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-coimbatore",
+      "id": "c2d261200ab50ff5ca0892e6ef44c1c1b6b0312f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-contai",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-contai",
+      "id": "31afe759f3e3508dd1510e6e5e5f616dd090f635"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-cuddalore",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-cuddalore",
+      "id": "0daba18d4adf38221a7e255e487abc85e746dd50"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-cuttack",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-cuttack",
+      "id": "9469ec8da71547e56ae2082b1b298f234aa47782"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dehradun",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dehradun",
+      "id": "5c1abfcdcd3a384c006568103b464db0bc59a57e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-deoria",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-deoria",
+      "id": "15c9d3874cba14f9e8b2b2985859d0501dbd9347"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dewas",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dewas",
+      "id": "e003676ad5e2dcc68ea914c211ba821fca69bf60"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhanbad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dhanbad",
+      "id": "f7e8c03542aeb0519695b3d26d107cce85ef7a06"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharwad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dharwad",
+      "id": "d41c3ab95d0e33e8ce35200970bd882fdb41c92a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dibrugarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dibrugarh",
+      "id": "7f02160a262cab892328220be8b43e575d58036a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dimapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-dimapur",
+      "id": "76a860191683d6edd679ff8edbb51a3679d0c089"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-durg",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-durg",
+      "id": "a4268285f2a49779fb4bc7672b21216b76a40711"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-eluru",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-eluru",
+      "id": "da0d145e537d41b8b324d6e574e9ada7ce6a8c9a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-erode",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-erode",
+      "id": "7ccc2894ccdb3d3dc9b6420b63e98144030638ff"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-etawah",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-etawah",
+      "id": "a3845de8764dc36f75c2cbbf45698d20d53d3b38"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-faizabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-faizabad",
+      "id": "f22a2d4dd169447f5e977ed8bb13058f012f906a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-faridabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-faridabad",
+      "id": "6b9f6333c6ebbbd3a524be707ff906616f5df63d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-faridkot",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-faridkot",
+      "id": "1eb12300c5142c6029098a092e9e8ead06f1aab5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gajraula",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gajraula",
+      "id": "37a578763aacca3780ae89e452c80b99d08a8381"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ganderbal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ganderbal",
+      "id": "7b3b93b2e7a9408f4493d256b886fd37ac233aca"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gandhidham",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gandhidham",
+      "id": "2274c29f69662b8d9358d8954512039e4ac1c7c8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gandhinagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gandhinagar",
+      "id": "82b555f4a02fe60617c0e8326bd45906f16bca00"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gangtok",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gangtok",
+      "id": "6b43c8b024f384c9deeaf48e1cf50c898885bff9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gaya",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gaya",
+      "id": "f601032bec8bc0e78021b10443f9bc8fb063bd6f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ghaziabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ghaziabad",
+      "id": "c00bf300ee7feac0bccccb599bdf33160e6fde47"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-goa",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-goa",
+      "id": "9ee3828ed9aa261d86ab4400e871f72990cd80e8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-godhra",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-godhra",
+      "id": "ea5aeb13f58ae47124f3d9643580a6870179ad98"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gorakhpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gorakhpur",
+      "id": "38f198bb39e8e79a478c5905569617345b8530ff"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-greater-noida",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-greater-noida",
+      "id": "793c82e5739de33e12bba693e24c84a29326834e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gudivada",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gudivada",
+      "id": "1e128e121747530ac84c057dd0b593c321bab4df"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-guntur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-guntur",
+      "id": "022c23b358346e8d6edafcb340bdc1999725216d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gurugram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gurugram",
+      "id": "8613ff827852b7100ffe902a1b68ebe4282ef1b9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-guwahati",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-guwahati",
+      "id": "83cb7cf75ae97e8010f4ece0c219f47d97935fe2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gwalior",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-gwalior",
+      "id": "e1c01de036db3ff9d1f21b0327562e4089925a8d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-haldia",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-haldia",
+      "id": "b8ebe89453fcdb186fa6fe2f03298d26802472c7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-haldwani",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-haldwani",
+      "id": "8826fbc48d0fec8496fc7dec4e0505c932707b66"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hardoi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hardoi",
+      "id": "b0e5fdda992ae675d7c49d19c1de80640d8ca5d1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-haridwar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-haridwar",
+      "id": "ff64e0a56729c1e0070dd52fd5b16a3bdf316f85"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-himatnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-himatnagar",
+      "id": "506ce9075a8436baa1a897cacac5ea829b9d51ad"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hisar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hisar",
+      "id": "c49ec3c041fb632437989d8e2bac41833b9a7edb"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hosapete",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hosapete",
+      "id": "c8168960338736fe18615681a4cba076eea16abb"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hoshiarpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hoshiarpur",
+      "id": "fd1ba94a63e305f48ba0d0d1727e00f0c6ad5b0a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hosur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hosur",
+      "id": "66849070f76cba54817e898202cf61596da82cb7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hyderabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-hyderabad",
+      "id": "4fdb67f38ba277c777fff8955bdf23e0e60848ac"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ichalkaranji",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ichalkaranji",
+      "id": "68928256c054ee18c38cacbe9a1ae51aba082c76"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-imphal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-imphal",
+      "id": "0e66b8a86e0e732cb76bdb759f15478a74a77d1b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-indore",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-indore",
+      "id": "624f203010b0eb7f9ff62b4bb3292c05e4217b18"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-itanagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-itanagar",
+      "id": "3b0fc89621ddb2403628960ebda77d4e510c9ed3"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jabalpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jabalpur",
+      "id": "a0afd2701e629553261d711a324f335092ee3e67"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jagtial",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jagtial",
+      "id": "f420aa5566c25738034077bb6da110c7ce289e02"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jaipur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jaipur",
+      "id": "3829f4d451194444120dcd2d086c2abd6d024959"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jalandhar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jalandhar",
+      "id": "12efce44779dca8d7334e6d6ffa20bc43c0cb568"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jammu",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jammu",
+      "id": "87c2b1011dd2e43195c059051c2893b101a24904"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jamnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jamnagar",
+      "id": "c2b99bb0445b8b92bfb772cd64fc9cbabc3a4eac"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jamshedpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jamshedpur",
+      "id": "f8cf5719b665b49326c10f18f9d41a750940b1cd"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jaunpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jaunpur",
+      "id": "5c6a487544545c701d9463bafb9d218065a84455"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jhansi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jhansi",
+      "id": "c735ab9e84243a92d548de9e06cfce491512c3ca"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jhargram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jhargram",
+      "id": "6dc020669d060572557cd3e08e1b94db6f27ecb5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jharsuguda",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jharsuguda",
+      "id": "e3a6dea17d74f1ad5536350ac122c5296787902b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jhunjhunu",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jhunjhunu",
+      "id": "a79f0494b594d68b203df6cd71a33e5fe4df9af6"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jind",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jind",
+      "id": "3553b65d12f0cd8a43630b9444fc5c555c78fb91"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jodhpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jodhpur",
+      "id": "8a6f7f0206ae362dc88e8596349818733d62153d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jorhat",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-jorhat",
+      "id": "109ac49fb6c6b9ab0db7ce5680c3118f3809b412"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-junagadh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-junagadh",
+      "id": "29f0a31deac15da92507c6fd9ef3977ac159b4a0"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kaithal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kaithal",
+      "id": "501659869f0a2e3f0906877db9725c1ca7850d07"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kakinada",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kakinada",
+      "id": "dc46b13af7b2f77367889f60c1c9fb51389d699c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kalyani",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kalyani",
+      "id": "eff73b9b28327aca9b1a3414ba76751d7cf68bf8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kannur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kannur",
+      "id": "896c6a1575c3a67869b40c15422bc91da0d20872"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kanpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kanpur",
+      "id": "e373b3ea8db085bc209fff18f707dd5796e5080e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karimnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-karimnagar",
+      "id": "343b30462a325f8955be0bc7efb58370ff0b0c4a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karnal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-karnal",
+      "id": "f708c7d6478041a76967890787b1d8babead8ae2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kasaragod",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kasaragod",
+      "id": "db3ef25dfa3665f9f18a3dab2e12fc5e5a17430d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kashipur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kashipur",
+      "id": "d980d8944bcc020dc46113696079a8e12eac7ae1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-katni",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-katni",
+      "id": "235507f1c2afdffbc4fab4487b44a775432afb5d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kayamkulam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kayamkulam",
+      "id": "78fca82575a432fdc81da92bfb070a9d3837479f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khammam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-khammam",
+      "id": "a25f838ef695055822c45b908f50484b30346ccf"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khandwa",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-khandwa",
+      "id": "82355a09bde7455a3bc4de2414ce90f6cc8d87f2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kharagpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kharagpur",
+      "id": "c9d4fac559d6f4391b6978c562eea64f3a353481"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khargone",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-khargone",
+      "id": "3239b78c5edb403e1aedb7e941c14a577b7f78f5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kochi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kochi",
+      "id": "5cd3fc10a5b56d09daf5fa2ea81b0ac092b05d87"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kohima",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kohima",
+      "id": "ab29fd776b476ba484939842da6c03cb11177164"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kolhapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kolhapur",
+      "id": "b7a9fae65690aefcf3fde9c2b1d66193c9bbbac6"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kolkata",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kolkata",
+      "id": "b6c7b4b72657cab47395c37f400ba0642cf5d40c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kollam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kollam",
+      "id": "e3451daf30f5b7f1c40ac1c7dcdb6cb9ebb9aac9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kota",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kota",
+      "id": "f95f804e043c313b5aed2df4b6ad512266c0f59d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kothagudem",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kothagudem",
+      "id": "1fb5d04db941723924ec9edeb71ba6e17b62b127"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kottayam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kottayam",
+      "id": "b201ff5b35c665e704c0d115d5c98fa6675bc715"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kozhikode",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kozhikode",
+      "id": "5db9cf568e4d906ee98aa9b5ab5de8fb984da81c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kundli",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kundli",
+      "id": "3ec88f34ae1ada1ba238ffd9409c07c6c065220f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kupwara",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kupwara",
+      "id": "ecb3d4349068f7cfda1069c49f0dc1c6bb995dca"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kurnool",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kurnool",
+      "id": "ec07729db73d8cf3f86b6de7416c7be3c96a5b69"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kurukshetra",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-kurukshetra",
+      "id": "6d5d38ae1c9798e1c5a266c8f9de6b69d673405e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-leh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-leh",
+      "id": "6b119689cd2d850faf6ccefe594f6b742ca2f64a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lucknow",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-lucknow",
+      "id": "0002263b39916f614c0772c8c77fa6b23821dca8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ludhiana",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ludhiana",
+      "id": "688aa3e46ec441eadc551c4b637f8c002e5a45cb"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-madurai",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-madurai",
+      "id": "54a908d894c7180f2da6a221f6fe1d5f064441b0"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mahbubnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mahbubnagar",
+      "id": "11637e3eead86924ab772d14e7f6ca23c2e7e859"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-malappuram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-malappuram",
+      "id": "630689e4022b857d92440a437025a14b7df9614d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mandi",
+      "id": "16beb195d1c3039e02c418ee1a8fccaf0773acef"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mathura",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mathura",
+      "id": "51c101aceac4775bf142218fabd0ea121855382d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-meerut",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-meerut",
+      "id": "3325d36b0579188c9e4a32ecd384a3ca69c1dd0b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mehsana",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mehsana",
+      "id": "315c84564054b38c7994756e200c96e951331aa5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mirzapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mirzapur",
+      "id": "96beadb26fcd0090f619d92724743187c3c003e1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-moga",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-moga",
+      "id": "22a8382681f9d27b80e58dffee637d27cb52b18a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-moradabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-moradabad",
+      "id": "2b58331ab1954f4eafe8de0572050c37a3a78694"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mumbai",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mumbai",
+      "id": "4c38c06850c3ef16ab92744640430fd954394763"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-muvattupuzha",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-muvattupuzha",
+      "id": "d49ff84712e5e7999abd9d14796940d842f113bf"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-muzaffarnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-muzaffarnagar",
+      "id": "42b3dddf62b6462b68e16c203e9921b60633ecc1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-muzaffarpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-muzaffarpur",
+      "id": "32e98bb010f4e41eb7150672ff3ea1b559951176"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mysuru",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-mysuru",
+      "id": "8bcb1174e15e12f5c0d898e1170eb4e5d115de61"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nagaon",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nagaon",
+      "id": "9f08155a6d5f29a7066f42bb21eae9a50b9a0a0e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nagaur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nagaur",
+      "id": "1c1a7a57edd0c98701ecfcc38a8fbf4cee2bf3a2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nagpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nagpur",
+      "id": "9db137e64a67da9cadbf27c5e27b1b9099eb8516"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nalgonda",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nalgonda",
+      "id": "32ad679a56afb82933b4087f8d137053bb50fd7e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nashik",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nashik",
+      "id": "a401ae38dc4239427fe89b54773bab57771ee97a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-navsari",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-navsari",
+      "id": "7ec6ae09111b220fb8c5ca30b16f002343aa1769"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nellore",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nellore",
+      "id": "86fdf7e0fe9d9abe689354a61954e89cfc1bd1c4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-new-delhi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-new-delhi",
+      "id": "83c33b656952d5726c07cde489c0c4e4ffa2e6a7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nizamabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nizamabad",
+      "id": "6317805873d16260511c47f3b9326fc26074808c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-noida",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-noida",
+      "id": "8e86b3d6b730317a4b9d5edab6b3206e93defb71"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-north-lakhimpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-north-lakhimpur",
+      "id": "31dce807ab244903977d60615b5ca26ba2504105"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nuzividu",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-nuzividu",
+      "id": "5a2c5fef4dad33dea49fbbfe2c22ee34df03b913"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ongole",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ongole",
+      "id": "98afa9c98e8a3703e9b080bddd24794b6fcc12c1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-palakkad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-palakkad",
+      "id": "4e6c18797e7b643576230609884c917ce0cfa52e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-palampur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-palampur",
+      "id": "e042dcae114c5bd84314757b460b013f70f230ce"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-palanpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-palanpur",
+      "id": "5a1f28dccc1416011ff223ff7c84a701a6c53483"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pali",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pali",
+      "id": "2dee08fc8c2cb4c7b01f966defa2209b96e06b39"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-panipat",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-panipat",
+      "id": "47320a3eb973da89cb02ceb8a1be378171892490"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-paonta-sahib",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-paonta-sahib",
+      "id": "381bfeb7cf0296928549c36e41279c25ac658581"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pathanamthitta",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pathanamthitta",
+      "id": "b46189ddde00af86644ec9c61e16eaa7a73d4ea1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pathankot",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pathankot",
+      "id": "cacf351e1883a5f9b236801ed6190f542ddb4ba9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-patiala",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-patiala",
+      "id": "83bd4b9b7dae129c69cdc30c7b2fdc6c79b9a1fb"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-patna",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-patna",
+      "id": "2e6ddd7dfca1c1340a555891076dc03e88d9529d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pollachi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pollachi",
+      "id": "11b81f2fea8446df7d86f12425cbd4167c9f0d26"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pratapgarh",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pratapgarh",
+      "id": "fe7bc3a9cce8681311eeb646b4f3967d8b68ac46"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-prayagraj",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-prayagraj",
+      "id": "591722e8eb179b6ea6bc876cd3a9a6f17211736a"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-puducherry",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-puducherry",
+      "id": "1a9d174ee94cebce7e05d005e68b58a671c2ad2e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pune",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-pune",
+      "id": "631e83f09d04fef02bc023957279360d2911b498"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-raipur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-raipur",
+      "id": "2f374612ac496df04b628fb122d263fc1280a4e7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rajam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rajam",
+      "id": "13a585775264a7482b55bbcd121ac6ddfb6fa5a1"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rajkot",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rajkot",
+      "id": "15fb0231c4d8603cf1868f517f70566fd882f3e2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ramagundam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ramagundam",
+      "id": "693ebb670e284fe5dc7f2cf24360b5aad01e6c4d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rampur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rampur",
+      "id": "1fbdaef45420aaf1dfaa3937d2e26330ca8088c8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ranchi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ranchi",
+      "id": "13b07c3568da584bbfa3d4276c74e663cdf1535d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ratnagiri",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-ratnagiri",
+      "id": "b155db6b144891719d7429323360a680d6b1575b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rewa",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rewa",
+      "id": "61a15d6709a9956ad6d2fb073c7f898395ed14e8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rewari",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rewari",
+      "id": "642c595ccd24cda00374175035abb2be6d771346"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-roorkee",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-roorkee",
+      "id": "57df903c36c4e499fd635467acc4fd4bba33e3cc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rudrapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rudrapur",
+      "id": "9a2402c8aa3a707d116e79795a0ea9c38636b9cf"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rupnagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-rupnagar",
+      "id": "7c3a2b4bffbf6b915524cc371e79140e6942f0c4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-saharanpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-saharanpur",
+      "id": "209abf0ee7ebbaef3ae1cddfdb0f3e85a04c1f4d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-salem",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-salem",
+      "id": "97bd3eac873841f24bded7827cce4f4c8676f056"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sambalpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sambalpur",
+      "id": "e4829d255765675e0a8f14f22b7083a810124d36"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sangareddy",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sangareddy",
+      "id": "f823ffffd4f8bd2d495aee26bfdfb5ecd40906a3"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sangli",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sangli",
+      "id": "ca67d521c7ec3bf4662cd2fa804b30cdf907e734"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sasaram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sasaram",
+      "id": "62396dd53e6ad719009c7ae332ab3b317799154f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-satara",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-satara",
+      "id": "19c325b5c808e63714511f39d4d5c48350c3ef4d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-satna",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-satna",
+      "id": "c780f8b4b9fab96ff84081f50399b78977e32cb9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-secunderabad",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-secunderabad",
+      "id": "3d93cb7cd0eb0c14e974c8cc2542c6ff3a6f0b07"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shahdol",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-shahdol",
+      "id": "ab90f02c38560deb230a31b93a14f97d844b38be"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shahjahanpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-shahjahanpur",
+      "id": "5eb1fb7ea4d9bf7b2bb808b008faeeb0f878ffcd"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shillong",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-shillong",
+      "id": "a03cc57e5eb47300e3adc6efc67de3c87d595cbd"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shimla",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-shimla",
+      "id": "17314e42673236021cd9beedc4d747e0b73e3ba9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shivamogga",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-shivamogga",
+      "id": "7dc2287e6e51b48009af9682221b2bdbb82fdea5"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-siddipet",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-siddipet",
+      "id": "affd062aa4b9800303e03e16f4acb8e6de239f12"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sikar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sikar",
+      "id": "88caf99c9ef905492d8c473581c4af221c312d06"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-silchar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-silchar",
+      "id": "8f7e55d0d3ee9654a4b386936f76dcb47c121a6f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-siliguri",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-siliguri",
+      "id": "2dfdd27fcd8ddf9f90deb3a073445441be36056f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sirhind",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sirhind",
+      "id": "c1cbe237ebcbb8695fa3572ced0a6cb25e4be560"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sirsa",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sirsa",
+      "id": "9a1ab2bb6f1147a6ddbee3a21ff3fe6a62bcdb05"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sitapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sitapur",
+      "id": "ecef771d9b54aedc10a48e88b5d5697a40d6c9fb"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-solan",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-solan",
+      "id": "7defed002c7db881c774f4b557ab49163cd2746f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-solapur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-solapur",
+      "id": "b7ea9b72a6af9a8c16254be653cf0f90913fbc49"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sonipat",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-sonipat",
+      "id": "3a81e6ed3a503f0a4a4e8bc8bea3b9a9d408fc6c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-srikakulam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-srikakulam",
+      "id": "542f2c4dc2819b7eff73b028d8225e7c3ed5243f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-srinagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-srinagar",
+      "id": "3378caa12fddcebb826b5034477d10b3db89858d"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-surat",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-surat",
+      "id": "ad2d1de03908bc71e1e27be2cec7bbcb51b9ac26"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-surendranagar",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-surendranagar",
+      "id": "e783329d6d43d33782186ed6b8886018ba5f962c"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tamluk",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-tamluk",
+      "id": "8d5f4d116fe0bda36901cfaf1883332f23c60e98"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tezpur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-tezpur",
+      "id": "aaeeed12d52d1d8511cf70a2bb3f926e70ddaa49"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thane",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thane",
+      "id": "3951d36f0b5b6076e01440f8d02a8beb956df084"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thanjavur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thanjavur",
+      "id": "80b3ee4159526d56545263b94020b439b98e85da"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thiruvalla",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thiruvalla",
+      "id": "9789565a96f48173a31f21bd4e524d39ae415315"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thiruvananthapuram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thiruvananthapuram",
+      "id": "1fdd35ce778f1d4b117d2b46edbbf014c4701c61"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thodupuzha",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thodupuzha",
+      "id": "9081a5411ca6607df41abd028c98ad2756cb7fae"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thrissur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-thrissur",
+      "id": "8fb2453a39948d1bd099024277bd3c5eb7284d19"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tinsukia",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-tinsukia",
+      "id": "1d58401412033baedcd0d4600d909484b2081620"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tirunelveli",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-tirunelveli",
+      "id": "66b5e26d139b40f1d691883988fb78a35ae57c91"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tirupati",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-tirupati",
+      "id": "a0c0cccee5ffee9ea878fe28385af015a9d0265e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-udaipur",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-udaipur",
+      "id": "f983ad8859a0578cc5e084b1c8fda3728fbac3b7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-udupi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-udupi",
+      "id": "e113fe449ed03d488921d4171ce0ccab0bdc9bcc"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vadodara",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-vadodara",
+      "id": "5cd74b5e73e45ab0b567416741884eace0954352"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vapi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-vapi",
+      "id": "a427b88430cda0c6bf69be1ce956b8e9a3e8f3a9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-varanasi",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-varanasi",
+      "id": "91c741dd34951534dd112229cc08416aa7e1c57e"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vellore",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-vellore",
+      "id": "275cacb65cd4e7c88a9b26a5255d66cad90fe1ff"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vijayawada",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-vijayawada",
+      "id": "fbfbc897cc1280449dea18f38762d063ed4e5a8f"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-visakhapatnam",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-visakhapatnam",
+      "id": "3cd9194559d5edc7b9079039faf606cf2893fee9"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vizianagaram",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-vizianagaram",
+      "id": "56bbe9ad1d9b32e66bea3878e85e0c3ecc645455"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-warangal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-warangal",
+      "id": "8fea5fffe887b27f4d175d43cec92f2a2dc972a2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-yavatmal",
+      "source": "SITEMAPS",
+      "targetPath": "/outletlocator/driving-school-in-yavatmal",
+      "id": "3799a0484e006caa5b162b62d5776616ee18eb64"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/privacy-policy",
+      "source": "SITEMAPS",
+      "targetPath": "/privacy-policy",
+      "id": "7e52538ba0b1e908fa15ccaf3f6628551e66d9b7"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/quiz",
+      "source": "SITEMAPS",
+      "targetPath": "/quiz",
+      "id": "f15333423b1ae2b5ccd9f5807c742795edeb2cb8"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/register",
+      "source": "SITEMAPS",
+      "targetPath": "/register",
+      "id": "ad048856b03fad8d83254c4dd4ddb72d3bd061a2"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/sitemap",
+      "source": "SITEMAPS",
+      "targetPath": "/sitemap",
+      "id": "5a4d260a4ac28bc7584d9f16bb6fa3aeeeb9d0d4"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/terms-of-use",
+      "source": "SITEMAPS",
+      "targetPath": "/terms-of-use",
+      "id": "6397211f09d2d693a3a052c1ba7d70a59108165b"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/why-us",
+      "source": "SITEMAPS",
+      "targetPath": "/why-us",
+      "id": "6992cb0debfd6822ffa6ec5b2572962629f2c0a0"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": [
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-abu-road",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-achrol",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-adoni",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-agartala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ahmednagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-akbarpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-akola",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-alathur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-allahabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amalapuram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambala-cantt",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambattur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambernath",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambikapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amroha",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anakapalle",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anandpur-sahib",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anantnag",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anekal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-angamaly",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-annur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-arambagh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-araria",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-arrah",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-asansol",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ashok-nagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-attibele",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-attingal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-attur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-avadi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-azara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baddi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-badlapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baghpat",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bahadurgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bahraich",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bakshi-ka-talab",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ballabhgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ballia",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-balrampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bangalore",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-banka",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-banswara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-banur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barabanki",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baraut",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bardoli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bargarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baripada",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barmer",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barwala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barwani",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-basti",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bavla",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bazpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-beawar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-belgaum",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bellary",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-berhampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bettiah",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhadohi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhadrak",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhagalpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhanjanagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bharatpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhatia",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhatinda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhatkal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhavani",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhawanipatna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhind",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhiwandi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bidar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bihar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bihar-sharif",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bijapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bina",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bishnupur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-biswanath-chariali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bodhgaya",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-boisar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bongaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-borivali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-budaun",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-burdwan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-buxar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-challakere",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chamba",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chandausi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chandrapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-channapatna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chapra",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-charkhi-dadri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-cheeka",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chembur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chengalpattu",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-cherthala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chhattarpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chibramau",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chidambaram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chikhli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chikkaballapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chikmagalur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chirawa",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chitradurga",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chitrakoot",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chittoor",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-chomu",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-cochin",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-coochbehar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-coonoor",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-damoh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-danapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-darbhanga",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-darjeeling",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dasuya",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-davangere",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-delhi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-deoband",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-deoli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharamsala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharapuram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharmanagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dharmapuri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhekiajuli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhemaji",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dholpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhubri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dhule",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-digboi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-digha",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dindigul",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dindori-(mp)",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-diphu",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dombivali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dr-ambedkar-nagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dudu",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dumka",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dungarpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-durgapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-dwarka",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ernakulam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-etah",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-farrukhabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-fatehpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-fazilka",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ferozepur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-forbesganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gadarwara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gangapur-city",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ganj-basoda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-garhwa",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ghazipur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gobichettipalayam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-golaghat",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gondal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gopalganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-goregaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gudur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-guduvanchery",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gulbarga",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gurdaspur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-gurgaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hailakandi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hajipur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-halol",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hamirpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hamirpur(up)",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hanamkonda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-handwara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hanumangarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-harda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hassan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hathras",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hazaribagh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hazratganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hindaun",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hodal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hojai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-honda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hoskote",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hospet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-howrah",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-hubli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-indapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-irinjalakuda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-islampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-itarsi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jagatsinghpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jagdalpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jajpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jalgaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jalna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jalore",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jalpaiguri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jammu-kashmir",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jangaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jaora",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jhabua",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jhajjar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-jowai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-julana",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kadi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kaikaluru",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kalamassery",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kalimpong",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kalna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kalyan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kamareddy",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kancheepuram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kangra",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kanhangad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kannauj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karaikudi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karimganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karkala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-karwar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kathua",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-katihar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kaushambi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-keonjhar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khalilabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khanapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kharar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kharghar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khatima",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-khunti",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kishanganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-koderma",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kokrajhar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kolar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kondagaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kondapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-koppal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-koraput",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-korba",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kosamba",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kosi-kalan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kothamangalam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kotma",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kotputli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kottakkal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kovilpatti",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-krishnagiri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-krishnanagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kumbakonam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kundapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kurla",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-kushal-nagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lakhimpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lakhimpur-kheri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lakhisarai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lalganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lalitpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-latur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-lohardaga",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-macherla",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-machilipatnam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-madhubani",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-madhurawada",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-madhyamgram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-madhya-pradesh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-maharajganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mahe",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mahoba",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-maihar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mallappally",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mancherial",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandapeta",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandi-adampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandi-dabwali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mandi-gobindgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-manesar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mangaldai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mangalore",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-maninagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-manipur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mannargudi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mapusa",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-margao",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mauganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mavelikara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mayiladuthurai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-memari",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-merta-city",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mettupalayam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mhow",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-miraj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mira-road",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mizoram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-modinagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mohali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-moosapet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-moran",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-motihari",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mukerian",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mulund",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-murthal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-mysore",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nadiad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nagercoil",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nagoan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nahan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-naharkatiya",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-naharlagun",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-naidu-peta",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nalagarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nanded",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nandurbar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nandyal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-naraingarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-narasaraopet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-navi-mumbai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nawada",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nawalgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nelamangala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nimbahera",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nowshera",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-nuh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ooty",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-orai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ottapalam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-padrauna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-paithan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-palwal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-panaji",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-panchkula",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pandharpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-panvel",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-paravur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-parbhani",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-patan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pathshala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pattukkottai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-payyanur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-perintalmanna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-phagwara",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pilani",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pilibhit",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pimpri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pipariya",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pithampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pithoragarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pondicherry",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-porbandar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-port-blair",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pudukkottai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-pulwama",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-puri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-purnea",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-radhanpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-raichur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-raiganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rajahmundry",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rajouri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rajpura",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ramanathapuram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ramgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ranaghat",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rangia",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ranikhet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ranipet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ranni",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ratlam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-raxaul",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rayagada",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-red-hills",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rishikesh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rishra",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rohtak",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ropar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rourkela",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rs-pura",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-rupnarayanpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-saharsa",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sahibabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-samastipur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sangamner",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sangola",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sawai-madhopur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-school-in-dahod",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-school-in-gurgaon",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-school-in-mainpuri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-school-in-nelamangala",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-school-in-paradeep",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sehore",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shahbad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shahkot",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shajapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shamli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shikohabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shimoga",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shirdi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shirur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shivpuri",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shri-madhopur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shujalpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-shyampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sidhauli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sidhi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sihora",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-silvassa",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sirohi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sitarganj",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sivagangai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-siwan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sohna",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sonapur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sonari",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sriperumbudur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sullurpet",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sultanpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sultanpur-lodhi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-sundergarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-suratgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tadepalli",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-talegaon-dabhade",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-taliparamba",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tamil-nadu",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tanakpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tanda",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tanuku",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tarn-taran",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tenali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-theni",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thirukovilur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-thoubal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tikamgarh",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tirupur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tiruvannamali",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-trichy",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tumkur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tura",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-tuticorin",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-udhampur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ujjain",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ukhrul",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ulhasnagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-uluberia",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-una",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-unnao",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-uttarkashi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vasai",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vasco",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vidisha",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vijayapura",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vijaynagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-vikasnagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-villupuram",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-virar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-virudhachalam",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-virudhunagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-wagholi",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-waidhan",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-wanaparthy",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-wardha",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-west-bengal",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-yamunanagar",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-yeshwanthpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-zahirabad",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-zirakpur",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ziro",
+      "status": "302 Found Redirect: https://www.marutisuzukidrivingschool.com/outletlocator"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/online-courses/online-course-1",
+      "status": "404 Page not found"
+    },
+    {
+      "url": "https://www.marutisuzukidrivingschool.com/courses/refresher-courses/refresher-course-1",
+      "status": "404 Page not found"
+    }
+  ]
+}
