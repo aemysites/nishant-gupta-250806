@@ -1,0 +1,476 @@
+{
+  "templates": [
+    {
+      "name": "\"Dashboard Page\"",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses/learner-detailed-track-course/learner-dt-course",
+          "uuid": "26c716900ad9504dad2071a2c869f0bd25966924"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses/learner-extended-track-course/learner-et-course",
+          "uuid": "87fbd1519ff0cd5d345d6ae09c649b668a4afb2e"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses/learner-courses/learner-standard-track-course",
+          "uuid": "94003aaec15340e978377216aaeee1c5cc927337"
+        }
+      ]
+    },
+    {
+      "name": "'Product Listing Page'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-new-true-value-now-250",
+          "uuid": "110f976c015527c23cb1160c36b06d2c89892329"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-offers-5-year",
+          "uuid": "446fb05933f9db7c9b2904c14ed7cc69ca2dcdae"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/opens-bookings-xl6",
+          "uuid": "abc9fa4415e4b08e01b9d7eb17afadba7d4cb872"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/india-highest-selling-mpv-maruti-suzuki-ertiga",
+          "uuid": "dedf51386f9500da98afea60174a522311b29709"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-goes-greener",
+          "uuid": "358cade0150e50f706b90d8684dda4e75828d91b"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-ramps-up-vitara-brezza-production",
+          "uuid": "d3175ac416b9cc2fc60ea85fe94b93f8b78c02cc"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-driving-school-msds-successfully-trains-over",
+          "uuid": "efc7f777076deb98178303de28ac21fa487af45c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/a-green-milestone--maruti-suzuki-achieves-five-lakh-cumulative-cng-vehicle-sales",
+          "uuid": "31c0892f74c8f28994dd4de40456e634fdd34725"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/coming-to-you-maruti-suzuki-nextgenertiga-in-a-completely",
+          "uuid": "cb6e2966e9b128403de72d171cb8f1c65ed77f38"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/the-all-new-swift-awarded-indian-car-of-the-year-2019",
+          "uuid": "cb14a47ba25267e363698769df19694214c89315"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-best-sellers-swift-and-dzire-now-with-added-safety-features",
+          "uuid": "05db96e44a7df0434fb2d5e982a1aac99e7545ee"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-adds-more-safety-features-to-celerio-range",
+          "uuid": "eabb5e37512c49b5a7a50bbba1c53e1a60661f37"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/wagonr-now-offered-with-auto-gear-shift-dual-airbags-and-abs",
+          "uuid": "a5cadd1f57411ca12c547cec4d6e83752c262be5"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/all-new-dzire-scores-the-fastest-1lakh-sales-mark-in-indian-automobile-history",
+          "uuid": "2b2b85265ffb4a35364df6d4a0e23e4b119a1d73"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/10000-tribal-youth-benefit-from-maruti-suzuki-and-gujarat-government-driving-training-initiative",
+          "uuid": "bdafea1c0fb3efb8176cf6a391134e89894297f0"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-to-set-up-a--japan-india-institute-of-manufacturing",
+          "uuid": "0f4ccefe21f4e4ce8b4623ea49a79993a0bb05ab"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-to-set-up-12--automated-driving-test-centers-in-the-capital",
+          "uuid": "04c3cde095ee907ca629d6f4ccd0e025cb638b2d"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-swift-now-with-10-improved-fuel-efficiency-with-refined",
+          "uuid": "1052bcfec62ea512ffd3772f4c845fb0ca871934"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-sales-in-november-2015",
+          "uuid": "ca56cf45cc4f9234abcd31dd989a654ce8816899"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-sales-in-november-2014",
+          "uuid": "5a2233f5d0ca2c8a7493a69c9ed8ab577dcc230a"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-receives-cii-itc-sustainability-award-for-csr",
+          "uuid": "a9711d930836fdb0a27ac5b50dd11efe88052cc4"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-expands-the-celerio-family-adds-bold-sporty-and-trendy-celeriox",
+          "uuid": "a3c941d2b7f5428503c2315301f3399e25796de9"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-driving-school-network-expands-to-45",
+          "uuid": "fe391daa9c2134ca9ebe139e933d7b8b69676ba3"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-drives-in-the-all-new-s-cross",
+          "uuid": "d642297a6a30cb421090c74404ba51e973dcd5be"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-donates-rs-2-crore-to-prime-minister-national-relief-fund",
+          "uuid": "6f84d05bbcee2c734fb4663c4b4bd4c6e87a0536"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-donates-rs-2-crore-for-flood-victims-of-tamil-nadu",
+          "uuid": "ead6325b9d3a9dc7412be1661ca85f21cf0a2674"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-collaborates-with-ola-to-create-a-pool-of-skilled-drivers-and-promote-entrepreneurship",
+          "uuid": "659e1b19923a3d52cb037766431650d864b5f598"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-baleno-clocks-fastest-5-lakh-sales",
+          "uuid": "e7e1b10d9dd2f61a822b81bff4e70330a955cb8e"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-announces-rs-1-crore",
+          "uuid": "bf4fdc4420677b155fcda6fb7544c788ae5100bc"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-alto-associates-with--ms-dhoni--the-untold-story",
+          "uuid": "fdeab10be0faceed50e259cb7f463b438bf530dc"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-free-check-up-camp-to-offer-range-of-services-to-customers",
+          "uuid": "1cf49953e1f7c7bb20051361f7874241830304dc"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/global-debut-of-maruti-suzuki-mid-size-premium-sedan-ciaz",
+          "uuid": "490a518c8872b962f677f34b4b19ec98379214cd"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media/maruti-suzuki-urges-all-car-occupants-to-wear-the-seat-belt",
+          "uuid": "efc2ad49603f1066f417cae5f3e310a395af5903"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard Template",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses",
+          "uuid": "deb9e64d5f94e6e04cfabd64a79f78a4d16ff796"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog",
+          "uuid": "94a013b68308624932013e46e82e4da8beb245cc"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/media",
+          "uuid": "bb83b76e3924edfa0520ecd06b07581b128a2390"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/contact-us",
+          "uuid": "279db51b84ce8a710a7bfc4ce74201516ccb6a7d"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/faq",
+          "uuid": "d0d39c42a24bde26dfa44150712048a83fce7c3b"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/about-us",
+          "uuid": "9c4bfc035a0eb28a48866b8cea15ba35e2116f19"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Interface'",
+      "cluster": 4,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/how-to-obtain-a-commercial-driving-licence-in-india",
+          "uuid": "8445a9d4500da6736d37c24c8c6f77d57d6929c2"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/how-to-obtain-a-driving-license-in-india",
+          "uuid": "06171077acf73cad33e22b2d08ca47eecab6429c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/all-you-need-to-know-about-a-driving-license-in-india",
+          "uuid": "2b665819572cb324160fb81ad2661add5ee477b3"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/learn-how-to-get-a-licence/international-driving-license-here-what-you-need-to-know",
+          "uuid": "d7ab19a0f12987c624c20503acc72bf534a277d9"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Table Page'",
+      "cluster": 5,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ahmedabad",
+          "uuid": "104df1d09ecad27d07060fb2a4b51c860b6fd675"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-agra",
+          "uuid": "08f621e2756cced812959ca5945b36f1b63285e5"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barasat",
+          "uuid": "6e5639b90df338e7b7f3939c72bbb3afc872d86e"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-baramati",
+          "uuid": "3dce2dfaeef6afdb102ac2ac2ede09b16f64fb32"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bankura",
+          "uuid": "1e8c95b86dfa9e416b3a09b5d2a9c060a710ce1f"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-azamgarh",
+          "uuid": "cc5e717531cda3c58f037866aeb065c6a75a64a4"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-aurangabad",
+          "uuid": "a9e3cdde749a03dd999bbc8740d406843feb8658"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ankleshwar",
+          "uuid": "5c2a9dbdfdb624bf844ccb334eaf277a9c939598"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-angul",
+          "uuid": "268ca5021b5a4821146bbc9cd22fb95c7d025af8"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anantapur",
+          "uuid": "ddb0dcaa3495c2940765a6b9bacb221b172137e8"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-anand",
+          "uuid": "c75c1fff61146f7bd8ff66db9204ccea5820d668"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amritsar",
+          "uuid": "76e1c4269b59c1bc31e161e1bb060e6998e6ce63"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-amravati",
+          "uuid": "c5764e7182fdab4cc5b4ac8209f7452099eb3fd1"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ambala",
+          "uuid": "d14e1a38b993849c7096f8270ffe456ea18605d5"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-alwar",
+          "uuid": "054fa13c7fe385bbf0604871d36d03e0cc0ae79c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-aligarh",
+          "uuid": "a82f6a59b95a1a28ab4438b1109d1e19883dc23c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-alappuzha",
+          "uuid": "2d42f04e22a01ced4fa579519d3a92bb905cf07c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-ajmer",
+          "uuid": "dcb26cf8f3ca36c5b4f8abbe53e9c0da692de16c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bikaner",
+          "uuid": "c44aaddce27e552b54af34f42e4226d26befa942"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bilaspur",
+          "uuid": "8b166f6bbcde5fe243decaa5ddeb81568647d468"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-biswanath-charali",
+          "uuid": "f0148ef79e1cf8942632b1aecfdf70e5f959e83e"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bokaro-steel-city",
+          "uuid": "af3876cd73f1cc21636c41e7ebdbbcad62e6fc9c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bengaluru",
+          "uuid": "d643040e8bfd4aa79c6f983fe39924b532f67b41"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bharuch",
+          "uuid": "62fe2353796ed6b4bb25f108379607f0e3578698"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhavnagar",
+          "uuid": "b969067a968543031d2696e9bbe94fa4107db232"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhilai",
+          "uuid": "d9b0239f9073aefa7d9dd70681a62923665082ea"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhilwara",
+          "uuid": "f6bbd556419f8bf4c1b7c435d7777f5a23aff9a9"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhimavaram",
+          "uuid": "3b42e97910c1c0f8fadb2dff736ff5769665d9e9"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhiwadi",
+          "uuid": "50ae65ceb3e5e10e155c6021078dfbf8d0dc2323"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhiwani",
+          "uuid": "43656a1e991869362acc827a2df0f35250572321"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhopal",
+          "uuid": "836699a8388ad76a2f6a992fecfa2065e4463185"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhubaneswar",
+          "uuid": "9ecb3acaa5e74aebd6bbc469b45e95b67db58608"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bhuj",
+          "uuid": "054c8b6dd21bf2ed2f26c39926983cb8e5de73df"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bijnor",
+          "uuid": "8e2b9ea56905c8955ff113472ce637336dca67f3"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bareilly",
+          "uuid": "e762b0102e5310d84ba7827dd5ab070bb89ff55c"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-barpeta",
+          "uuid": "9ab28f0365c5315f460b154232e6a7a71ccb6ede"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-batala",
+          "uuid": "75dc673e74931a5a09043f168f19a47db614dfab"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator/driving-school-in-bathinda",
+          "uuid": "fce45311860f3411fa8a3ffefdcb6a7f446aef20"
+        }
+      ]
+    },
+    {
+      "name": "'Content Dashboard'",
+      "cluster": 6,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/top-10-road-safety-tips-you-should-know",
+          "uuid": "a0e745216f2ba8f2170e90742a519a3587a6c0fd"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/10-practices-that-make-you-a-safer-driver",
+          "uuid": "e754bbf130b148e555729a354812717fe8170b99"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/how-a-simulator-helps-you-before-you-start-driving",
+          "uuid": "92f689bb5e1c0f39dae5b159f6247e9da898f245"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/why-theory-is-as-important-as-practical-to-learn-driving",
+          "uuid": "dcd102b9769cb729c5d85c2bc6696347b3e4b704"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/5-car-driving-tips-that-make-you-a-better-driver",
+          "uuid": "04cc452e7b5d10e67a7ff644d894af2624920b67"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-tips/are-you-driving-right",
+          "uuid": "ddec395702c0f3a7bb036095342b395372c2a7a1"
+        }
+      ]
+    },
+    {
+      "name": "Course Overview Page",
+      "cluster": 7,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses/corporate-courses/corporate-course",
+          "uuid": "4ae19aec53008c10a84788eb11e4662c65905e21"
+        }
+      ]
+    },
+    {
+      "name": "'Directory Listing'",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/",
+          "uuid": "bf10079830df8670116691549b0ef03b50385ff2"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 9,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/road-safety-signage/road-safety-signage",
+          "uuid": "b7bdcb241ad323ac515c43b2e091d16ac532075b"
+        }
+      ]
+    },
+    {
+      "name": "'Course Overview Page'",
+      "cluster": 10,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/courses/advance-courses/advanced-course",
+          "uuid": "6d5db2da0fad2370675535e963b1e4c09fdc2e7e"
+        }
+      ]
+    },
+    {
+      "name": "'Content Dashboard'",
+      "cluster": 11,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/why-you-should-learn-driving-from-a-professional-driving-school",
+          "uuid": "5b48188369f84e432387787a353940bffcd69014"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/driving-school-why-is-it-important",
+          "uuid": "ad61e7f56245d320b98d2291f0e777a5d917a4c4"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/presenting-the-maruti-suzuki-driving-school",
+          "uuid": "30fe39167f1f6ad90335d290706ca00baf6841c6"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/maruti-suzuki-driving-school-vs-others",
+          "uuid": "b69961bef16ed4639d30fd5c3a3c134d51c37606"
+        },
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/blog/driving-school/journey-of-msds-where-we-are-where-we-are-going",
+          "uuid": "19d6512755b0a050caf60208314be4b03af53c8b"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Page'",
+      "cluster": 12,
+      "pages": [
+        {
+          "url": "https://www.marutisuzukidrivingschool.com/outletlocator",
+          "uuid": "549737a02048724de675e6accbd62a1e5304287f"
+        }
+      ]
+    }
+  ]
+}
