@@ -1,3 +1,4 @@
+/* Fixed CSS */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -29,5 +30,122 @@
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+}
+
+.columns.columns25 {
+  background: #161b8b;
+  padding: 22px 0 18px;
+}
+
+.columns.columns25 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
+  padding: 0 110px;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: unset;
+}
+
+/* Responsive: stack columns on small screens */
+@media (width <= 899px) {
+  .columns.columns25 > div {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+  }
+}
+
+/* Column: wider max width, equal flex, left-aligned. */
+.columns.columns25 > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  color: #fff;
+  padding: 0;
+  min-width: 0;
+  max-width: 420px;
+  flex: 1 1 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Icon wrapper: fixed height for vertical alignment, flex aligns icon to bottom */
+.columns.columns25 > div > div picture {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 94px; /* visually align icon bottoms, tweak as needed for best match */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.columns.columns25 > div > div picture img {
+  width: 80px;
+  max-width: 80px;
+  height: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings: slightly smaller, bolder, compact, uppercase, matching original line breaks */
+.columns.columns25 > div > div h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  overflow-wrap: break-word; /* Replaced deprecated 'word-break: break-word' */
+}
+
+/* Paragraph: slightly larger, slightly looser line height */
+.columns.columns25 > div > div p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.32;
+  margin: 0;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Responsive adjustments for icons and text */
+@media (width <= 899px) {
+  .columns.columns25 {
+    padding: 10px 0 8px;
+  }
+
+  .columns.columns25 > div > div {
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .columns.columns25 > div > div picture {
+    height: 64px;
+  }
+
+  .columns.columns25 > div > div picture img {
+    width: 54px;
+    max-width: 54px;
+    height: 54px;
+    max-height: 54px;
+  }
+
+  .columns.columns25 > div > div h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .columns.columns25 > div > div p {
+    font-size: 13px;
   }
 }
