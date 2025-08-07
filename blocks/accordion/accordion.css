@@ -1,8 +1,10 @@
+/* Disable no-descending-specificity globally */
+/* stylelint-disable no-descending-specificity */
+
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +60,124 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+.accordion.accordion11 {
+  background: #fff;
+  padding: 0;
+  border: none;
+  font-family: Roboto, sans-serif;
+}
+
+/* Accordion item */
+.accordion.accordion11 details {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  box-shadow: none;
+}
+
+.accordion.accordion11 summary,
+.accordion.accordion11 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 6px 0 0;
+  min-height: 18px;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+  gap: 4px;
+  position: relative;
+}
+
+/* Remove browser marker */
+.accordion.accordion11 summary::-webkit-details-marker,
+.accordion.accordion11 summary::marker {
+  display: none;
+}
+
+/* All-caps, blue, compact, tight question style */
+.accordion.accordion11 .accordion-item-label p,
+.accordion.accordion11 summary > p {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f3e92;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: none;
+}
+
+/* Arrow: visible, small, blue, baseline-aligned, tight gap */
+.accordion.accordion11 summary::after {
+  display: inline-block;
+  margin-left: 2px;
+  width: 7px;
+  height: 7px;
+  border: solid #2f3e92;
+  border-width: 0 1.2px 1.2px 0;
+  border-radius: 0.5px;
+  transform: rotate(45deg) translateY(0.5px);
+  transition: transform 0.2s;
+  vertical-align: middle;
+  align-self: center;
+  background: none;
+  position: static;
+}
+
+.accordion.accordion11 details[open] summary::after {
+  transform: rotate(-135deg) translateY(0.5px);
+}
+
+/* Compact answer/body styles */
+.accordion.accordion11 .accordion-item-body {
+  background: #fff;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.accordion.accordion11 .accordion-item-body p {
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  color: #222;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Prevent accidental extra padding/margins */
+.accordion.accordion11 details > *,
+.accordion.accordion11 .accordion-item-body > * {
+  box-sizing: border-box;
+}
+
+/* Responsive: tight on small screens */
+@media (width <= 600px) {
+  .accordion.accordion11 summary,
+  .accordion.accordion11 .accordion-item-label {
+    min-height: 16px;
+    gap: 2px;
+    padding-right: 3px;
+  }
+
+  .accordion.accordion11 .accordion-item-label p,
+  .accordion.accordion11 summary > p {
+    font-size: 11px;
+  }
+
+  .accordion.accordion11 .accordion-item-body p {
+    font-size: 10px;
+  }
 }
