@@ -927,18 +927,266 @@
     max-width: 55vw;
   }
 }
-
-/* Remove any border/padding from previous divider attempts */
 .columns > div > div {
   border: none;
   padding-right: 0;
   padding-bottom: 0;
 }
-
-/* Add extra left/right space on very large screens for breathing room */
 @media (min-width: 1600px) {
   .columns > div {
     padding-left: 160px;
     padding-right: 160px;
   }
+}
+
+
+.columns.columns6 {
+  background: #fff;
+  font-family: "Roboto", "sans-serif";
+}
+
+/* --- Main Two-Column Layout --- */
+.columns.columns6 > .columns {
+  display: grid;
+  grid-template-columns: 60% 38%;
+  gap: 28px;
+  max-width: 1160px;
+  margin: 40px auto 0 auto;
+  padding: 0 28px 48px 36px;
+  align-items: start;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .columns.columns6 > .columns {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0 8px 28px 8px;
+    margin: 24px 0 0 0;
+  }
+}
+
+/* --- Left/Main Content --- */
+.columns.columns6 > .columns > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+}
+
+/* Main card visual */
+.columns.columns6 > .columns > div:first-child > div:first-child {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 3px 14px rgba(40,53,147,0.06);
+  padding: 28px 36px 20px 36px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+.columns.columns6 h1 {
+  color: #283593;
+  font-size: 2.18rem;
+  font-weight: 700;
+  line-height: 1.11;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
+}
+
+.columns.columns6 h2,
+.columns.columns6 h3 {
+  color: #3973b1;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 10px;
+  line-height: 1.13;
+}
+
+.columns.columns6 h2,
+.columns.columns6 > .columns > div:nth-child(2) h2 {
+  text-transform: none;
+  font-size: 1.15rem;
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.columns.columns6 h3 {
+  font-size: 1.01rem;
+  text-transform: none;
+}
+
+/* Main text */
+.columns.columns6 p,
+.columns.columns6 ul,
+.columns.columns6 li {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.62;
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+}
+
+.columns.columns6 ul {
+  padding-left: 1.3em;
+  margin-bottom: 10px;
+}
+
+.columns.columns6 li {
+  margin-bottom: 5px;
+}
+
+/* Emphasized text */
+.columns.columns6 strong {
+  color: #3973b1;
+  font-weight: 700;
+}
+
+/* Main content image */
+.columns.columns6 > .columns > div:first-child picture,
+.columns.columns6 > .columns > div:first-child img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0 0 8px 0;
+  box-sizing: border-box;
+}
+
+/* --- Right/Sidebar --- */
+.columns.columns6 > .columns > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+/* Sidebar card styling */
+.columns.columns6 > .columns > div:nth-child(2) > div {
+  background: #fff;
+  border: 1px solid #edeef2;
+  border-radius: 10px;
+  padding: 16px 16px 14px 16px;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(40,53,147,0.06);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .columns.columns6 > .columns > div:nth-child(2) {
+    gap: 14px;
+  }
+  .columns.columns6 > .columns > div:nth-child(2) > div {
+    padding: 10px 8px 8px 8px;
+  }
+}
+
+/* Sidebar headings */
+.columns.columns6 > .columns > div:nth-child(2) h2 {
+  color: #3973b1;
+  font-size: 1.09rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 11px 0;
+  border-bottom: 1px solid #edeef2;
+  padding-bottom: 3px;
+  letter-spacing: 0.01em;
+}
+
+.columns.columns6 > .columns > div:nth-child(2) h3 {
+  color: #3973b1;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 13px 0 9px 0;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.012em;
+}
+
+/* Sidebar images */
+.columns.columns6 > .columns > div:nth-child(2) picture,
+.columns.columns6 > .columns > div:nth-child(2) img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Sidebar text */
+.columns.columns6 > .columns > div:nth-child(2) p {
+  color: #505050;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.columns.columns6 > .columns > div:nth-child(2) .button-container p {
+  margin-bottom: 0;
+}
+
+/* Sidebar "Read More" button enhancement */
+.columns.columns6 .button-container .button,
+.columns.columns6 .button-container a.button {
+  display: block;
+  width: 100%;
+  background: #3973b1;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 1.01rem;
+  font-weight: 600;
+  padding: 10px 0 10px 0;
+  margin: 12px 0 10px 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 1px 3px rgba(40,53,147,0.03);
+  transition: background 0.13s;
+  letter-spacing: 0;
+}
+.columns.columns6 .button-container .button:hover,
+.columns.columns6 .button-container a.button:hover {
+  background: #283593;
+}
+
+/* Sidebar date */
+.columns.columns6 > .columns > div:nth-child(2) > div > p:last-child {
+  color: #9fa6b2;
+  font-size: 0.92rem;
+  margin: 1px 0 0 0;
+  letter-spacing: 0.004em;
+  line-height: 1.25;
+}
+
+/* Remove margin for last sidebar card */
+.columns.columns6 > .columns > div:nth-child(2) > div:last-child {
+  margin-bottom: 0;
+}
+
+/* Main content card: remove background, border, padding from non-main sections */
+.columns.columns6 > .columns > div:first-child > div:not(:first-child) {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Main content links */
+.columns.columns6 a {
+  color: #3973b1;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.columns.columns6 a:hover {
+  color: #283593;
+}
+
+/* Utility: remove bottom margin on last p in main card */
+.columns.columns6 > .columns > div:first-child > div:first-child p:last-child {
+  margin-bottom: 0;
 }
