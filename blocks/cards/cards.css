@@ -917,8 +917,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Layout: wide, fixed-width, side-by-side cards with proper gap */
 .cards.cards34 ul {
   display: flex;
   flex-direction: row;
@@ -933,8 +931,6 @@
   overflow-x: visible;
   min-width: 0;
 }
-
-/* Card sizing and layout */
 .cards.cards34 ul > li {
   flex: 0 0 320px;
   max-width: 320px;
@@ -955,15 +951,11 @@
   overflow: visible;
   word-break: break-word;
 }
-
-/* Center card highlight */
 .cards.cards34 ul > li:nth-child(3) {
   border: 2px solid #2131b3;
   box-shadow: 0 4px 24px rgba(33,49,179,0.13);
   z-index: 1;
 }
-
-/* Responsive adjustments for tablet/phone */
 @media (max-width: 1350px) {
   .cards.cards34 ul > li {
     flex: 0 1 30vw;
@@ -1010,14 +1002,10 @@
     padding: 13px 2vw 12px 2vw;
   }
 }
-
-/* Remove inner margin from card body */
 .cards.cards34 .cards-card-body {
   margin: 0;
   padding: 0;
 }
-
-/* Headings & quotes */
 .cards.cards34 .cards-card-body h3 {
   color: #2131b3;
   font-size: 20px;
@@ -1036,8 +1024,6 @@
   line-height: 1.3;
   white-space: normal;
 }
-
-/* Paragraphs */
 .cards.cards34 .cards-card-body p {
   color: #222;
   font-size: 14.5px;
@@ -1049,8 +1035,6 @@
   font-family: inherit;
   font-weight: 400;
 }
-
-/* Signature (name/city, always last p) */
 .cards.cards34 .cards-card-body p:last-child {
   color: #2131b3;
   font-weight: bold;
@@ -1060,8 +1044,6 @@
   line-height: 1.2;
   white-space: normal;
 }
-
-/* first card's image: small, centered, round */
 .cards.cards34 .cards-card-image {
   width: 100%;
   margin-bottom: 13px;
@@ -1076,13 +1058,9 @@
   display: block;
   margin: 0 auto;
 }
-
-/* Remove any default grid border */
 .cards.cards34 ul > li {
   border: none;
 }
-
-/* Prevent unwanted horizontal scrolling and truncation */
 .cards.cards34 ul,
 .cards.cards34 ul > li,
 .cards.cards34 .cards-card-body,
@@ -1092,4 +1070,143 @@
   overflow: visible;
   white-space: normal;
   text-overflow: unset;
+}
+
+
+.cards.cards39 {
+  width: 100%;
+}
+
+/* Center the card(s) horizontally with flex, allow natural width */
+.cards.cards39 > ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  /* Remove max-width/min-width constraints that could collapse children */
+}
+
+/* Card: compact, never collapse, no border or shadow */
+.cards.cards39 > ul > li {
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: 290px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 8px;
+  padding: 0;
+  min-width: 0;
+}
+
+/* Image block: center with extra top/bottom spacing */
+.cards.cards39 .cards-card-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+/* Slightly larger, circular image */
+.cards.cards39 .cards-card-image img {
+  width: 148px;
+  height: 148px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  background: #f8f8f8;
+  margin: 0 auto;
+}
+
+/* Tighter horizontal padding for the body */
+.cards.cards39 .cards-card-body {
+  padding: 0 12px 16px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Headline: blue, bold, visually compact */
+.cards.cards39 .cards-card-body h3 {
+  color: #3036aa;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.25;
+  text-align: left;
+  font-family: var(--heading-font-family);
+}
+
+/* Description: gray, compact */
+.cards.cards39 .cards-card-body p {
+  color: #333333;
+  font-size: 0.97rem;
+  font-family: var(--body-font-family);
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Tighten "Read more" area */
+.cards.cards39 .cards-card-body p:last-child {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+/* "Read more" link styling */
+.cards.cards39 .cards-card-body p:last-child a:first-child {
+  color: #3036aa;
+  font-size: 0.98rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  margin-right: 4px;
+  vertical-align: middle;
+  display: inline-block;
+  transition: color 0.2s;
+  line-height: 1.2;
+}
+
+/* Arrow image sizing/alignment */
+.cards.cards39 .cards-card-body p:last-child a + a picture,
+.cards.cards39 .cards-card-body p:last-child a + a img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+  .cards.cards39 > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards.cards39 > ul > li {
+    max-width: 97vw;
+    margin: 18px 0;
+  }
+  .cards.cards39 .cards-card-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .cards.cards39 .cards-card-body {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
 }
