@@ -259,7 +259,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* Add more left padding for visual alignment, and keep right for icon space */
   padding: 12px 32px 12px 24px;
   background: transparent;
   border: none;
@@ -289,8 +288,6 @@
   line-height: 1.2;
   flex: 1 1 auto;
 }
-
-/* Fix: Keep horizontal bar, remove any transform/rotate, push to far right */
 .accordion.accordion18 summary:after {
   display: block;
   margin-left: auto;
@@ -299,23 +296,15 @@
   background: #1A33B9;
   border-radius: 1px;
   align-self: center;
-  /* Remove transform or rotation if inherited */
   transform: none;
-  /* No content property used, so empty content string */
   content: "";
 }
-
-/* Remove any box-shadow or extra marks for closed state - always just a minus */
 .accordion.accordion18 details:not([open]) summary:after {
   box-shadow: none;
 }
-
-/* Reduce vertical spacing between accordion items */
 .accordion.accordion18 details + details {
   margin-top: 0;
 }
-
-/* Answer/body styles */
 .accordion.accordion18 .accordion-item-body {
   padding: 0 32px 12px 24px;
   margin: 0;
@@ -347,13 +336,110 @@
   text-decoration: underline;
   font-size: 12px;
 }
-
-/* Responsive paddings for mobile */
 @media (max-width: 600px) {
   .accordion.accordion18 .accordion-item-label,
   .accordion.accordion18 summary,
   .accordion.accordion18 .accordion-item-body {
     padding-left: 12px;
     padding-right: 12px;
+  }
+}
+
+
+.accordion.accordion19 details {
+  border: none;
+  margin: 0;
+}
+
+.accordion.accordion19 summary.accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  min-height: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border-right: 1px solid #e6e6e6;
+  padding: 8px 16px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  overflow: visible;
+}
+
+.accordion.accordion19 summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Heading style */
+.accordion.accordion19 summary.accordion-item-label h2 {
+  color: #1428A0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0;
+  line-height: 1.2;
+  padding: 0;
+  align-self: center;
+  flex-shrink: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+/* Plus icon, perfectly centered with transform */
+.accordion.accordion19 summary.accordion-item-label::before,
+.accordion.accordion19 summary.accordion-item-label::after {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  background: #1428A0;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Vertical bar of plus */
+.accordion.accordion19 summary.accordion-item-label::before {
+  width: 3px;
+  height: 20px;
+  transform: translate(8.5px, -50%);
+  display: block;
+  /* place vertical bar at center of horizontal bar */
+}
+
+/* Horizontal bar of plus */
+.accordion.accordion19 summary.accordion-item-label::after {
+  width: 20px;
+  height: 3px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+/* When open, hide vertical bar to make minus */
+.accordion.accordion19 details[open] summary.accordion-item-label::before {
+  display: none;
+}
+
+/* Prevent highlight/hover background */
+.accordion.accordion19 details[open] summary,
+.accordion.accordion19 details summary:focus,
+.accordion.accordion19 details summary:hover {
+  background-color: #fff;
+}
+
+/* Remove the border from the expanded body */
+.accordion.accordion19 details[open] .accordion-item-body {
+  border-top: none;
+  background-color: #fff;
+}
+
+/* Responsiveness: shrink padding and icon position on small screens */
+@media (max-width: 600px) {
+  .accordion.accordion19 summary.accordion-item-label {
+    padding: 8px 8px;
+  }
+  .accordion.accordion19 summary.accordion-item-label::before,
+  .accordion.accordion19 summary.accordion-item-label::after {
+    right: 8px;
   }
 }
