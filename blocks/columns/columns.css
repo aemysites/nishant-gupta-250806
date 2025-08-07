@@ -630,8 +630,6 @@
   margin: 0 auto;
   padding: 0;
 }
-
-/* Two-column layout with flex: fix proportions, spacing, and padding */
 .columns.columns1 > .columns {
   display: flex;
   flex-direction: row;
@@ -661,8 +659,6 @@
     gap: 32px;
   }
 }
-
-/* Left (main/content) column: make it wider */
 .columns.columns1 > .columns > div:first-child {
   flex: 0 1 73%;
   max-width: 73%;
@@ -672,8 +668,6 @@
   display: flex;
   flex-direction: column;
 }
-
-/* Right (sidebar) column: make it narrower and vertically spaced */
 .columns.columns1 > .columns > div:last-child {
   flex: 0 1 27%;
   max-width: 27%;
@@ -693,8 +687,6 @@
     padding: 0;
   }
 }
-
-/* Main heading: even larger, more space below */
 .columns.columns1 h1 {
   font-size: 2.7rem;
   color: #1a237e;
@@ -704,8 +696,6 @@
   line-height: 1.2;
   letter-spacing: 0;
 }
-
-/* Main image: ensure it's present, prominent, and spaced */
 .columns.columns1 > .columns > div:first-child > p > picture,
 .columns.columns1 > .columns > div:first-child > p > img,
 .columns.columns1 > .columns > div:first-child picture,
@@ -717,8 +707,6 @@
   margin-bottom: 36px;
   border-radius: 0;
 }
-
-/* Subtitle/lede (left column, table strong) */
 .columns.columns1 > .columns > div:first-child table > tbody > tr:first-child td strong {
   display: block;
   font-size: 1.18rem;
@@ -728,8 +716,6 @@
   margin-top: 0;
   line-height: 1.36;
 }
-
-/* Main article body text */
 .columns.columns1 > .columns > div:first-child table,
 .columns.columns1 > .columns > div:first-child table td {
   border: none;
@@ -751,8 +737,6 @@
   color: #1976d2;
   font-weight: 700;
 }
-
-/* List styling main column */
 .columns.columns1 > .columns > div:first-child ul {
   margin: 12px 0 28px 30px;
   padding-left: 16px;
@@ -764,16 +748,12 @@
   color: #212121;
   font-size: 1.09rem;
 }
-
-/* Section headings in left column */
 .columns.columns1 > .columns > div:first-child p strong,
 .columns.columns1 > .columns > div:first-child table td > p > strong {
   color: #1A237E;
   font-weight: 700;
   font-size: 1.15rem;
 }
-
-/* Sidebar headings */
 .columns.columns1 > .columns > div:last-child h2 {
   color: #1A237E;
   font-size: 1.19rem;
@@ -787,8 +767,6 @@
 .columns.columns1 > .columns > div:last-child h2:first-child {
   margin-top: 0;
 }
-
-/* Sidebar article images */
 .columns.columns1 > .columns > div:last-child picture,
 .columns.columns1 > .columns > div:last-child img {
   width: 100%;
@@ -797,8 +775,6 @@
   display: block;
   border-radius: 0;
 }
-
-/* Sidebar article titles */
 .columns.columns1 > .columns > div:last-child h3 {
   color: #1976D2;
   font-size: 1.13rem;
@@ -807,8 +783,6 @@
   margin-top: 1em;
   line-height: 1.4;
 }
-
-/* Sidebar article body text and dates */
 .columns.columns1 > .columns > div:last-child p {
   color: #757575;
   font-size: 1.07rem;
@@ -816,8 +790,6 @@
   line-height: 1.7;
   word-break: break-word;
 }
-
-/* Read more: more prominent, extra spacing */
 .columns.columns1 .button-container .button,
 .columns.columns1 > .columns > div:last-child a.button {
   background: #1976D2;
@@ -845,15 +817,11 @@
 .columns.columns1 > .columns > div:last-child p.button-container {
   margin-bottom: 18px;
 }
-
-/* Sidebar date after article */
 .columns.columns1 > .columns > div:last-child p:not(.button-container) + p {
   color: #b0b0b0;
   font-size: 1.01rem;
   margin-bottom: 32px;
 }
-
-/* Sidebar section spacing */
 .columns.columns1 > .columns > div:last-child h2 + p {
   margin-top: 12px;
 }
@@ -861,15 +829,11 @@
 .columns.columns1 > .columns > div:last-child > *:not(:last-child) {
   margin-bottom: 33px;
 }
-
-/* Ensure images never overflow */
 .columns.columns1 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-/* Responsive: adjust sidebar heading and article spacing */
 @media (max-width: 900px) {
   .columns.columns1 > .columns > div:last-child h2 {
     margin-top: 27px;
@@ -882,5 +846,149 @@
   }
   .columns.columns1 > .columns > div:last-child > *:not(:last-child) {
     margin-bottom: 18px;
+  }
+}
+
+
+.columns {
+  background: #fff;
+  padding: 64px 0;
+}
+
+/* ROW OF COLUMNS: .columns > div is the row, its children are the columns */
+.columns > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .columns > div {
+    gap: 8px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .columns {
+    padding: 32px 0;
+  }
+  .columns > div {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 4vw;
+  }
+}
+
+/* Each column: flexes equally, vertical stack */
+.columns > div > div {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+/* Headings */
+.columns h3 {
+  color: #2948b1;
+  font-size: 1.3rem;
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* List styling */
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.columns li {
+  color: #131313;
+  font-size: 1rem;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.columns li:last-child {
+  margin-bottom: 0;
+}
+
+/* Links */
+.columns a {
+  color: #2948b1;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.columns a:hover,
+.columns a:focus {
+  color: #2948b1;
+  text-decoration: underline;
+}
+
+/* Download App images row: horizontally centered */
+.columns > div > div:last-child ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .columns > div > div:last-child ul {
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Download App images */
+.columns > div > div:last-child ul li {
+  margin-bottom: 0;
+}
+
+.columns > div > div:last-child ul li img {
+  max-width: 110px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* "FOLLOW US :" vertical spacing below app badges */
+.columns > div > div:last-child h3#follow-us- {
+  margin-top: 38px;
+  margin-bottom: 0;
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #2948b1;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .columns > div > div:last-child h3#follow-us- {
+    margin-top: 24px;
   }
 }
