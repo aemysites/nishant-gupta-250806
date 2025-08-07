@@ -1189,8 +1189,6 @@
   padding: 0;
   overflow: visible;
 }
-
-/* Make sure the row is flex, columns side by side, all stretch to same height */
 .columns.columns17 > div {
   display: flex;
   flex-direction: row;
@@ -1212,8 +1210,6 @@
     height: auto;
   }
 }
-
-/* All columns: stretch and fill height */
 .columns.columns17 > div > div {
   flex: 1 1 0;
   display: flex;
@@ -1231,8 +1227,6 @@
     padding: 32px 14px 28px 14px;
   }
 }
-
-/* Left column (white) */
 .columns.columns17 > div > div:first-child {
   background: #fff;
   border-radius: 20px 0 0 20px;
@@ -1253,8 +1247,6 @@
     padding: 32px 14px 24px 14px;
   }
 }
-
-/* Head office label: lighter, smaller, less margin */
 .columns.columns17 > div > div:first-child p:first-of-type {
   color: #b3b3b3;
   font-size: 0.95rem;
@@ -1263,8 +1255,6 @@
   margin-top: 0px;
   line-height: 1.3;
 }
-
-/* Company name (second p or h2): bold, blue */
 .columns.columns17 > div > div:first-child h2,
 .columns.columns17 > div > div:first-child p:nth-of-type(2) {
   color: #151f7a;
@@ -1274,8 +1264,6 @@
   margin-top: 0;
   line-height: 1.25;
 }
-
-/* Address text: lighter, more compact */
 .columns.columns17 > div > div:first-child p:last-of-type {
   color: #222;
   font-size: 1rem;
@@ -1284,8 +1272,6 @@
   margin-bottom: 0;
   line-height: 1.45;
 }
-
-/* Left image: slightly smaller, rounded, margin-bottom */
 .columns.columns17 > div > div:first-child img {
   border-radius: 8px;
   width: 98px;
@@ -1297,8 +1283,6 @@
   box-shadow: none;
   background: none;
 }
-
-/* Contact columns: blue bg, center all, fill height, extra vertical padding/spacing */
 .columns.columns17 > div > div:nth-child(2),
 .columns.columns17 > div > div:nth-child(3) {
   background: #161f7a;
@@ -1334,15 +1318,11 @@
     padding: 38px 14px 32px 14px;
   }
 }
-
-/* Center everything in contact columns */
 .columns.columns17 > div > div:nth-child(2) > *,
 .columns.columns17 > div > div:nth-child(3) > * {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* Contact column icon: large, extra space below, circular outline using box-shadow */
 .columns.columns17 > div > div:nth-child(2) img,
 .columns.columns17 > div > div:nth-child(3) img {
   width: 90px;
@@ -1356,8 +1336,6 @@
   margin-top: 0;
   box-shadow: 0 0 0 2px #b5bcf2;
 }
-
-/* Contact column label: smaller, uppercase, more spacing below */
 .columns.columns17 > div > div:nth-child(2) p,
 .columns.columns17 > div > div:nth-child(3) p {
   color: #c7d1f8;
@@ -1368,8 +1346,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-/* Contact main value: bold, large, more spacing above */
 .columns.columns17 > div > div:nth-child(2) h3,
 .columns.columns17 > div > div:nth-child(3) h3 {
   font-size: 1.22rem;
@@ -1397,8 +1373,6 @@
   color: #c7d1f8;
   text-decoration: underline;
 }
-
-/* Divider vertical alignment for desktop (optional, makes divider sharper and full height) */
 .columns.columns17 > div > div:nth-child(2)::after {
   content: "";
   position: absolute;
@@ -1420,8 +1394,6 @@
     background: #233087;
   }
 }
-
-/* Remove default link underlines in contact blocks */
 .columns.columns17 > div > div:nth-child(2) a,
 .columns.columns17 > div > div:nth-child(3) a {
   text-decoration: none;
@@ -1459,10 +1431,282 @@
     padding-right: 6px;
   }
 }
-
-/* Fix column heights to match card on all browsers */
 .columns.columns17 > div,
 .columns.columns17 > div > div {
   height: 100%;
   min-height: 0;
+}
+
+
+.columns.columns23 {
+  background: #f5f6fa;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Root grid: main and sidebar */
+.columns.columns23 > div {
+  display: grid;
+  grid-template-columns: 710px 355px;
+  column-gap: 24px;
+  max-width: 1100px;
+  margin: 38px auto 38px auto;
+  align-items: flex-start;
+  padding: 0;
+}
+
+/* Responsive: stack on tablet/mobile */
+@media (max-width: 1100px) {
+  .columns.columns23 > div {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+    row-gap: 30px;
+    column-gap: 0;
+    padding: 0 2vw;
+  }
+}
+
+/* Card appearance for both main and sidebar */
+.columns.columns23 > div > div:first-child,
+.columns.columns23 > div > div:last-child {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgba(34,62,153,0.09);
+  min-width: 0;
+}
+
+.columns.columns23 > div > div:first-child {
+  padding: 26px 18px 28px 22px;
+}
+
+.columns.columns23 > div > div:last-child {
+  padding: 14px 10px 16px 10px;
+  max-width: 355px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Main heading + spacing */
+.columns.columns23 h1 {
+  color: #223e99;
+  font-size: 1.85rem;
+  font-weight: bold;
+  margin: 0 0 1.0em 0;
+  line-height: 1.14;
+}
+
+.columns.columns23 h2 {
+  color: #223e99;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 2em 0 1em 0;
+  border-bottom: 2px solid #e5e7f1;
+  padding-bottom: 0.2em;
+  line-height: 1.13;
+}
+
+.columns.columns23 h2:first-child {
+  margin-top: 0;
+}
+
+.columns.columns23 h3 {
+  color: #223e99;
+  font-size: 1.01rem;
+  font-weight: 700;
+  margin: 0.5em 0 0.7em 0;
+}
+
+/* More vertical space before/after major blocks for airiness */
+.columns.columns23 > div > div:first-child h2,
+.columns.columns23 > div > div:first-child table {
+  margin-bottom: 1.2em;
+}
+
+/* Typography and links */
+.columns.columns23 p,
+.columns.columns23 td,
+.columns.columns23 th,
+.columns.columns23 li {
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.columns.columns23 strong {
+  color: #223e99;
+  font-weight: 600;
+}
+
+.columns.columns23 a,
+.columns.columns23 a:visited {
+  color: #223e99;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Main image style */
+.columns.columns23 picture,
+.columns.columns23 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.35em;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(34,62,153,0.055);
+}
+
+/* Sidebar images (a little larger) */
+.columns.columns23 > div > div:last-child picture,
+.columns.columns23 > div > div:last-child img {
+  max-width: 240px;
+  margin-bottom: 0.7em;
+  box-shadow: 0 1px 2px rgba(34,62,153,0.04);
+  border-radius: 4px;
+}
+
+/* Sidebar headings and spacing */
+.columns.columns23 > div > div:last-child h2 {
+  color: #223e99;
+  font-size: 1.03rem;
+  font-weight: 500;
+  margin: 14px 0 0.75em 0;
+  border: none;
+  padding-bottom: 0;
+}
+
+.columns.columns23 > div > div:last-child h3 {
+  color: #223e99;
+  font-size: 1.00rem;
+  font-weight: 700;
+  margin: 0.32em 0 0.6em 0;
+}
+
+.columns.columns23 > div > div:last-child p {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+}
+
+.columns.columns23 .button-container {
+  margin: 0.6em 0 0.28em 0;
+}
+
+.columns.columns23 a.button,
+.columns.columns23 a.button:visited {
+  display: inline-block;
+  background: #223e99;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 9px 0;
+  font-size: 15px;
+  margin: 0.18em 0 0.18em 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(34,62,153,0.06);
+  border: none;
+  transition: background .13s;
+}
+.columns.columns23 a.button:hover,
+.columns.columns23 a.button:focus {
+  background: #1b3279;
+  color: #fff;
+}
+
+/* Table styling for two-column feature separation */
+.columns.columns23 table {
+  width: 100%;
+  background: #fafbfe;
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  margin: 1.3em 0;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(34,62,153,0.04);
+}
+
+.columns.columns23 td,
+.columns.columns23 th {
+  padding: 11px 14px;
+  border: 1px solid #e5e7f1;
+  vertical-align: top;
+  background: #fff;
+}
+.columns.columns23 th {
+  background: #eef1fb;
+  font-weight: 600;
+  color: #223e99;
+}
+
+/* Stronger two-column separation for feature/side-by-side tables */
+.columns.columns23 table > tbody > tr > td:not(:last-child) {
+  padding-right: 32px;
+  border-right: none;
+  background: #fff;
+}
+.columns.columns23 table > tbody > tr > td:last-child {
+  background: #f7f9fd;
+  padding-left: 32px;
+  border-left: 2px solid #e5e7f1;
+}
+
+/* Feature lists */
+.columns.columns23 ul {
+  margin-left: 1.2em;
+  color: #223e99;
+  padding-left: 1.2em;
+  margin-bottom: 1.1em;
+}
+.columns.columns23 ul li {
+  margin: 0.27em 0;
+  font-weight: 500;
+  list-style-type: disc;
+  color: #223e99;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Sidebar section border separators for visual grouping */
+.columns.columns23 > div > div:last-child > *:not(:last-child) {
+  border-bottom: 1px solid #e5e7f1;
+  padding-bottom: 1.05em;
+}
+.columns.columns23 > div > div:last-child > *:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Responsive tables and padding */
+@media (max-width: 900px) {
+  .columns.columns23 > div {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin: 10px 0;
+    padding: 0;
+  }
+  .columns.columns23 > div > div:first-child,
+  .columns.columns23 > div > div:last-child {
+    padding: 8px 2vw 12px 2vw;
+    border-radius: 0;
+    max-width: 100%;
+  }
+  .columns.columns23 > div > div:last-child {
+    gap: 8px;
+  }
+  .columns.columns23 table,
+  .columns.columns23 td,
+  .columns.columns23 th {
+    font-size: 12px;
+    padding: 6px 3px;
+  }
+  .columns.columns23 > div > div:last-child picture,
+  .columns.columns23 > div > div:last-child img {
+    max-width: 100%;
+  }
 }
