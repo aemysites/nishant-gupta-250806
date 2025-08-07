@@ -1,5 +1,3 @@
-/* stylelint-disable no-descending-specificity */
-
 .accordion details {
   border: 1px solid #dadada;
 }
@@ -240,5 +238,122 @@
   .accordion.accordion15 details .accordion-item-body {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+
+.accordion.accordion18 {
+  background: #fff;
+  border-top: 1px solid #f8f9fb;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion.accordion18 details {
+  border: none;
+  margin: 0;
+}
+
+.accordion.accordion18 .accordion-item-label,
+.accordion.accordion18 summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Add more left padding for visual alignment, and keep right for icon space */
+  padding: 12px 32px 12px 24px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-height: 0;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.accordion.accordion18 summary::-webkit-details-marker,
+.accordion.accordion18 summary::marker {
+  display: none;
+}
+
+.accordion.accordion18 .accordion-item-label p,
+.accordion.accordion18 summary > p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #1A33B9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  flex: 1 1 auto;
+}
+
+/* Fix: Keep horizontal bar, remove any transform/rotate, push to far right */
+.accordion.accordion18 summary:after {
+  display: block;
+  margin-left: auto;
+  width: 18px;
+  height: 2px;
+  background: #1A33B9;
+  border-radius: 1px;
+  align-self: center;
+  /* Remove transform or rotation if inherited */
+  transform: none;
+  /* No content property used, so empty content string */
+  content: "";
+}
+
+/* Remove any box-shadow or extra marks for closed state - always just a minus */
+.accordion.accordion18 details:not([open]) summary:after {
+  box-shadow: none;
+}
+
+/* Reduce vertical spacing between accordion items */
+.accordion.accordion18 details + details {
+  margin-top: 0;
+}
+
+/* Answer/body styles */
+.accordion.accordion18 .accordion-item-body {
+  padding: 0 32px 12px 24px;
+  margin: 0;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.accordion.accordion18 details[open] .accordion-item-body {
+  border: none;
+  background: none;
+}
+
+.accordion.accordion18 .accordion-item-body p {
+  margin: 0;
+  font-size: 12px;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.accordion.accordion18 .accordion-item-body a {
+  color: #1A33B9;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+/* Responsive paddings for mobile */
+@media (max-width: 600px) {
+  .accordion.accordion18 .accordion-item-label,
+  .accordion.accordion18 summary,
+  .accordion.accordion18 .accordion-item-body {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
