@@ -629,8 +629,6 @@
   font-family: "Roboto", "sans-serif";
   color: #212121;
 }
-
-/* Main two-column layout */
 .columns.columns1 > .columns {
   display: flex;
   flex-direction: row;
@@ -643,8 +641,6 @@
   background: #fff;
   box-sizing: border-box;
 }
-
-/* Make columns proportions closer to original: left (main) wider, right (related) narrower */
 .columns.columns1 > .columns > div:first-child {
   flex: 0 1 78%;
   max-width: 78%;
@@ -669,8 +665,6 @@
   justify-content: flex-start;
   margin-top: 0;
 }
-
-/* Responsive: stack columns on mobile, remove side paddings */
 @media (max-width: 900px) {
   .columns.columns1 > .columns {
     flex-direction: column;
@@ -685,8 +679,6 @@
     padding: 0;
   }
 }
-
-/* Main headline */
 .columns.columns1 h1 {
   font-size: 2.25rem;
   color: #2452a7;
@@ -696,8 +688,6 @@
   line-height: 1.13;
   text-align: left;
 }
-
-/* Ensure main image is prominent, tall and full width */
 .columns.columns1 > .columns > div:first-child p > picture,
 .columns.columns1 > .columns > div:first-child p > img,
 .columns.columns1 > .columns > div:first-child picture,
@@ -711,8 +701,6 @@
   margin-bottom: 18px;
   border-radius: 0;
 }
-
-/* Subheadline/table under image */
 .columns.columns1 > .columns > div:first-child table > tbody > tr:first-child td strong {
   display: block;
   font-size: 1.09rem;
@@ -723,8 +711,6 @@
   line-height: 1.36;
   text-align: left;
 }
-
-/* Main text */
 .columns.columns1 p,
 .columns.columns1 td,
 .columns.columns1 li {
@@ -734,8 +720,6 @@
   margin-bottom: 8px;
   word-break: break-word;
 }
-
-/* Main column ul/li styles */
 .columns.columns1 > .columns > div:first-child ul {
   margin: 6px 0 16px 28px;
   padding-left: 10px;
@@ -746,19 +730,13 @@
   color: #212121;
   font-size: 1.02rem;
 }
-
-/* Strong blue text for highlights */
 .columns.columns1 strong {
   color: #1976d2;
   font-weight: 700;
 }
-
-/* Remove left padding on the right column */
 .columns.columns1 > .columns > div:last-child > * {
   padding-left: 0;
 }
-
-/* Right column headings: bigger and bolder, less margin */
 .columns.columns1 > .columns > div:last-child h2 {
   color: #1A237E;
   font-size: 1.29rem;
@@ -778,8 +756,6 @@
   margin-top: 0.7em;
   line-height: 1.2;
 }
-
-/* Related card layout: tighter vertical grouping, limit image size */
 .columns.columns1 > .columns > div:last-child picture,
 .columns.columns1 > .columns > div:last-child img {
   width: 100%;
@@ -791,8 +767,6 @@
   display: block;
   border-radius: 0;
 }
-
-/* Related article paragraph */
 .columns.columns1 > .columns > div:last-child p {
   color: #757575;
   font-size: 0.98rem;
@@ -800,8 +774,6 @@
   line-height: 1.5;
   word-break: break-word;
 }
-
-/* "Read More" button: even more compact */
 .columns.columns1 .button-container .button,
 .columns.columns1 > .columns > div:last-child a.button {
   margin-bottom: 1px;
@@ -817,21 +789,156 @@
   transition: background 0.18s;
   line-height: 1.13;
 }
-
-/* Remove extra margin on last right column child */
 .columns.columns1 > .columns > div:last-child > *:last-child {
   margin-bottom: 0;
 }
-
-/* Tighter vertical spacing between related cards */
 .columns.columns1 > .columns > div:last-child > *:not(:last-child) {
   margin-bottom: 8px;
 }
-
-/* Table clean-up in main column */
 .columns.columns1 > .columns > div:first-child table,
 .columns.columns1 > .columns > div:first-child table td {
   border: none;
   background: transparent;
   padding: 0;
+}
+
+
+.columns {
+  background: #f8f8f8;
+  padding: 48px 0 32px 0;
+  font-family: "Roboto", "sans-serif";
+}
+
+.columns > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 72px;
+  gap: 56px;
+}
+
+@media (max-width: 1300px) {
+  .columns > div {
+    padding: 0 36px;
+    gap: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .columns > div {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 12px;
+  }
+}
+
+.columns > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.columns h3 {
+  color: #223488;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  margin: 0 0 14px 0;
+  text-transform: none;
+  line-height: 1.2;
+}
+
+.columns h3#follow-us- {
+  font-size: 16px;
+  margin-top: 38px;
+  margin-bottom: 0;
+  color: #223488;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.columns li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.columns li:last-child {
+  margin-bottom: 0;
+}
+
+.columns a {
+  color: #223488;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 15px;
+}
+
+.columns a:hover, .columns a:focus {
+  color: #0e1e60;
+  text-decoration: underline;
+}
+
+.columns picture,
+.columns img {
+  display: block;
+  margin-bottom: 10px;
+  max-width: 154px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.columns > div > div:last-child ul {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .columns > div > div:last-child ul {
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .columns picture,
+  .columns img {
+    max-width: 55vw;
+  }
+}
+
+/* Remove any border/padding from previous divider attempts */
+.columns > div > div {
+  border: none;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+/* Add extra left/right space on very large screens for breathing room */
+@media (min-width: 1600px) {
+  .columns > div {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
 }
