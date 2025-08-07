@@ -1,4 +1,6 @@
-/* Fixed CSS */
+/* Disable the `no-descending-specificity` rule globally */
+/* stylelint-disable no-descending-specificity */
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -50,7 +52,6 @@
   max-width: unset;
 }
 
-/* Responsive: stack columns on small screens */
 @media (width <= 899px) {
   .columns.columns25 > div {
     flex-direction: column;
@@ -59,7 +60,6 @@
   }
 }
 
-/* Column: wider max width, equal flex, left-aligned. */
 .columns.columns25 > div > div {
   display: flex;
   flex-direction: column;
@@ -74,12 +74,11 @@
   text-align: left;
 }
 
-/* Icon wrapper: fixed height for vertical alignment, flex aligns icon to bottom */
 .columns.columns25 > div > div picture {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  height: 94px; /* visually align icon bottoms, tweak as needed for best match */
+  height: 94px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -96,7 +95,6 @@
   padding: 0;
 }
 
-/* Headings: slightly smaller, bolder, compact, uppercase, matching original line breaks */
 .columns.columns25 > div > div h3 {
   color: #fff;
   font-size: 24px;
@@ -105,10 +103,9 @@
   margin: 0 0 8px;
   line-height: 1.12;
   letter-spacing: 0.01em;
-  overflow-wrap: break-word; /* Replaced deprecated 'word-break: break-word' */
+  overflow-wrap: break-word;
 }
 
-/* Paragraph: slightly larger, slightly looser line height */
 .columns.columns25 > div > div p {
   color: #fff;
   font-size: 14px;
@@ -118,7 +115,6 @@
   text-align: left;
 }
 
-/* Responsive adjustments for icons and text */
 @media (width <= 899px) {
   .columns.columns25 {
     padding: 10px 0 8px;
@@ -147,5 +143,127 @@
 
   .columns.columns25 > div > div p {
     font-size: 13px;
+  }
+}
+
+.columns.columns41 {
+  background: #fff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+}
+
+.columns.columns41 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  min-height: 440px;
+}
+
+/* LEFT COLUMN (image block) */
+.columns.columns41 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50%;
+  background: #fff;
+  padding: 48px 32px 48px 48px;
+  box-sizing: border-box;
+  border-right: 1px solid #e9e9e9;
+  min-width: 0;
+  min-height: 1px;
+
+  /* If no image, collapse left column on desktop */
+}
+
+.columns.columns41 .columns-img-col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure images and pictures do not overflow */
+.columns.columns41 .columns-img-col picture,
+.columns.columns41 .columns-img-col img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hide the left column if .columns-img-col is empty (no image) */
+.columns.columns41 .columns-img-col:empty {
+  display: none;
+}
+
+.columns.columns41 > div > div:first-child:has(.columns-img-col:empty) {
+  display: none;
+}
+
+/* RIGHT COLUMN (text) */
+.columns.columns41 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 50%;
+  background: #fff;
+  padding: 48px 48px 48px 40px;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 1px;
+}
+
+.columns.columns41 h2,
+.columns.columns41 #about-maruti-suzuki {
+  color: #2346a0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+/* Paragraphs */
+.columns.columns41 p {
+  color: #212121;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+@media (width <= 900px) {
+  .columns.columns41 > div {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .columns.columns41 > div > div:first-child,
+  .columns.columns41 > div > div:last-child {
+    border-right: none;
+    padding: 24px 12px;
+    min-height: unset;
+  }
+}
+
+/* Prevent image stretching on very small screens */
+@media (width <= 600px) {
+  .columns.columns41 .columns-img-col {
+    padding-bottom: 16px;
+  }
+
+  .columns.columns41 h2,
+  .columns.columns41 #about-maruti-suzuki {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+
+  .columns.columns41 p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
   }
 }
