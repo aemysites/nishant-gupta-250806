@@ -624,68 +624,60 @@
 
 .columns.columns1 {
   background: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
   color: #212121;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
 }
 
-/* Two-column layout with flex: fix proportions, spacing, and padding */
+/* Main two-column layout */
 .columns.columns1 > .columns {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-start;
-  justify-content: center;
-  gap: 72px;
-  max-width: 1220px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 56px 72px 56px;
+  padding: 0 24px;
+  gap: 24px;
   background: #fff;
   box-sizing: border-box;
 }
 
-@media (max-width: 1400px) {
-  .columns.columns1 > .columns {
-    max-width: 98vw;
-    padding: 40px 18px 42px 18px;
-    gap: 36px;
-  }
+/* Make columns proportions closer to original: left (main) wider, right (related) narrower */
+.columns.columns1 > .columns > div:first-child {
+  flex: 0 1 78%;
+  max-width: 78%;
+  min-width: 0;
+  padding: 32px 36px 32px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
+.columns.columns1 > .columns > div:last-child {
+  flex: 0 1 22%;
+  max-width: 22%;
+  min-width: 0;
+  padding: 32px 0 32px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+/* Responsive: stack columns on mobile, remove side paddings */
 @media (max-width: 900px) {
   .columns.columns1 > .columns {
     flex-direction: column;
-    align-items: stretch;
-    padding: 16px 4vw 16px 4vw;
-    gap: 32px;
+    gap: 0;
+    padding: 0;
+    max-width: 100vw;
   }
-}
-
-/* Left (main/content) column: make it wider */
-.columns.columns1 > .columns > div:first-child {
-  flex: 0 1 73%;
-  max-width: 73%;
-  min-width: 0;
-  box-sizing: border-box;
-  padding-right: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Right (sidebar) column: make it narrower and vertically spaced */
-.columns.columns1 > .columns > div:last-child {
-  flex: 0 1 27%;
-  max-width: 27%;
-  min-width: 0;
-  box-sizing: border-box;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-@media (max-width: 900px) {
   .columns.columns1 > .columns > div:first-child,
   .columns.columns1 > .columns > div:last-child {
     max-width: 100%;
@@ -694,193 +686,152 @@
   }
 }
 
-/* Main heading: even larger, more space below */
+/* Main headline */
 .columns.columns1 h1 {
-  font-size: 2.7rem;
-  color: #1a237e;
+  font-size: 2.25rem;
+  color: #2452a7;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 26px;
-  line-height: 1.2;
-  letter-spacing: 0;
+  margin-bottom: 18px;
+  line-height: 1.13;
+  text-align: left;
 }
 
-/* Main image: ensure it's present, prominent, and spaced */
-.columns.columns1 > .columns > div:first-child > p > picture,
-.columns.columns1 > .columns > div:first-child > p > img,
+/* Ensure main image is prominent, tall and full width */
+.columns.columns1 > .columns > div:first-child p > picture,
+.columns.columns1 > .columns > div:first-child p > img,
 .columns.columns1 > .columns > div:first-child picture,
 .columns.columns1 > .columns > div:first-child img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-bottom: 36px;
+  min-height: 200px;
+  object-fit: cover;
+  margin-bottom: 18px;
   border-radius: 0;
 }
 
-/* Subtitle/lede (left column, table strong) */
+/* Subheadline/table under image */
 .columns.columns1 > .columns > div:first-child table > tbody > tr:first-child td strong {
   display: block;
-  font-size: 1.18rem;
-  color: #757575;
+  font-size: 1.09rem;
+  color: #828282;
   font-weight: 400;
-  margin-bottom: 19px;
+  margin-bottom: 12px;
   margin-top: 0;
   line-height: 1.36;
+  text-align: left;
 }
 
-/* Main article body text */
+/* Main text */
+.columns.columns1 p,
+.columns.columns1 td,
+.columns.columns1 li {
+  font-size: 1.02rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+/* Main column ul/li styles */
+.columns.columns1 > .columns > div:first-child ul {
+  margin: 6px 0 16px 28px;
+  padding-left: 10px;
+}
+.columns.columns1 > .columns > div:first-child ul li {
+  list-style: disc inside;
+  margin-bottom: 5px;
+  color: #212121;
+  font-size: 1.02rem;
+}
+
+/* Strong blue text for highlights */
+.columns.columns1 strong {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+/* Remove left padding on the right column */
+.columns.columns1 > .columns > div:last-child > * {
+  padding-left: 0;
+}
+
+/* Right column headings: bigger and bolder, less margin */
+.columns.columns1 > .columns > div:last-child h2 {
+  color: #1A237E;
+  font-size: 1.29rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+  line-height: 1.21;
+}
+
+.columns.columns1 > .columns > div:last-child h3 {
+  color: #1976D2;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  margin-top: 0.7em;
+  line-height: 1.2;
+}
+
+/* Related card layout: tighter vertical grouping, limit image size */
+.columns.columns1 > .columns > div:last-child picture,
+.columns.columns1 > .columns > div:last-child img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 88px;
+  min-height: 58px;
+  object-fit: cover;
+  margin-bottom: 3px;
+  display: block;
+  border-radius: 0;
+}
+
+/* Related article paragraph */
+.columns.columns1 > .columns > div:last-child p {
+  color: #757575;
+  font-size: 0.98rem;
+  margin-bottom: 3px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* "Read More" button: even more compact */
+.columns.columns1 .button-container .button,
+.columns.columns1 > .columns > div:last-child a.button {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: 6px 19px;
+  font-size: 0.94rem;
+  border-radius: 4px;
+  background: #1976D2;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: none;
+  transition: background 0.18s;
+  line-height: 1.13;
+}
+
+/* Remove extra margin on last right column child */
+.columns.columns1 > .columns > div:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Tighter vertical spacing between related cards */
+.columns.columns1 > .columns > div:last-child > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Table clean-up in main column */
 .columns.columns1 > .columns > div:first-child table,
 .columns.columns1 > .columns > div:first-child table td {
   border: none;
   background: transparent;
   padding: 0;
-}
-
-.columns.columns1 > .columns > div:first-child p,
-.columns.columns1 > .columns > div:first-child td,
-.columns.columns1 > .columns > div:first-child li {
-  font-size: 1.09rem;
-  color: #212121;
-  line-height: 1.76;
-  margin-bottom: 21px;
-  word-break: break-word;
-}
-
-.columns.columns1 > .columns > div:first-child strong {
-  color: #1976d2;
-  font-weight: 700;
-}
-
-/* List styling main column */
-.columns.columns1 > .columns > div:first-child ul {
-  margin: 12px 0 28px 30px;
-  padding-left: 16px;
-}
-
-.columns.columns1 > .columns > div:first-child ul li {
-  list-style: disc inside;
-  margin-bottom: 11px;
-  color: #212121;
-  font-size: 1.09rem;
-}
-
-/* Section headings in left column */
-.columns.columns1 > .columns > div:first-child p strong,
-.columns.columns1 > .columns > div:first-child table td > p > strong {
-  color: #1A237E;
-  font-weight: 700;
-  font-size: 1.15rem;
-}
-
-/* Sidebar headings */
-.columns.columns1 > .columns > div:last-child h2 {
-  color: #1A237E;
-  font-size: 1.19rem;
-  font-weight: 700;
-  margin-top: 38px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 10px;
-  line-height: 1.32;
-}
-.columns.columns1 > .columns > div:last-child h2:first-child {
-  margin-top: 0;
-}
-
-/* Sidebar article images */
-.columns.columns1 > .columns > div:last-child picture,
-.columns.columns1 > .columns > div:last-child img {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 18px;
-  display: block;
-  border-radius: 0;
-}
-
-/* Sidebar article titles */
-.columns.columns1 > .columns > div:last-child h3 {
-  color: #1976D2;
-  font-size: 1.13rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  margin-top: 1em;
-  line-height: 1.4;
-}
-
-/* Sidebar article body text and dates */
-.columns.columns1 > .columns > div:last-child p {
-  color: #757575;
-  font-size: 1.07rem;
-  margin-bottom: 14px;
-  line-height: 1.7;
-  word-break: break-word;
-}
-
-/* Read more: more prominent, extra spacing */
-.columns.columns1 .button-container .button,
-.columns.columns1 > .columns > div:last-child a.button {
-  background: #1976D2;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 4px;
-  padding: 10px 31px;
-  font-size: 1.08rem;
-  display: inline-block;
-  margin-bottom: 17px;
-  margin-top: 4px;
-  border: none;
-  box-shadow: none;
-  transition: background 0.18s;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-
-.columns.columns1 .button-container .button:hover,
-.columns.columns1 > .columns > div:last-child a.button:hover {
-  background: #0d47a1;
-  color: #fff;
-}
-
-.columns.columns1 > .columns > div:last-child p.button-container {
-  margin-bottom: 18px;
-}
-
-/* Sidebar date after article */
-.columns.columns1 > .columns > div:last-child p:not(.button-container) + p {
-  color: #b0b0b0;
-  font-size: 1.01rem;
-  margin-bottom: 32px;
-}
-
-/* Sidebar section spacing */
-.columns.columns1 > .columns > div:last-child h2 + p {
-  margin-top: 12px;
-}
-
-.columns.columns1 > .columns > div:last-child > *:not(:last-child) {
-  margin-bottom: 33px;
-}
-
-/* Ensure images never overflow */
-.columns.columns1 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Responsive: adjust sidebar heading and article spacing */
-@media (max-width: 900px) {
-  .columns.columns1 > .columns > div:last-child h2 {
-    margin-top: 27px;
-    margin-bottom: 14px;
-    font-size: 1.06rem;
-    border-bottom-width: 1px;
-  }
-  .columns.columns1 > .columns > div:last-child h3 {
-    font-size: 1.08rem;
-  }
-  .columns.columns1 > .columns > div:last-child > *:not(:last-child) {
-    margin-bottom: 18px;
-  }
 }
