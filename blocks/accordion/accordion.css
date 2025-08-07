@@ -1,4 +1,3 @@
-/* Disable no-descending-specificity globally */
 /* stylelint-disable no-descending-specificity */
 
 .accordion details {
@@ -69,7 +68,6 @@
   font-family: Roboto, sans-serif;
 }
 
-/* Accordion item */
 .accordion.accordion11 details {
   border: none;
   margin: 0;
@@ -96,31 +94,11 @@
   position: relative;
 }
 
-/* Remove browser marker */
 .accordion.accordion11 summary::-webkit-details-marker,
 .accordion.accordion11 summary::marker {
   display: none;
 }
 
-/* All-caps, blue, compact, tight question style */
-.accordion.accordion11 .accordion-item-label p,
-.accordion.accordion11 summary > p {
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #2f3e92;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0;
-  line-height: 1.15;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex: none;
-}
-
-/* Arrow: visible, small, blue, baseline-aligned, tight gap */
 .accordion.accordion11 summary::after {
   display: inline-block;
   margin-left: 2px;
@@ -141,30 +119,35 @@
   transform: rotate(-135deg) translateY(0.5px);
 }
 
-/* Compact answer/body styles */
 .accordion.accordion11 .accordion-item-body {
   background: #fff;
   padding: 0;
   margin-top: 4px;
 }
 
-.accordion.accordion11 .accordion-item-body p {
+.accordion.accordion11 .accordion-item-label p,
+.accordion.accordion11 summary > p {
   font-family: Roboto, sans-serif;
-  font-size: 11px;
-  color: #222;
-  font-weight: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f3e92;
+  text-transform: uppercase;
   margin: 0;
-  line-height: 1.4;
+  padding: 0;
+  letter-spacing: 0;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: none;
 }
 
-/* Prevent accidental extra padding/margins */
 .accordion.accordion11 details > *,
 .accordion.accordion11 .accordion-item-body > * {
   box-sizing: border-box;
 }
 
-/* Responsive: tight on small screens */
-@media (width <= 600px) {
+@media (min-width: 600px) {
   .accordion.accordion11 summary,
   .accordion.accordion11 .accordion-item-label {
     min-height: 16px;
@@ -172,12 +155,90 @@
     padding-right: 3px;
   }
 
-  .accordion.accordion11 .accordion-item-label p,
   .accordion.accordion11 summary > p {
     font-size: 11px;
   }
 
   .accordion.accordion11 .accordion-item-body p {
     font-size: 10px;
+  }
+}
+
+.accordion.accordion15 details {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion.accordion15 summary.accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+  height: 20px;
+  padding: 0;
+  background: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  user-select: none;
+  line-height: 1;
+  gap: 0;
+}
+
+.accordion.accordion15 summary.accordion-item-label:focus {
+  outline: none;
+}
+
+.accordion.accordion15 summary.accordion-item-label p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.01em;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+  align-self: center;
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.accordion.accordion15 summary.accordion-item-label::-webkit-details-marker {
+  font-size: 9px;
+  color: #bbb;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1.5px;
+}
+
+.accordion.accordion15 summary.accordion-item-label::marker {
+  font-size: 9px;
+  color: #bbb;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1.5px;
+}
+
+.accordion.accordion15 details .accordion-item-body {
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .accordion.accordion15 summary.accordion-item-label,
+  .accordion.accordion15 details .accordion-item-body {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
