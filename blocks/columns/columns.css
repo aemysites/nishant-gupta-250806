@@ -1711,8 +1711,6 @@
     padding: 0 2vw;
   }
 }
-
-/* Card style */
 .columns.columns26 > div > div {
   background: #fff;
   border-radius: 13px;
@@ -1736,8 +1734,6 @@
     max-width: 100%;
   }
 }
-
-/* Top image: larger and with more space above/below */
 .columns.columns26 > div > div > p:first-child {
   text-align: center;
   margin: 0 0 30px 0;
@@ -1750,8 +1746,6 @@
   margin: 0 auto;
   display: block;
 }
-
-/* Heading: larger, more spacing above/below */
 .columns.columns26 h3 {
   color: #26329A;
   font-size: 1.77rem;
@@ -1769,8 +1763,6 @@
   letter-spacing: 0.01em;
   max-width: 96%;
 }
-
-/* Stats section */
 .columns.columns26 h4 {
   font-size: 1.54rem;
   color: #26329A;
@@ -1788,8 +1780,6 @@
   margin: 0 0 2px 0;
   line-height: 1.12;
 }
-
-/* Stat card grouping: slightly darker bg, less shadow, tighter */
 .columns.columns26 h4 + h5 + ul {
   background: #f1f6fb;
   border-radius: 7px;
@@ -1818,8 +1808,6 @@
 .columns.columns26 h4:not(:first-child) {
   margin-top: 11px;
 }
-
-/* Price section: inline currency, price, note */
 .columns.columns26 > div > div > p {
   color: #23235B;
   font-size: 1rem;
@@ -1857,11 +1845,8 @@
   margin: 0.43em 0 1.09em 0;
   letter-spacing: 0.01em;
   display: block;
-  /* Separate asterisk: use kerning if possible with the HTML structure */
   letter-spacing: 0.04em;
 }
-
-/* Button: centered, slightly less wide, extra vertical space */
 .columns.columns26 .button-container {
   margin: 0 0 22px 0;
   text-align: center;
@@ -1889,8 +1874,6 @@
   background: #26329A;
   color: #fff;
 }
-
-/* Disclaimer: lighter, smaller, less margin */
 .columns.columns26 > div > div > p:last-child {
   color: #e1e4ec;
   font-size: 0.77rem;
@@ -1919,4 +1902,157 @@
   .columns.columns26 img {
     max-width: 97vw;
   }
+}
+
+
+.columns {
+  background: #999999;
+  padding: 48px 0 36px 0;
+  font-family: "Roboto", "sans-serif";
+  color: #fff;
+}
+
+/* Refined grid for more accurate width and spacing */
+.columns > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+@media (max-width: 1050px) {
+  .columns > div {
+    max-width: 98vw;
+    padding: 0 2vw;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .columns > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+}
+
+.columns > div > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.columns h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.columns li {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.columns li:last-child {
+  margin-bottom: 0;
+}
+
+.columns a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+
+.columns a:hover,
+.columns a:focus {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+/* Download app badges row */
+.columns > div > div:last-child ul {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 18px 0 32px 0;
+  align-items: center;
+}
+
+.columns > div > div:last-child ul li {
+  margin-bottom: 0;
+}
+
+/* Badge images */
+.columns picture,
+.columns img {
+  display: block;
+  margin-bottom: 0;
+  max-width: 154px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* "FOLLOW US :" heading vertical separation */
+.columns h3#follow-us- {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+/* If disclaimer/fine print exists, style it */
+.columns .fine-print,
+.columns .disclaimer,
+.columns p {
+  font-size: 12px;
+  color: #ddd;
+  font-weight: 400;
+  margin: 8px 0 0 0;
+  line-height: 1.5;
+}
+.columns .caution {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Footer bar if present in HTML */
+.columns .footer-bottom {
+  background: #222;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  margin-top: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
 }
