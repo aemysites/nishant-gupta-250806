@@ -1,3 +1,5 @@
+/* Stylelint disable no-descending-specificity */
+
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -43,5 +45,146 @@
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
+  }
+}
+
+.hero.hero12 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgb(44 62 80 / 8%);
+  padding: 44px 40px;
+  max-width: 1160px;
+  margin: 48px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Always reserve space for image column even if empty */
+.hero.hero12 > div:first-child {
+  flex: 0 0 44%;
+  max-width: 420px;
+  min-width: 280px;
+  min-height: 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  /* Optional subtle background to signal/hold image space if empty */
+  background: transparent;
+}
+
+/* Allow image to fill, remain balanced even if missing */
+.hero.hero12 > div:first-child > div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 220px;
+}
+
+.hero.hero12 > div:last-child {
+  flex: 1 1 0;
+  max-width: 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.hero.hero12 > div:last-child > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: unset;
+}
+
+.hero.hero12 picture,
+.hero.hero12 img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  min-width: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgb(44 62 80 / 8%);
+  height: auto;
+  background: #f6f6fb;
+}
+
+/* Headline & text */
+.hero.hero12 h1 {
+  color: #234e9c;
+  font-size: 2.15rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.hero.hero12 p {
+  font-size: 1.09rem;
+  color: #333;
+  line-height: 1.68;
+  margin-bottom: 16px;
+  margin-top: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+.hero.hero12 strong {
+  color: #234e9c;
+  font-weight: 600;
+}
+
+.hero.hero12 em {
+  color: #636363;
+}
+
+.hero.hero12 a {
+  color: #234e9c;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Responsive: Stack columns vertically on small screens, allow text to expand */
+@media (width <= 950px) {
+  .hero.hero12 {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 12px;
+    max-width: 98vw;
+  }
+
+  .hero.hero12 > div:first-child,
+  .hero.hero12 > div:last-child {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero.hero12 picture,
+  .hero.hero12 img {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero.hero12 h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero.hero12 > div:first-child > div {
+    min-height: 0;
   }
 }
