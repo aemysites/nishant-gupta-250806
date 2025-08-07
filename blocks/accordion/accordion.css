@@ -371,8 +371,6 @@
 .accordion.accordion19 summary::-webkit-details-marker {
   display: none;
 }
-
-/* Heading style */
 .accordion.accordion19 summary.accordion-item-label h2 {
   color: #1428A0;
   font-size: 18px;
@@ -386,8 +384,6 @@
   z-index: 1;
   background: transparent;
 }
-
-/* Plus icon, perfectly centered with transform */
 .accordion.accordion19 summary.accordion-item-label::before,
 .accordion.accordion19 summary.accordion-item-label::after {
   position: absolute;
@@ -397,43 +393,30 @@
   border-radius: 2px;
   pointer-events: none;
 }
-
-/* Vertical bar of plus */
 .accordion.accordion19 summary.accordion-item-label::before {
   width: 3px;
   height: 20px;
   transform: translate(8.5px, -50%);
   display: block;
-  /* place vertical bar at center of horizontal bar */
 }
-
-/* Horizontal bar of plus */
 .accordion.accordion19 summary.accordion-item-label::after {
   width: 20px;
   height: 3px;
   transform: translateY(-50%);
   display: block;
 }
-
-/* When open, hide vertical bar to make minus */
 .accordion.accordion19 details[open] summary.accordion-item-label::before {
   display: none;
 }
-
-/* Prevent highlight/hover background */
 .accordion.accordion19 details[open] summary,
 .accordion.accordion19 details summary:focus,
 .accordion.accordion19 details summary:hover {
   background-color: #fff;
 }
-
-/* Remove the border from the expanded body */
 .accordion.accordion19 details[open] .accordion-item-body {
   border-top: none;
   background-color: #fff;
 }
-
-/* Responsiveness: shrink padding and icon position on small screens */
 @media (max-width: 600px) {
   .accordion.accordion19 summary.accordion-item-label {
     padding: 8px 8px;
@@ -441,5 +424,112 @@
   .accordion.accordion19 summary.accordion-item-label::before,
   .accordion.accordion19 summary.accordion-item-label::after {
     right: 8px;
+  }
+}
+
+
+.accordion.accordion22 details,
+.accordion.accordion22 details[open] {
+  border: none;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion.accordion22 summary,
+.accordion.accordion22 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 8px 22px 8px 16px;
+  min-height: 32px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  user-select: none;
+  width: 100%;
+}
+
+/* Remove marker for summary */
+.accordion.accordion22 summary::-webkit-details-marker {
+  display: none;
+}
+.accordion.accordion22 summary::marker {
+  display: none;
+  font-size: 0;
+}
+
+/* Question text styling: allow text to grow and wrap */
+.accordion.accordion22 .accordion-item-label p,
+.accordion.accordion22 summary p {
+  color: #1a237e;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--body-font-family, "Roboto", "sans-serif");
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: 0.09em;
+  flex: 1 1 0;
+  min-width: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* Make arrow larger, bolder, and vertically centered */
+.accordion.accordion22 summary::after {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-color: #1a237e;
+  border-width: 0 2px 2px 0;
+  border-radius: 1px;
+  margin-left: 20px;
+  transform: rotate(45deg) translateY(0px);
+  transition: transform 0.2s;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.accordion.accordion22 details[open] summary::after {
+  transform: rotate(-135deg) translateY(0px);
+}
+
+.accordion.accordion22 .accordion-item-body {
+  padding: 0 16px 8px 16px;
+  margin: 0;
+  background: #fff;
+  border: none;
+}
+
+.accordion.accordion22 .accordion-item-body p {
+  color: #444444;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: var(--body-font-family, "Roboto", "sans-serif");
+  font-weight: 400;
+}
+
+.accordion.accordion22 details[open] .accordion-item-body {
+  border-top: none;
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .accordion.accordion22 summary,
+  .accordion.accordion22 .accordion-item-label,
+  .accordion.accordion22 .accordion-item-body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .accordion.accordion22 .accordion-item-label p,
+  .accordion.accordion22 summary p {
+    font-size: 14px;
   }
 }
