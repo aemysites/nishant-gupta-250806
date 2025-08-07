@@ -288,9 +288,6 @@ header nav .nav-hamburger {
   display: none;
   visibility: hidden;
 }
-
-/* --- LOGO --- */
-/* Show logo if present as first-child in .default-content-wrapper */
 .header-wrapper nav .nav-sections .default-content-wrapper > p:first-child {
   display: flex;
   align-items: center;
@@ -305,8 +302,6 @@ header nav .nav-hamburger {
   object-fit: contain;
   display: block;
 }
-
-/* If .nav-brand contains logo, show it and hide duplicate in .default-content-wrapper */
 .header-wrapper nav .nav-brand {
   order: 1;
   display: flex;
@@ -324,8 +319,6 @@ header nav .nav-hamburger {
 .header-wrapper nav .nav-brand:not(:empty) + .nav-sections .default-content-wrapper > p:first-child {
   display: none;
 }
-
-/* --- MAIN NAVIGATION --- */
 .header-wrapper nav .nav-sections {
   order: 2;
   display: flex;
@@ -371,9 +364,6 @@ header nav .nav-hamburger {
   color: #6d89e6;
   text-decoration: underline;
 }
-
-/* --- TOOL SECTION (search, phone, login) --- */
-/* Group all tool elements into a right-aligned flex row */
 .header-wrapper nav .nav-sections .default-content-wrapper .header-tools {
   display: flex;
   align-items: center;
@@ -392,8 +382,6 @@ header nav .nav-hamburger {
   align-items: center;
   height: 38px;
 }
-
-/* Phone number */
 .header-wrapper nav .nav-sections .default-content-wrapper > .button-container .button {
   background: none;
   color: #fff;
@@ -409,8 +397,6 @@ header nav .nav-hamburger {
   display: flex;
   align-items: center;
 }
-
-/* Search field styling */
 .header-wrapper nav .nav-sections .default-content-wrapper > p:nth-of-type(4) {
   background: #fff;
   color: #191d8c;
@@ -459,8 +445,6 @@ header nav .nav-hamburger {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* Vertical align all header children */
 .header-wrapper nav,
 .header-wrapper nav .nav-brand,
 .header-wrapper nav .nav-sections,
@@ -468,8 +452,6 @@ header nav .nav-hamburger {
 .header-wrapper nav .nav-sections .default-content-wrapper > * {
   align-items: center;
 }
-
-/* Responsive adjustments */
 @media (max-width: 899px) {
   .header-wrapper .nav-wrapper {
     position: relative;
@@ -501,6 +483,249 @@ header nav .nav-hamburger {
   .header-wrapper nav .nav-sections .default-content-wrapper > .button-container,
   .header-wrapper nav .nav-sections .default-content-wrapper > p:nth-of-type(4),
   .header-wrapper nav .nav-sections .default-content-wrapper > p:last-child {
+    margin-left: 0;
+    min-width: 44px;
+    padding: 0 8px;
+    font-size: 12px;
+    height: 22px;
+  }
+}
+
+
+.header {
+  background: #161e93;
+  width: 100%;
+}
+.header .nav-wrapper {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background: #161e93;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: var(--nav-height);
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1264px;
+  width: 100%;
+  min-height: var(--nav-height);
+  background: #161e93;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+.header nav .nav-hamburger {
+  display: none;
+  visibility: hidden;
+}
+.header nav .nav-brand {
+  order: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+  min-width: 170px;
+}
+.header nav .nav-brand img {
+  max-height: 38px;
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.header nav .nav-sections {
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  justify-content: flex-start;
+}
+.header nav .nav-sections .default-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  gap: 0;
+}
+.header nav .nav-sections .default-content-wrapper > ul:first-of-type {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header nav .nav-sections .default-content-wrapper > ul:first-of-type li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+  text-decoration: none;
+  padding: 0 2px;
+  display: inline-block;
+  line-height: 1.4;
+}
+.header nav .nav-sections .default-content-wrapper > ul:first-of-type li a:hover,
+.header nav .nav-sections .default-content-wrapper > ul:first-of-type li a:focus {
+  color: #b8c1ec;
+  text-decoration: underline;
+}
+
+/* Phone number: maintain clear air gap */
+.header nav .nav-sections .default-content-wrapper > .button-container {
+  margin-left: 56px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+.header nav .nav-sections .default-content-wrapper > .button-container .button {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  padding: 0 8px;
+  margin: 0;
+  border-radius: 0;
+  min-height: 0;
+  min-width: 0;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+/* --- SEARCH BAR MAGIC --- */
+/* Join p:nth-of-type(4) and p:nth-of-type(5) as a single pill visually */
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(4),
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(5) {
+  background: #f2f6fd;
+  border: none;
+  font-family: Arial, sans-serif;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+/* Left "search text" pill half */
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(4) {
+  border-radius: 18px 0 0 18px;
+  font-size: 12px;
+  color: #161e93;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 0 0 14px;
+  margin-right: 0;
+  margin-left: 12px;
+  min-width: 56px;
+  max-width: 120px;
+  white-space: nowrap;
+}
+
+/* Right "icon" pill half */
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(5) {
+  border-radius: 0 18px 18px 0;
+  padding: 0 12px 0 2px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(5) img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
+
+/* Remove left margin on search icon to visually fuse text+icon */
+.header nav .nav-sections .default-content-wrapper > p:nth-of-type(5) img {
+  margin-left: 0;
+}
+
+/* Login last p: white, small, right, tight group */
+.header nav .nav-sections .default-content-wrapper > p:last-child {
+  color: #fff;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  margin-left: 14px;
+  cursor: pointer;
+  line-height: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.header nav .nav-sections .default-content-wrapper > p:last-child img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Phone icon */
+.header nav .nav-sections .default-content-wrapper > ul:nth-of-type(2) img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Ensure all children are aligned in a single row and header fills width */
+.header {
+  display: flex;
+}
+.header-wrapper .nav-wrapper {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 899px) {
+  .header .nav-wrapper {
+    position: relative;
+    min-height: 56px;
+    padding: 0;
+  }
+  .header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100vw;
+    padding: 0 12px;
+    min-height: 56px;
+  }
+  .header nav .nav-brand {
+    margin: 0 0 8px 0;
+    min-width: 120px;
+    height: 32px;
+  }
+  .header nav .nav-sections .default-content-wrapper {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  .header nav .nav-sections .default-content-wrapper > ul:first-of-type {
+    gap: 10px;
+    margin: 0 0 6px 0;
+    flex-direction: column;
+  }
+  .header nav .nav-sections .default-content-wrapper > .button-container,
+  .header nav .nav-sections .default-content-wrapper > p:nth-of-type(4),
+  .header nav .nav-sections .default-content-wrapper > p:last-child {
     margin-left: 0;
     min-width: 44px;
     padding: 0 8px;
