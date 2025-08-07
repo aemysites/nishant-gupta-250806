@@ -340,8 +340,6 @@
   font-size: 1.03rem;
   line-height: 1.6;
 }
-
-/* Make bullet area occupy space (no bullet possible due to content constraint) */
 .columns.columns46 ul li:before {
   display: inline-block;
   position: absolute;
@@ -352,7 +350,6 @@
   border-radius: 50%;
   background: transparent;
   box-shadow: none;
-  /* No visible bullet due to content constraint */
 }
 
 .columns.columns46 ul li::marker {
@@ -394,4 +391,122 @@
   max-width: 100%;
   height: auto;
   margin: 0;
+}
+
+
+.columns.columns7 {
+  background: #828282;
+  padding: 14px 0 16px 0;
+  color: #fff;
+  font-family: "Roboto", "sans-serif";
+}
+
+/* Main row: columns side-by-side with balanced spacing */
+.columns.columns7 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .columns.columns7 > div {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+/* Slightly wider columns for improved list readability */
+.columns.columns7 > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  flex: 1 1 0;
+  max-width: 235px;
+}
+
+/* Headings styling */
+.columns.columns7 h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+/* Remove bullets and excess margins from lists */
+.columns.columns7 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Compact, uppercase, white list items and links */
+.columns.columns7 li,
+.columns.columns7 a {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1.48;
+  margin: 0;
+  letter-spacing: 0;
+  padding: 0;
+  background: none;
+}
+
+.columns.columns7 a:hover,
+.columns.columns7 a:focus {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+/* App badges row: more breathing room above, balanced below */
+.columns.columns7 > div > div:nth-child(4) ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.columns.columns7 > div > div:nth-child(4) ul:first-of-type li {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* App badge image size */
+.columns.columns7 > div > div:nth-child(4) ul:first-of-type img {
+  width: auto;
+  max-width: 148px;
+  height: auto;
+  display: block;
+}
+
+/* "FOLLOW US :" label - balanced under badges */
+.columns.columns7 > div > div:nth-child(4) > h3#follow-us- {
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+/* Make columns a touch more compact on very wide screens */
+@media (min-width: 1200px) {
+  .columns.columns7 > div > div {
+    max-width: 215px;
+  }
 }
