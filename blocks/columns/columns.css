@@ -2060,8 +2060,6 @@
   font-family: "Roboto", "sans-serif";
   padding: 0;
 }
-
-/* --------- Main Layout --------- */
 .columns.columns42 > div {
   display: flex;
   flex-direction: row;
@@ -2078,8 +2076,6 @@
     padding: 32px 8px 24px 8px;
   }
 }
-
-/* --------- Left Column: Features --------- */
 .columns.columns42 > div > div:first-child {
   flex: 2 1 0%;
   min-width: 0;
@@ -2088,9 +2084,6 @@
   gap: 0;
   padding-right: 24px;
 }
-
-/* Feature Group: icon + stats row */
-/* Make each icon row flex, vertically centered and tightly spaced */
 .columns.columns42 > div > div:first-child p:has(picture) {
   display: flex;
   flex-direction: row;
@@ -2113,8 +2106,6 @@
   width: 52px;
   height: 52px;
 }
-
-/* Make the icon and text blocks tighter */
 .columns.columns42 > div > div:first-child p:has(picture) + h2,
 .columns.columns42 > div > div:first-child p:has(picture) + h2 + h3,
 .columns.columns42 > div > div:first-child p:has(picture) + h2 + h3 + p:not(:has(picture)) {
@@ -2122,8 +2113,6 @@
   padding: 0;
   margin-left: 66px;
 }
-
-/* Tighter feature stat vertical rhythm */
 .columns.columns42 > div > div:first-child h2 {
   font-size: 1.15rem;
   color: #242e6f;
@@ -2144,8 +2133,6 @@
 .columns.columns42 > div > div:first-child h2 + h3 {
   margin-top: 0.03em;
 }
-
-/* Compact and readable description */
 .columns.columns42 > div > div:first-child h3 + p:not(:has(picture)) {
   margin-top: 0.05em;
   margin-bottom: 0;
@@ -2159,8 +2146,6 @@
   padding: 0;
   margin-left: 66px;
 }
-
-/* Slight gap between feature groups - but much more compact than before */
 .columns.columns42 > div > div:first-child p:has(picture) + h2 {
   margin-top: -2px;
 }
@@ -2170,8 +2155,6 @@
 .columns.columns42 > div > div:first-child p:has(picture) + h2 + h3 + p:not(:has(picture)) {
   margin-bottom: 6px;
 }
-
-/* Special handling for car image block */
 .columns.columns42 > div > div:first-child p:has(picture) picture img[width="405"] {
   max-width: 130px;
   width: 100%;
@@ -2191,13 +2174,9 @@
   margin-top: 0;
   margin-bottom: 12px;
 }
-
-/* "VIEW ALL" button hugs last feature */
 .columns.columns42 > div > div:first-child .button-container {
   margin: 8px 0 22px 66px;
 }
-
-/* --------- Button --------- */
 .columns.columns42 .button,
 .columns.columns42 a.button {
   background: #242e6f;
@@ -2219,8 +2198,6 @@
 .columns.columns42 a.button:focus {
   background: #1d2a60;
 }
-
-/* --------- Right Column: Quiz Panel --------- */
 .columns.columns42 > div > div:last-child {
   flex: 1 1 0%;
   min-width: 0;
@@ -2255,8 +2232,6 @@
   font-weight: 400;
   line-height: 1.5;
 }
-
-/* --------- Stat Cards: Grid and Compact Layout --------- */
 .columns.columns42 > div > div:last-child ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2299,7 +2274,6 @@
   width: 28px;
   height: auto;
 }
-/* Stat numbers/labels: stack for compactness */
 .columns.columns42 > div > div:last-child ul li > strong,
 .columns.columns42 > div > div:last-child ul li > span,
 .columns.columns42 > div > div:last-child ul li > em {
@@ -2320,8 +2294,6 @@
   color: #242e6f;
   line-height: 1.1;
 }
-
-/* --------- Full-width, centered Get Started button under grid --------- */
 .columns.columns42 > div > div:last-child .button-container {
   width: 100%;
   text-align: center;
@@ -2338,8 +2310,6 @@
   color: #fff;
   box-shadow: 0 3px 18px rgba(36,46,111,0.14);
 }
-
-/* --------- Headings: more prominent --------- */
 .columns.columns42 h1 {
   font-size: 2.07rem;
   font-weight: 800;
@@ -2352,8 +2322,6 @@
     font-size: 1.5rem;
   }
 }
-
-/* Responsive image tweaks */
 .columns.columns42 img {
   width: auto;
   max-width: 100%;
@@ -2361,8 +2329,150 @@
   border-radius: 0;
   display: block;
 }
-
-/* Prevent excessive vertical dead space below block */
 .columns.columns42 {
   padding-bottom: 0;
+}
+
+
+.columns.columns14.block.columns-6-cols {
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically center both columns */
+  justify-content: space-between;
+  gap: 56px;
+  min-height: 420px;
+}
+
+@media (max-width: 900px) {
+  .columns.columns14.block.columns-6-cols {
+    flex-direction: column;
+    padding: 24px 12px;
+    gap: 32px;
+    min-height: unset;
+    align-items: stretch;
+  }
+}
+
+/* Left column: content/form group */
+.columns.columns14.block.columns-6-cols > div:first-child {
+  flex: 1 1 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center within parent */
+  align-items: flex-start;
+  gap: 12px; /* tighter vertical grouping */
+  min-width: 260px;
+  max-width: 520px;
+}
+
+.columns.columns14.block.columns-6-cols > div:first-child > div {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+.columns.columns14.block.columns-6-cols > div:first-child > div > p {
+  color: #212121;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  line-height: 1.55;
+  font-family: var(--body-font-family);
+  letter-spacing: 0.01em;
+}
+
+/* Heading style for the first item */
+.columns.columns14.block.columns-6-cols > div:first-child > div:first-child > p {
+  color: #212488;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  margin-top: 0;
+  line-height: 1.18;
+}
+
+/* Simulate button for the last row */
+.columns.columns14.block.columns-6-cols > div:first-child > div:last-child > p {
+  display: inline-block;
+  background: #212488;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 14px 44px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(33,36,136,0.10);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  letter-spacing: 0.02em;
+  min-width: 210px;
+  transition: background 0.2s;
+}
+.columns.columns14.block.columns-6-cols > div:first-child > div:last-child > p:hover,
+.columns.columns14.block.columns-6-cols > div:first-child > div:last-child > p:focus {
+  background: #1a1c70;
+}
+
+/* Right column: image/illustration and other content */
+.columns.columns14.block.columns-6-cols > div:last-child {
+  flex: 1 1 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  gap: 24px;
+  position: relative;
+  height: 100%;
+}
+
+/* Center and show image if present */
+.columns.columns14.block.columns-6-cols > div:last-child > .columns-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 220px;
+}
+
+.columns.columns14.block.columns-6-cols > div:last-child .columns-img-col img,
+.columns.columns14.block.columns-6-cols > div:last-child .columns-img-col picture {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Right column: faint text (such as disclaimer) styling */
+.columns.columns14.block.columns-6-cols > div:last-child > div > p {
+  color: #bbb;
+  font-size: 15px;
+  margin: 0 0 16px 0;
+  text-align: left;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+/* Prevent collapse of empty columns */
+.columns.columns14.block.columns-6-cols > div {
+  min-height: 1px;
+}
+
+@media (max-width: 900px) {
+  .columns.columns14.block.columns-6-cols > div:last-child,
+  .columns.columns14.block.columns-6-cols > div:first-child {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .columns.columns14.block.columns-6-cols > div:last-child .columns-img-col img,
+  .columns.columns14.block.columns-6-cols > div:last-child .columns-img-col picture {
+    max-width: 90vw;
+  }
 }
