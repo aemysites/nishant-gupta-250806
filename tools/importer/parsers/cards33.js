@@ -1,72 +1,62 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to get the main image element from a card
-  function getImage(card) {
-    // Try multiple selectors for maximum flexibility
-    let img = card.querySelector('.drivingTipsBanner img');
-    if (!img) {
-      img = card.querySelector('img');
-    }
-    if (img) {
-      // Ensure the image src is present for all images
-      const src = img.getAttribute('src') || img.getAttribute('data-src');
-      if (src) {
-        img.setAttribute('src', src);
-        img.removeAttribute('data-src');
-      }
-      return img;
-    }
-    return '';
+  // Helper to get the actual src from an <img>
+  function getImgSrc(img) {
+    return img.getAttribute('src') || img.getAttribute('data-src');
   }
-
-  // Helper to extract text content block for a card
-  function getTextContent(card) {
-    // Prefer the full drivingTipsTxtSec block (captures h3, description, CTA, etc)
-    const txtBlock = card.querySelector('.drivingTipsTxtSec');
-    if (txtBlock) {
-      return [txtBlock];
-    }
-    // Fallback: gather h3, summary, cta link
-    const items = [];
-    const h3 = card.querySelector('h3');
-    if (h3) items.push(h3);
-    const summary = card.querySelector('.blogcontentSummary');
-    if (summary) items.push(summary);
-    const cta = card.querySelector('a.readMoreLink');
-    if (cta) items.push(cta);
-    // If something found, use that
-    if (items.length) return items;
-    // Final fallback: plain text
-    return [document.createTextNode(card.textContent.trim())];
-  }
-
-  // Collect unique cards by title text
+  // Find the .owl-stage element containing all cards
+  const owlStage = element.querySelector('.owl-stage');
+  if (!owlStage) return;
+  // Select all .owl-item .item .drivingTipsSec in order
+  const cardSecList = owlStage.querySelectorAll('.owl-item .item .drivingTipsSec');
+  // To avoid duplicates, use a Set
   const seen = new Set();
-  const cards = [];
-  element.querySelectorAll('.item > .drivingTipsSec').forEach(card => {
-    let key = '';
-    const h3 = card.querySelector('h3');
-    if (h3) {
-      key = h3.textContent.trim();
-    } else {
-      key = card.textContent.trim();
+  const cardRows = [];
+  cardSecList.forEach(drivingTipsSec => {
+    // Get the image (first .drivingTipsBanner img in this section)
+    const imgBanner = drivingTipsSec.querySelector('.drivingTipsBanner');
+    const img = imgBanner && imgBanner.querySelector('img');
+    // Get the text section
+    const txtSec = drivingTipsSec.querySelector('.drivingTipsTxtSec');
+    // Compose text cell to ensure all text content is included
+    const textCell = document.createElement('div');
+    if (txtSec) {
+      // Title: h3
+      const h3 = txtSec.querySelector('h3');
+      if (h3) {
+        // Use the actual h3 as it is in the DOM
+        textCell.appendChild(h3);
+      }
+      // Description: .blogcontentSummary
+      const desc = txtSec.querySelector('.blogcontentSummary');
+      if (desc) {
+        // Use the actual element (span/div) from DOM
+        textCell.appendChild(desc);
+      }
+      // CTA: a.readMoreLink
+      const cta = txtSec.querySelector('a.readMoreLink');
+      if (cta) {
+        textCell.appendChild(cta);
+      }
     }
-    if (key && !seen.has(key)) {
-      seen.add(key);
-      cards.push(card);
+    // Compose unique key to avoid duplicate cards
+    const imgKey = img ? getImgSrc(img) : '';
+    const titleKey = txtSec && txtSec.querySelector('h3') ? txtSec.querySelector('h3').textContent.trim() : '';
+    const uniqueKey = imgKey + '|' + titleKey;
+    // Only add row if there's both image and text content, and not already seen
+    if (!seen.has(uniqueKey) && img && textCell.textContent.trim()) {
+      cardRows.push([
+        img,
+        textCell
+      ]);
+      seen.add(uniqueKey);
     }
   });
-
-  if (!cards.length) return;
-
-  // Build the table structure: header row first, then each card as [image, textBlock]
-  const rows = [['Cards (cards33)']];
-  cards.forEach(card => {
-    const img = getImage(card);
-    const text = getTextContent(card);
-    rows.push([img, text]);
-  });
-
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // Table header: exactly as the example
+  const tableRows = [
+    ['Cards (cards33)'],
+    ...cardRows
+  ];
+  const block = WebImporter.DOMUtils.createTable(tableRows, document);
+  element.replaceWith(block);
 }

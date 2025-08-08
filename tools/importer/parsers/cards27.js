@@ -1,47 +1,52 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Prepare the header row exactly as specified
-  const cells = [
-    ['Cards (cards27)']
-  ];
+  // Compose table header
+  const rows = [['Cards (cards27)']];
 
-  // Find the set of card columns
-  const cardColumns = element.querySelectorAll('.row > .col-lg-6');
+  // Get all card boxes (columns)
+  const cardBoxes = element.querySelectorAll('.quizScoreCourseBox');
+  cardBoxes.forEach((cardBox) => {
+    // Image (first column)
+    const imgDiv = cardBox.querySelector('.quizScoreCourseImg');
+    let imgEl = imgDiv && imgDiv.querySelector('img') ? imgDiv.querySelector('img') : null;
+    // Reference the actual <img> from the doc
 
-  cardColumns.forEach((col) => {
-    // First cell: the card image (existing DOM element)
-    let img = null;
-    const imgBox = col.querySelector('.quizScoreCourseImg');
-    if (imgBox) {
-      img = imgBox.querySelector('img');
+    // Text content (second column)
+    const txtDiv = cardBox.querySelector('.quizScoreCourseTxt');
+    const textCell = document.createElement('div');
+
+    // Title (h2) as <strong>
+    const h2 = txtDiv && txtDiv.querySelector('h2');
+    if (h2 && h2.textContent.trim()) {
+      const strong = document.createElement('strong');
+      strong.textContent = h2.textContent;
+      textCell.appendChild(strong);
     }
-    // Second cell: all card text and CTA (existing DOM elements)
-    const textElements = [];
-    const txtBox = col.querySelector('.quizScoreCourseTxt');
-    if (txtBox) {
-      // Title
-      const h2 = txtBox.querySelector('h2');
-      if (h2) textElements.push(h2);
-      // Description
-      const p = txtBox.querySelector('p');
-      if (p) textElements.push(p);
-      // CTA button
-      const ctaDiv = txtBox.querySelector('.blueButton');
-      if (ctaDiv) {
-        const ctaLink = ctaDiv.querySelector('a');
-        if (ctaLink) textElements.push(ctaLink);
-      }
+
+    // Description (p)
+    const p = txtDiv && txtDiv.querySelector('p');
+    if (p && p.textContent.trim()) {
+      const para = document.createElement('p');
+      para.textContent = p.textContent;
+      textCell.appendChild(para);
     }
-    // Add row if at least image or text exists
-    if (img || textElements.length) {
-      cells.push([
-        img,
-        textElements
-      ]);
+
+    // CTA (link)
+    const btnDiv = txtDiv && txtDiv.querySelector('.blueButton');
+    const a = btnDiv && btnDiv.querySelector('a');
+    if (a && a.textContent.trim()) {
+      const ctaP = document.createElement('p');
+      // Reference the existing <a> directly
+      ctaP.appendChild(a);
+      textCell.appendChild(ctaP);
     }
+
+    rows.push([
+      imgEl,
+      textCell
+    ]);
   });
 
-  // Create and replace with the new table
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  const table = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(table);
 }

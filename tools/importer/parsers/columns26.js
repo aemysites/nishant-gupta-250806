@@ -1,28 +1,37 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find all unique course slides (.owl-item .item) by their h3 title (avoid duplicates)
-  const items = Array.from(element.querySelectorAll('.owl-item .item'));
-  const seen = new Set();
+  // Table header must match example exactly: single cell
+  const headerRow = ['Columns (columns26)'];
+
+  // Find all .item > .coursesRptSec blocks representing each column
+  const itemEls = element.querySelectorAll('.item');
+  const seenTitles = new Set();
   const columns = [];
-  for (const item of items) {
-    const titleEl = item.querySelector('h3');
-    const title = titleEl ? titleEl.textContent.trim() : '';
-    if (title && !seen.has(title)) {
-      seen.add(title);
-      columns.push(item);
-    }
-    if (columns.length === 2) break; // Only first two unique for two columns
+
+  itemEls.forEach(item => {
+    const courseBlock = item.querySelector('.coursesRptSec');
+    if (!courseBlock) return;
+    const titleEl = courseBlock.querySelector('h3');
+    if (!titleEl) return;
+    const title = titleEl.textContent.trim();
+    if (seenTitles.has(title)) return;
+    seenTitles.add(title);
+
+    // Reference all children of each courseBlock, preserving structure and all text content
+    // Do not filter or clone, just reference existing nodes
+    const colContent = Array.from(courseBlock.childNodes).filter(node => {
+      // Exclude input elements (used for GA, not content), otherwise preserve all
+      return !(node.nodeType === Node.ELEMENT_NODE && node.tagName === 'INPUT');
+    });
+    columns.push(colContent);
+  });
+
+  // Only build and replace if we have actual columns
+  if (columns.length > 0) {
+    const table = WebImporter.DOMUtils.createTable([
+      headerRow,
+      columns
+    ], document);
+    element.replaceWith(table);
   }
-  // Pad with empty divs if there are fewer than 2 columns
-  while (columns.length < 2) {
-    columns.push(document.createElement('div'));
-  }
-  // Build the table: header row (1 cell), then content row (2 cells)
-  const cells = [
-    ['Columns (columns26)'], // header row - exactly one cell
-    columns                 // row with one cell per column
-  ];
-  // Create the table and replace the original element
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
 }

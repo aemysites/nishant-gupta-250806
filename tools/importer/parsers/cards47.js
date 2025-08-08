@@ -1,52 +1,98 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the carousel with the blog cards
-  const slider = element.querySelector('.blogBannerSec .owl-carousel');
-  if (!slider) return;
+  // 1. Block header matches example (exact text, single column)
+  const rows = [['Cards (cards47)']];
 
-  // Select all .owl-item > .item (includes active and cloned)
-  const owlItems = slider.querySelectorAll('.owl-item > .item');
+  // 2. Find the relevant carousel with cards
+  const carousel = element.querySelector('.blogBannerSec .owl-carousel');
+  if (!carousel) return;
 
-  // To prevent duplicates (due to carousel clones), track card titles
-  const seenTitles = new Set();
-  const cells = [['Cards (cards47)']];
+  // 3. Find all visible cards (.owl-item.active .item)
+  const items = Array.from(carousel.querySelectorAll('.owl-item.active .item'));
+  if (!items.length) return;
 
-  owlItems.forEach(item => {
+  items.forEach(item => {
+    // Find the main card container
     const box = item.querySelector('.blogHomeBox');
     if (!box) return;
 
-    // Get primary card image
-    let image = null;
-    const imgWrapper = box.querySelector('.blogHomeImg');
-    if (imgWrapper) {
-      const img = imgWrapper.querySelector('img');
-      if (img) {
-        // Prefer src, fallback to data-src
-        if (!img.getAttribute('src') && img.getAttribute('data-src')) {
-          img.setAttribute('src', img.getAttribute('data-src'));
+    // --- IMAGE CELL ---
+    let imgCell = '';
+    const mainImg = box.querySelector('.blogHomeImg img');
+    if (mainImg) {
+      // Ensure src is set
+      if (!mainImg.src && mainImg.dataset.src) {
+        mainImg.src = mainImg.dataset.src;
+      }
+      imgCell = mainImg;
+    } else {
+      // Fallback to icon img
+      const iconImg = box.querySelector('.blogIconTxt img');
+      if (iconImg) {
+        if (!iconImg.src && iconImg.dataset.src) {
+          iconImg.src = iconImg.dataset.src;
         }
-        image = img;
+        imgCell = iconImg;
       }
     }
 
-    // Get card content block (title, desc, CTA)
-    const blogContent = box.querySelector('.blogContent');
-    if (!blogContent) return;
+    // --- TEXT CELL ---
+    // Compose a fragment so all related text is included
+    const frag = document.createDocumentFragment();
 
-    // Deduplicate based on h3 text (card title), or fallback to all content
-    const h3 = blogContent.querySelector('h3');
-    const cardTitle = h3 ? h3.textContent.trim() : blogContent.textContent.trim();
-    if (seenTitles.has(cardTitle)) return;
-    seenTitles.add(cardTitle);
+    // 1. Title (blogTitleTxt)
+    const titleBlock = box.querySelector('.blogTitleTxt');
+    if (titleBlock) {
+      // Use <strong> and preserve <br>
+      const strong = document.createElement('strong');
+      strong.innerHTML = titleBlock.innerHTML;
+      frag.appendChild(strong);
+      frag.appendChild(document.createElement('br'));
+    }
 
-    // Ensure all text and structure (title, summary, CTA) are included by referencing the whole content block
-    cells.push([
-      image,
-      blogContent
-    ]);
+    // 2. Heading (h3)
+    const heading = box.querySelector('.blogContent h3');
+    if (heading) {
+      // Use <span style="font-weight:bold">
+      const boldSpan = document.createElement('span');
+      boldSpan.style.fontWeight = 'bold';
+      boldSpan.textContent = heading.textContent.trim();
+      frag.appendChild(boldSpan);
+      frag.appendChild(document.createElement('br'));
+    }
+
+    // 3. Description (blogcontentSummary)
+    const desc = box.querySelector('.blogcontentSummary');
+    if (desc) {
+      const descSpan = document.createElement('span');
+      descSpan.textContent = desc.textContent.trim();
+      frag.appendChild(descSpan);
+      frag.appendChild(document.createElement('br'));
+    }
+
+    // 4. Call-to-action (blueButton > a)
+    const cta = box.querySelector('.blueButton a');
+    if (cta) {
+      // Remove tracking attributes but keep live element
+      cta.removeAttribute('onclick');
+      frag.appendChild(cta);
+    }
+
+    // Edge case: If fragment is empty, fallback to all box text
+    if (!frag.childNodes.length) {
+      frag.appendChild(document.createTextNode(box.textContent.trim()));
+    }
+
+    // Remove trailing <br> if present
+    while (frag.lastChild && frag.lastChild.nodeName === 'BR') {
+      frag.removeChild(frag.lastChild);
+    }
+
+    // Add this card as a row: [imgCell, frag]
+    rows.push([imgCell, frag]);
   });
 
-  // Create and replace table
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  // 4. Create table and replace the original element
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(block);
 }

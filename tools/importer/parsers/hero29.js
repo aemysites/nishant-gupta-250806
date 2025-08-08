@@ -1,52 +1,38 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to find the best (desktop) background image
-  function getHeroImg() {
-    // Try to find a visible desktop image first
-    const desktopImg = element.querySelector('.col-lg-7.d-none.d-lg-block .corporateTrainingImg img[src]');
-    if (desktopImg && desktopImg.getAttribute('src')) {
-      return desktopImg;
+  // Find hero image: prefer desktop, fallback to mobile
+  let imgEl = null;
+  const desktopImg = element.querySelector('.col-lg-7.d-none.d-lg-block .corporateTrainingImg img');
+  if (desktopImg && (desktopImg.getAttribute('src') || desktopImg.getAttribute('data-src'))) {
+    imgEl = desktopImg;
+  } else {
+    const mobileImg = element.querySelector('.col-lg-7.d-block.d-lg-none .corporateTrainingImg img');
+    if (mobileImg && (mobileImg.getAttribute('src') || mobileImg.getAttribute('data-src'))) {
+      imgEl = mobileImg;
     }
-    // Fallback to mobile image if desktop not present
-    const mobileImg = element.querySelector('.col-lg-7.d-block.d-lg-none .corporateTrainingImg img[data-src]');
-    if (mobileImg && mobileImg.getAttribute('data-src')) {
-      mobileImg.setAttribute('src', mobileImg.getAttribute('data-src'));
-      mobileImg.removeAttribute('data-src');
-      return mobileImg;
-    }
-    return '';
   }
 
-  // Build the content cell with headline, description, CTA
-  function getHeroContent() {
-    const contentArr = [];
-    // Headline
-    const h2 = element.querySelector('.corporateTrainingTxt h2');
-    if (h2) contentArr.push(h2);
-    // Description
-    const p = element.querySelector('.corporateTrainingTxt p');
-    if (p) contentArr.push(p);
-    // CTA/Button
-    const btnDiv = element.querySelector('.corporateTrainingTxt .blueButton');
-    if (btnDiv) {
-      const a = btnDiv.querySelector('a');
-      if (a) contentArr.push(a);
-    }
-    return contentArr;
+  // Gather the title, paragraph, and CTA from the text column
+  const txtCol = element.querySelector('.col-lg-5.col-sm-12 .corporateTrainingTxt');
+  const textContent = [];
+  if (txtCol) {
+    // Title (h2)
+    const heading = txtCol.querySelector('h2');
+    if (heading) textContent.push(heading);
+    // Paragraph
+    const paragraph = txtCol.querySelector('p');
+    if (paragraph) textContent.push(paragraph);
+    // CTA Button
+    const cta = txtCol.querySelector('.blueButton a');
+    if (cta) textContent.push(cta);
   }
 
-  const headerRow = ['Hero (hero29)'];
-  const img = getHeroImg();
-  const backgroundRow = [img ? img : ''];
-  const contentArr = getHeroContent();
-  const contentRow = [contentArr.length ? contentArr : ''];
-
+  // Build the table for Hero (hero29)
   const cells = [
-    headerRow,
-    backgroundRow,
-    contentRow
+    ['Hero (hero29)'],
+    [imgEl ? imgEl : ''],
+    [textContent.length > 0 ? textContent : ''],
   ];
-
   const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

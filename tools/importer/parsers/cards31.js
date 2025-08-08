@@ -1,47 +1,59 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row as per block spec
+  // Header row as in the example
   const headerRow = ['Cards (cards31)'];
   const rows = [headerRow];
 
-  // Find the visible cards only
-  const stage = element.querySelector('.owl-stage');
-  if (!stage) return;
-  const cardItems = Array.from(stage.querySelectorAll('.owl-item.active'));
+  // Find the main carousel containing the cards
+  const carousel = element.querySelector('.owlCommonEffect.mod-roadSafety .owl-carousel');
+  if (!carousel) return;
 
-  cardItems.forEach((item) => {
-    // Each card: .item > .roadSafetySec > .roadSafetyImgTxt
-    const card = item.querySelector('.roadSafetyImgTxt');
-    if (!card) return;
+  // Select unique, visible cards (skip .cloned), by using .owl-item.active (these are the main visible ones)
+  const cardItems = carousel.querySelectorAll('.owl-item.active');
 
-    // Use the EXISTING <img> element, set its src if only data-src present
-    const img = card.querySelector('img');
-    if (img && !img.src && img.getAttribute('data-src')) {
-      img.src = img.getAttribute('data-src');
+  cardItems.forEach((card) => {
+    // Reference the container block for this card
+    const imgTxt = card.querySelector('.roadSafetyImgTxt');
+    if (!imgTxt) return;
+
+    // Reference the img element itself, and ensure src is set
+    let img = imgTxt.querySelector('img');
+    if (img) {
+      // Use data-src if src is missing
+      if (!img.getAttribute('src') && img.getAttribute('data-src')) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+      }
     }
 
-    // Collect all content except the image into the text cell (robust and future-proof)
-    const textCellContent = [];
-    Array.from(card.childNodes).forEach((node) => {
-      // If the node is an element and is the image, skip
-      if (node.nodeType === 1 && node.tagName === 'IMG') return;
-      // For a <span> (the label), wrap in <strong> as title
-      if (node.nodeType === 1 && node.tagName === 'SPAN') {
-        const strong = document.createElement('strong');
-        strong.textContent = node.textContent;
-        textCellContent.push(strong);
-      } else if (node.nodeType === 3) {
-        // text node, preserve if not whitespace
-        if (node.textContent.trim()) {
-          textCellContent.push(document.createTextNode(node.textContent));
+    // Prepare text cell content: gather all element text, not just <span>
+    // The markup example shows the label as a heading (bold), so treat all text as <strong> at minimum
+    const textChunks = [];
+    // Prefer span text, but if not, use all text nodes
+    const span = imgTxt.querySelector('span');
+    if (span && span.textContent.trim()) {
+      const strong = document.createElement('strong');
+      strong.textContent = span.textContent.trim();
+      textChunks.push(strong);
+    }
+    // If there is additional descriptive text (unlikely in this HTML, but for flexibility), include it
+    Array.from(imgTxt.childNodes).forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+        // If not already included, add it as a <span>
+        const txt = node.textContent.trim();
+        // Don't duplicate the label
+        if (!span || txt !== span.textContent.trim()) {
+          textChunks.push(document.createTextNode(txt));
         }
-      } else if (node.nodeType === 1) {
-        // If it's another element (eg <p>), keep it as is
-        textCellContent.push(node);
       }
     });
-    // If nothing, keep as empty string
-    const textCell = textCellContent.length ? textCellContent : '';
+    // Fallback: If no <span>, just use all textContent as <strong>
+    if (!span && imgTxt.textContent.trim()) {
+      const strong = document.createElement('strong');
+      strong.textContent = imgTxt.textContent.trim();
+      textChunks.push(strong);
+    }
+    // If nothing found, leave empty string
+    const textCell = textChunks.length ? textChunks : '';
 
     rows.push([
       img || '',
@@ -49,6 +61,7 @@ export default function parse(element, { document }) {
     ]);
   });
 
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // Create the table with block structure
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(block);
 }

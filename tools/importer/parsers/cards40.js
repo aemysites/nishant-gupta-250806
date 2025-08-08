@@ -1,65 +1,57 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the carousel
+  // Cards (cards40) block header
+  const headerRow = ['Cards (cards40)'];
+  const cells = [headerRow];
+
+  // Find the carousel container
   const carousel = element.querySelector('.owl-carousel');
   if (!carousel) return;
-  const stage = carousel.querySelector('.owl-stage');
-  if (!stage) return;
 
-  // Get unique (non-cloned) items only
-  let items = Array.from(stage.querySelectorAll('.owl-item')).filter(item => !item.classList.contains('cloned'));
-  if (!items.length) items = Array.from(stage.querySelectorAll('.owl-item'));
+  // Get all .item elements (each card)
+  const items = carousel.querySelectorAll('.item');
 
-  const rows = [['Cards (cards40)']]; // Header matches example
-
-  items.forEach(item => {
-    const card = item.querySelector('.item .mediaRptSec');
-    if (!card) return;
-
-    // Column 1: Image element
-    let img = card.querySelector('.mediaBanner img');
-    if (img) {
-      let src = img.getAttribute('src') || img.getAttribute('data-src');
-      if (src && src.startsWith('//')) src = 'https:' + src;
-      if (src) img.setAttribute('src', src);
+  items.forEach((item) => {
+    // Card image
+    const imgContainer = item.querySelector('.mediaBanner');
+    let imgEl = null;
+    if (imgContainer) {
+      imgEl = imgContainer.querySelector('img');
+      if (imgEl) {
+        // Ensure src is set
+        if (!imgEl.getAttribute('src')) {
+          const dataSrc = imgEl.getAttribute('data-src');
+          if (dataSrc) {
+            imgEl.setAttribute('src', dataSrc);
+          }
+        }
+      }
     }
 
-    // Column 2: All text content (h3, p, links, date) from .mediaTxtSec
-    const txtSec = card.querySelector('.mediaTxtSec');
-    let col2 = document.createElement('div');
+    // Card text content (title, description, CTA, date)
+    const txtSec = item.querySelector('.mediaTxtSec');
+    const textElements = [];
     if (txtSec) {
-      // Heading (h3)
-      let h3 = txtSec.querySelector('h3');
-      if (h3) {
-        // Use existing element reference
-        col2.appendChild(h3);
-      }
-      // Description (p)
-      let p = txtSec.querySelector('p');
-      if (p) {
-        col2.appendChild(p);
-      }
-      // CTA and Date
-      let readAndDate = txtSec.querySelector('.readNdateSec');
-      if (readAndDate) {
-        // Find any anchor (Read More link)
-        const ctaLink = readAndDate.querySelector('a.readMoreLink');
-        if (ctaLink) col2.appendChild(ctaLink);
-        // Date, if present
-        const date = readAndDate.querySelector('.datesR');
-        if (date) col2.appendChild(date);
+      const h3 = txtSec.querySelector('h3');
+      if (h3) textElements.push(h3);
+      const p = txtSec.querySelector('p');
+      if (p) textElements.push(p);
+      const readNdateSec = txtSec.querySelector('.readNdateSec');
+      if (readNdateSec) {
+        const a = readNdateSec.querySelector('a.readMoreLink');
+        if (a) textElements.push(a);
+        const dateDiv = readNdateSec.querySelector('.datesR');
+        if (dateDiv) textElements.push(dateDiv);
       }
     }
-    // If col2 is empty, set to null
-    if (!col2.hasChildNodes()) col2 = null;
 
-    // Push row if at least one column has meaningful content
-    if (img || col2) {
-      rows.push([img, col2]);
+    // Only add the card if both image and text are present
+    if (imgEl && textElements.length > 0) {
+      cells.push([imgEl, textElements]);
     }
   });
 
-  // Create the block table and replace element
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // Create and replace block table
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(block);
 }
