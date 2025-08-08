@@ -1,49 +1,43 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Extract title from the button in .card-header
-  let titleElem = null;
-  const headerDiv = element.querySelector('.card-header');
-  if (headerDiv) {
-    const btn = headerDiv.querySelector('button');
-    if (btn) {
-      const btnClone = btn.cloneNode(true);
-      btnClone.querySelectorAll('i').forEach(i => i.remove());
-      [...btnClone.attributes].forEach(attr => btnClone.removeAttribute(attr.name));
-      titleElem = btnClone;
-    } else {
-      titleElem = document.createElement('div');
-      titleElem.textContent = headerDiv.textContent.trim();
-    }
-  } else {
-    titleElem = document.createElement('div');
-  }
+  // Block table header row as in the example
+  const headerRow = ['Accordion (accordion15)'];
 
-  // Extract content from .card-body in .collapse
-  let contentElem = null;
-  const collapseDiv = element.querySelector('.collapse');
-  if (collapseDiv) {
-    const cardBody = collapseDiv.querySelector('.card-body');
+  // Defensive: Find the .card element(s). For this case, element is always a single .card.
+  // But for generality, allow multiple .card children (future proof).
+  const cards = element.classList.contains('card') ? [element] : Array.from(element.querySelectorAll(':scope > .card'));
+
+  const rows = [headerRow];
+
+  cards.forEach(card => {
+    // Title extraction
+    // The title is in .card-header > h3 > button (text only, icons removed)
+    const cardHeader = card.querySelector('.card-header');
+    let title = '';
+    if (cardHeader) {
+      const btn = cardHeader.querySelector('button');
+      if (btn) {
+        // Remove icons (they should not appear in the title cell)
+        btn.querySelectorAll('i').forEach(i => i.remove());
+        title = btn.textContent.trim();
+      }
+    }
+    // Content extraction: everything inside .card-body
+    const cardBody = card.querySelector('.card-body');
+    let contentCell;
     if (cardBody) {
-      contentElem = cardBody;
+      // Instead of cloning, reference the existing .card-body element (per spec)
+      contentCell = cardBody;
     } else {
-      contentElem = document.createElement('div');
+      // Defensive: empty cell if no body
+      contentCell = '';
     }
-  } else {
-    contentElem = document.createElement('div');
-  }
+    // Add row (title, content)
+    rows.push([title, contentCell]);
+  });
 
-  // Create the table as usual
-  const cells = [
-    ['Accordion (accordion15)'],
-    [titleElem, contentElem]
-  ];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Fix: Set header cell colspan to number of columns in data row
-  const headerRow = block.querySelector('tr:first-child');
-  if (headerRow && headerRow.children.length === 1) {
-    headerRow.children[0].setAttribute('colspan', '2');
-  }
-
-  element.replaceWith(block);
+  // Create table using the provided helper
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  // Replace original accordion with new block table
+  element.replaceWith(table);
 }

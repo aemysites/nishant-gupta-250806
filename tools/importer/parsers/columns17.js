@@ -1,42 +1,66 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Extract address (left column)
-  const addressSecMain = element.querySelector('.addressSecMain');
-  let addressCellContent = [];
-  if (addressSecMain) {
-    const addressImg = addressSecMain.querySelector('.addressImg');
-    const addressDetails = addressSecMain.querySelector('.addressDetails');
-    if (addressImg && addressDetails) {
-      addressCellContent = [addressImg, addressDetails];
-    } else if (addressImg) {
-      addressCellContent = [addressImg];
-    } else if (addressDetails) {
-      addressCellContent = [addressDetails];
+  // Helper: convert relative image srcs to absolute
+  function absolutizeImgSrc(img) {
+    if (img && img.src && img.src.startsWith('//')) {
+      img.src = 'https:' + img.src;
     }
+    return img;
   }
 
-  // Extract toll-free and email columns
+  // Get the two major blocks for columns: address and contact
   const tollFreeEmailBox = element.querySelector('.tollFreeEmailBox');
-  let tollFreeCellContent = [];
-  let emailCellContent = [];
+  const addressSecMain = element.querySelector('.addressSecMain');
+
+  // Prepare the right column: contact details
+  let contactCol = null;
   if (tollFreeEmailBox) {
-    const callEmailSecs = tollFreeEmailBox.querySelectorAll('.callEmailSec');
-    if (callEmailSecs.length > 0) {
-      tollFreeCellContent = [callEmailSecs[0]];
-    }
-    if (callEmailSecs.length > 1) {
-      emailCellContent = [callEmailSecs[1]];
-    }
+    contactCol = document.createElement('div');
+    Array.from(tollFreeEmailBox.children).forEach(box => {
+      // For each .callEmailSec
+      // Make sure to reference the actual children, not clones
+      const iconSpan = box.querySelector('span');
+      const label = box.querySelector('label');
+      const h3 = box.querySelector('h3');
+      if (iconSpan && iconSpan.querySelector('img')) {
+        absolutizeImgSrc(iconSpan.querySelector('img'));
+      }
+      if (iconSpan) contactCol.appendChild(iconSpan);
+      if (label) contactCol.appendChild(label);
+      if (h3) contactCol.appendChild(h3);
+    });
+  } else {
+    contactCol = document.createElement('div');
   }
 
-  // The header row must have three cells: first with block name, two empty
-  const headerRow = ['Columns (columns17)', '', ''];
+  // Prepare the left column: address
+  let addressCol = null;
+  if (addressSecMain) {
+    addressCol = document.createElement('div');
+    // Address image
+    const addressImg = addressSecMain.querySelector('.addressImg img');
+    if (addressImg) {
+      absolutizeImgSrc(addressImg);
+      addressCol.appendChild(addressImg);
+    }
+    // Details
+    const addressDetails = addressSecMain.querySelector('.addressDetails');
+    if (addressDetails) {
+      // Only append .addressTxtSec if present
+      const txtSec = addressDetails.querySelector('.addressTxtSec');
+      if (txtSec) {
+        addressCol.appendChild(txtSec);
+      }
+    }
+  } else {
+    addressCol = document.createElement('div');
+  }
 
-  const tableCells = [
-    headerRow,
-    [addressCellContent, tollFreeCellContent, emailCellContent]
-  ];
+  // Compose final columns block
+  const headerRow = ['Columns (columns17)'];
+  const columnsRow = [addressCol, contactCol];
+  const cells = [headerRow, columnsRow];
 
-  const block = WebImporter.DOMUtils.createTable(tableCells, document);
-  element.replaceWith(block);
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(table);
 }

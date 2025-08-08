@@ -1,33 +1,36 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Get the left (main article) content: we want only the main article section, not the full column container
-  const leftCol = element.querySelector('.col-lg-8.col-md-12');
-  let mainContent = null;
-  if (leftCol) {
-    mainContent = leftCol.querySelector('.mediaDetailSec');
+  // Find the .container > .row, which holds two main columns
+  const row = element.querySelector('.container > .row');
+  if (!row) return;
+  // Collect left column (main article)
+  const colLeft = row.querySelector('.col-lg-8.col-md-12');
+  // Collect right column (related articles, recent article)
+  const colRight = row.querySelector('.col-lg-4.col-md-12');
+
+  // Defensive: If one of the columns is missing, fallback
+  let leftContent, rightContent;
+  if (colLeft) {
+    // Use all content of colLeft (main article and image)
+    leftContent = colLeft;
+  } else {
+    leftContent = document.createElement('div');
+    leftContent.textContent = '';
+  }
+  if (colRight) {
+    // Use all sidebar content (related/recent articles)
+    rightContent = colRight;
+  } else {
+    rightContent = document.createElement('div');
+    rightContent.textContent = '';
   }
 
-  // Get the right (sidebar) content: only the main sidebar content area excluding unrelated content if any
-  const rightCol = element.querySelector('.col-lg-4.col-md-12');
-  let sidebarContent = null;
-  if (rightCol) {
-    // Only grab inside the sidebar the direct content blocks that are intended for the columns block
-    // These are: mediaDetailList (related articles) and mediaRecentArticle (recent article)
-    const sidebarParts = [];
-    const mediaDetailList = rightCol.querySelector('.mediaDetailList');
-    if (mediaDetailList) sidebarParts.push(mediaDetailList);
-    const mediaRecentArticle = rightCol.querySelector('.mediaRecentArticle');
-    if (mediaRecentArticle) sidebarParts.push(mediaRecentArticle);
-    // If found, put both; otherwise, fallback to whole rightCol
-    sidebarContent = sidebarParts.length ? sidebarParts : [rightCol];
-  }
-
-  // Prepare table cells as per example: header one cell, second row two cells (main and sidebar)
-  const cells = [
-    ['Columns (columns1)'],
-    [mainContent, sidebarContent]
-  ];
-
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Table header as per spec
+  const headerRow = ['Columns (columns1)'];
+  // Second row: two columns, leftContent and rightContent
+  const dataRow = [leftContent, rightContent];
+  // Structure as required
+  const tableData = [headerRow, dataRow];
+  const table = WebImporter.DOMUtils.createTable(tableData, document);
   element.replaceWith(table);
 }

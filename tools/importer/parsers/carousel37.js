@@ -1,61 +1,67 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to make absolute URLs for images
-  function getAbsoluteUrl(url) {
-    if (!url) return '';
-    if (url.startsWith('http')) return url;
-    if (url.startsWith('//')) return 'https:' + url;
-    return url;
-  }
-
-  // Locate the main carousel
+  // Find the owl-carousel container
   const carousel = element.querySelector('.owl-carousel');
   if (!carousel) return;
 
-  // Only the non-cloned slides (the example markdown only shows the main logical slides)
-  const slides = Array.from(carousel.querySelectorAll('.owl-item'))
-    .filter(item => !item.classList.contains('cloned'));
+  // Get all "owl-item" elements that are NOT .cloned
+  const allItems = carousel.querySelectorAll('.owl-item');
+  const slides = [];
+  allItems.forEach(item => {
+    if (!item.classList.contains('cloned')) {
+      const itemInner = item.querySelector('.item');
+      if (itemInner) slides.push(itemInner);
+    }
+  });
+  if (!slides.length) return;
 
-  // Prepare the table rows
+  // Table header row (exact match to example)
   const rows = [['Carousel (carousel37)']];
 
-  slides.forEach(item => {
-    // .blogHomeBox contains both the image and text
-    const blogBox = item.querySelector('.blogHomeBox');
-    if (!blogBox) return;
-
-    // FIRST cell: image
-    let img = null;
-    const imgContainer = blogBox.querySelector('.blogHomeImg');
+  // Create one row for each slide
+  slides.forEach(slide => {
+    // First cell: the image (mandatory)
+    let imgEl = null;
+    const imgContainer = slide.querySelector('.blogHomeImg');
     if (imgContainer) {
-      img = imgContainer.querySelector('img');
+      const img = imgContainer.querySelector('img');
       if (img) {
-        // Fix the src so it is always present and absolute
-        let src = img.getAttribute('src') || img.getAttribute('data-src');
-        src = getAbsoluteUrl(src);
-        img.setAttribute('src', src);
-        img.removeAttribute('data-src');
+        // Make sure the 'src' is set (prefer 'src', fallback to 'data-src')
+        if (!img.getAttribute('src')) {
+          const dataSrc = img.getAttribute('data-src');
+          if (dataSrc) {
+            img.setAttribute('src', dataSrc.startsWith('//') ? 'https:' + dataSrc : dataSrc);
+          }
+        }
+        imgEl = img;
       }
     }
-
-    // SECOND cell: The ENTIRE .blogContent block, preserving all text and structure (reference existing element)
-    let textCell = '';
-    const content = blogBox.querySelector('.blogContent');
-    if (content) {
-      textCell = content; // reference the actual existing element
+    // Second cell: all content from .blogContent (heading, description, link, etc), preserving order and referencing nodes
+    let textCellContent = '';
+    const blogContent = slide.querySelector('.blogContent');
+    if (blogContent) {
+      // Collect all meaningful (not whitespace) child nodes
+      const children = Array.from(blogContent.childNodes).filter(n => {
+        if (n.nodeType === Node.TEXT_NODE) {
+          return n.textContent.trim();
+        }
+        return true;
+      });
+      // Reference nodes directly so all text, links, and markup are included
+      if (children.length > 0) {
+        textCellContent = children;
+      }
     }
-
-    if (img) {
+    // Only add if image exists (mandatory)
+    if (imgEl) {
       rows.push([
-        img,
-        textCell
+        imgEl,
+        textCellContent && textCellContent.length ? textCellContent : ''
       ]);
     }
   });
 
-  // Only build the table if we have at least one slide
-  if (rows.length > 1) {
-    const table = WebImporter.DOMUtils.createTable(rows, document);
-    element.replaceWith(table);
-  }
+  // Create the block table and replace the original element
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(block);
 }

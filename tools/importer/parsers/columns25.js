@@ -1,21 +1,20 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find all column content blocks
+  // Find the row container
   const row = element.querySelector(':scope > .row');
   if (!row) return;
-  const colDivs = Array.from(row.children);
-  const cellsRow = colDivs.map(col => {
-    const card = col.querySelector('.blueBgNumbers');
-    return card || document.createTextNode('');
+  // Find all immediate columns
+  const columns = Array.from(row.children).filter(col => col.classList.contains('col-12'));
+  // For each column, extract its main content
+  const columnCells = columns.map(col => {
+    const content = col.querySelector(':scope > .blueBgNumbers');
+    return content || document.createTextNode('');
   });
-
-  // Header row: single cell array
-  const headerRow = ['Columns (columns25)'];
-  // The table must have one column in the header row, and the next row has as many columns as needed
-  // So, structure: [ [header], [...cols] ]
-  const tableArray = [headerRow, cellsRow];
-
-  // Create block table and replace original element
-  const table = WebImporter.DOMUtils.createTable(tableArray, document);
+  // Create the table: header row is a single cell, content row has as many cells as columns
+  const cells = [
+    ['Columns (columns25)'],
+    columnCells
+  ];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

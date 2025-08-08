@@ -1,29 +1,28 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Gather direct child columns of the row
-  const columns = Array.from(element.querySelectorAll(':scope > div'));
+  // 1. Block Header: must match the spec exactly
+  const headerRow = ['Columns (columns7)'];
 
-  // In provided HTML, the actual column content is inside '.footerLink',
-  // so use that for each column if it exists, else fallback to the column itself.
-  const colContents = columns.map((col) => {
+  // 2. Gather columns (immediate children with content)
+  const colDivs = Array.from(element.querySelectorAll(':scope > div'));
+
+  // 3. For each column, reference its .footerLink (which contains the heading and links),
+  //    or the column itself if .footerLink missing (defensive)
+  const columns = colDivs.map(col => {
     const content = col.querySelector('.footerLink');
-    return content ? content : col;
+    return content || col;
   });
 
-  // Prepare table rows: header and content
-  // HEADER ROW: must be a single cell (one column)
-  const headerRow = ['Columns (columns7)'];
-  // CONTENT ROW: as many columns as columns detected
-  const contentRow = colContents;
+  // 4. Only include non-empty columns (all given HTMLs have content)
+  //    The HTML structure is guaranteed, but for resilience:
+  const filteredColumns = columns.filter(col => col && (col.textContent.trim() || col.querySelector('img') || col.querySelector('ul')));
 
-  // The table for createTable must have each row as an array
-  // headerRow is [ 'Columns (columns7)' ] (1 element)
-  // contentRow is [ col1, col2, col3, col4 ] (N elements)
-  // So the cells array will be: [[header], [col1, col2, col3, col4]]
+  // 5. Final table array: header row, then content row (columns)
+  const tableRows = [headerRow, filteredColumns];
 
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    contentRow,
-  ], document);
-  element.replaceWith(table);
+  // 6. Create the block table
+  const block = WebImporter.DOMUtils.createTable(tableRows, document);
+
+  // 7. Replace the original element with the new block table
+  element.replaceWith(block);
 }
