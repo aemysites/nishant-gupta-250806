@@ -1,54 +1,40 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row (must match example exactly)
+  // Helper to get immediate children matching selector
+  function getImmediateChild(parent, selector) {
+    for (const child of parent.children) {
+      if (child.matches(selector)) return child;
+    }
+    return null;
+  }
+
+  // Get the main row containing the two columns
+  const row = getImmediateChild(element, '.row');
+  if (!row) return;
+  const columns = row.querySelectorAll(':scope > div');
+  if (columns.length < 2) return;
+
+  // LEFT COLUMN: contains the image (wrapped in borderR)
+  let leftContent = null;
+  const leftCol = columns[0];
+  // Prefer the .borderR wrapper if present (retains original markup)
+  leftContent = getImmediateChild(leftCol, '.borderR') || leftCol.querySelector('img') || '';
+
+  // RIGHT COLUMN: contains the about text (aboutMsilSec)
+  let rightContent = null;
+  const rightCol = columns[1];
+  // The desired content is inside .aboutMsilSec
+  rightContent = rightCol.querySelector('.aboutMsilSec') || rightCol;
+
+  // Table header row exactly as required
   const headerRow = ['Columns (columns41)'];
+  // Table body row: two columns
+  const bodyRow = [leftContent, rightContent];
 
-  // Defensive: Locate main columns
-  // Find the direct children of .row
-  const rowDiv = element.querySelector('.row');
-  const columns = rowDiv ? rowDiv.querySelectorAll(':scope > div') : [];
-
-  // Column 1: the image in .borderR
-  let col1Content = '';
-  if (columns.length > 0) {
-    const borderR = columns[0].querySelector('.borderR');
-    if (borderR) {
-      const img = borderR.querySelector('img');
-      if (img) {
-        col1Content = img;
-      } else {
-        // If there is no image, use the borderR itself (could be empty)
-        col1Content = borderR;
-      }
-    } else {
-      // Fallback: use the whole first column block if .borderR not found
-      col1Content = columns[0];
-    }
-  }
-
-  // Column 2: the rich text block (aboutMsilSec)
-  let col2Content = '';
-  if (columns.length > 1) {
-    // Find .aboutMsilSec inside the second column
-    const aboutSec = columns[1].querySelector('.aboutMsilSec');
-    if (aboutSec) {
-      col2Content = aboutSec;
-    } else {
-      // Fallback: use the whole second column block if .aboutMsilSec not found
-      col2Content = columns[1];
-    }
-  }
-
-  // Ensure both cells are filled so the table is correct
-  const blockRow = [col1Content, col2Content];
-
-  // Compose the table block
-  const cells = [
+  const table = WebImporter.DOMUtils.createTable([
     headerRow,
-    blockRow
-  ];
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+    bodyRow,
+  ], document);
 
-  // Replace the element with the table
   element.replaceWith(table);
 }

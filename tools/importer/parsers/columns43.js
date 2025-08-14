@@ -1,52 +1,45 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row matches example: Columns (columns43)
-  const headerRow = ['Columns (columns43)'];
-
-  // Source structure: left column contains heading, intro, list, actions; right column contains image.
-  // Get container (should cover all content)
-  const container = element.querySelector('.container') || element;
-
-  // LEFT COLUMN (all text, lists, buttons)
-  const leftColumn = document.createElement('div');
-  leftColumn.style.display = 'flex';
-  leftColumn.style.flexDirection = 'column';
-
-  // Course Heading (keep heading level)
-  const heading = container.querySelector('.courseHeading h2');
-  if (heading) leftColumn.appendChild(heading);
-
-  // Description paragraph
-  const desc = container.querySelector('p');
-  if (desc) leftColumn.appendChild(desc);
-
-  // Features list (ul)
-  const list = container.querySelector('.noSliderCourse ul');
-  if (list) leftColumn.appendChild(list);
-
-  // Course buttons (Explore Now, I AM INTERESTED)
-  const buttons = container.querySelector('.courseSlideButton');
-  if (buttons) leftColumn.appendChild(buttons);
-
-  // RIGHT COLUMN (image)
-  const rightColumn = document.createElement('div');
-  const courseImgDiv = container.querySelector('.courseSecImg');
-  if (courseImgDiv) {
-    const img = courseImgDiv.querySelector('img');
-    if (img) {
-      rightColumn.appendChild(img);
-    }
+  // Helper to get direct children by selector
+  function getDirectChild(parent, selector) {
+    return Array.from(parent.children).find(el => el.matches(selector));
   }
 
-  // If no image, don't push right column
-  const contentRow = [leftColumn];
-  if (rightColumn.childNodes.length > 0) {
-    contentRow.push(rightColumn);
+  // Traverse the expected structure
+  const container = getDirectChild(element, '.container');
+  if (!container) return;
+  const txtBlock = getDirectChild(container, '.coursesTxtBlock');
+  if (!txtBlock) return;
+  const rptSec = getDirectChild(txtBlock, '.coursesRptSec');
+  const imgSec = getDirectChild(txtBlock, '.courseSecImg');
+
+  // Prepare column cells
+  const col1 = rptSec ? [rptSec] : [];
+  let col2 = [];
+  if (imgSec) {
+    const img = imgSec.querySelector('img');
+    if (img) col2.push(img);
   }
 
-  // Only create a Section Metadata table if example shows it (it does not in this case)
-  // Compose final table
-  const cells = [headerRow, contentRow];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  // The header row should span the correct number of columns
+  // This must match the number of columns in the data row
+  const columnsCount = 2; // two columns: content & image
+  // Create the table using the helper
+  const cells = [];
+
+  // Create header row with correct colspan
+  const headerRow = [];
+  const th = document.createElement('th');
+  th.textContent = 'Columns (columns43)';
+  if (columnsCount > 1) {
+    th.setAttribute('colspan', columnsCount);
+  }
+  headerRow.push(th);
+  cells.push(headerRow);
+
+  // Add the columns row
+  cells.push([col1, col2]);
+
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(table);
 }

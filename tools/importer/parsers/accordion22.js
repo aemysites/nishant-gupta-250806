@@ -1,44 +1,50 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Build the header row as specified in example
+  // Prepare the header row (single column as per requirements)
   const headerRow = ['Accordion (accordion22)'];
-  const rows = [headerRow];
 
-  // Accordion structure: find title and content
-  // Title: from button inside h5 inside .card-header
-  let titleText = '';
+  // Extract the title:
+  // Find the button (usually h3 > button), remove icons, use its text content
+  let titleCell = '';
   const cardHeader = element.querySelector('.card-header');
   if (cardHeader) {
-    const h5 = cardHeader.querySelector('h5');
-    if (h5) {
-      const button = h5.querySelector('button');
+    const h3 = cardHeader.querySelector('h3');
+    if (h3) {
+      const button = h3.querySelector('button');
       if (button) {
-        // Remove icon content, get only the text portion
-        // Some sites put icons at the end, so get the text up to the first icon
-        // We'll get only the text nodes
-        const textNodes = Array.from(button.childNodes).filter((n) => n.nodeType === Node.TEXT_NODE);
-        if (textNodes.length > 0) {
-          titleText = textNodes.map((n) => n.textContent).join('').trim();
-        } else {
-          titleText = button.textContent.trim();
-        }
+        // Remove icons from the button
+        Array.from(button.querySelectorAll('em')).forEach(em => em.remove());
+        // Reference the existing button element directly (for semantics), but remove icons
+        titleCell = button;
       }
     }
   }
+  if (!titleCell) {
+    // fallback
+    titleCell = document.createElement('span');
+    titleCell.textContent = 'Untitled Accordion Item';
+  }
 
-  // Content: all content inside .card-body
+  // Extract the content cell (card-body)
   let contentCell = '';
-  const collapseDiv = element.querySelector('.collapse');
-  if (collapseDiv) {
-    const cardBody = collapseDiv.querySelector('.card-body');
+  const collapse = element.querySelector('.collapse');
+  if (collapse) {
+    const cardBody = collapse.querySelector('.card-body');
     if (cardBody) {
       contentCell = cardBody;
     }
   }
+  if (!contentCell) {
+    contentCell = document.createElement('div');
+  }
 
-  rows.push([titleText, contentCell]);
+  // Compose rows: header is a single-column row, data is a two-column row
+  const rows = [
+    headerRow,      // one column (block name)
+    [titleCell, contentCell] // two columns (title, content)
+  ];
 
-  // Create and replace block table
-  const block = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(block);
+  // Create the table and replace the original element
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(table);
 }

@@ -1,82 +1,89 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header as in the example
-  const headerRow = ['Cards (cards4)'];
-  const rows = [headerRow];
+  // Ensure the header is exactly as required
+  const cells = [['Cards (cards4)']];
 
-  // Helper to extract one card's data from a single .addressSecMain element
-  function extractCard(cardEl) {
-    // First column: image (mandatory)
-    const imgContainer = cardEl.querySelector('.addressImg');
-    let img = null;
-    if (imgContainer) {
-      img = imgContainer.querySelector('img');
-    }
-
-    // Second column: text content
-    const detailsContainer = cardEl.querySelector('.addressDetails');
-    const textContent = [];
-    if (detailsContainer) {
-      const txtSec = detailsContainer.querySelector('.addressTxtSec');
-      if (txtSec) {
-        // Location name in <span> (as bold heading)
-        const span = txtSec.querySelector('span');
-        if (span && span.textContent.trim()) {
-          // Use <strong> to match heading style, same as markdown example
-          const strong = document.createElement('strong');
-          strong.textContent = span.textContent.trim();
-          textContent.push(strong);
-          // Add a <br> after heading for separation (optional, readability)
-          textContent.push(document.createElement('br'));
-        }
-        // Company name in <h2>, styled as strong block
-        const h2 = txtSec.querySelector('h2');
-        if (h2 && h2.textContent.trim()) {
-          const strongCompany = document.createElement('strong');
-          strongCompany.textContent = h2.textContent.trim();
-          textContent.push(strongCompany);
-          textContent.push(document.createElement('br'));
-        }
-        // Address in <p>
-        const p = txtSec.querySelector('p');
-        if (p) {
-          textContent.push(p);
-        }
-      }
-      // Call-to-action (phone link) in .directionCallNumber
-      const callUl = detailsContainer.querySelector('.directionCallNumber ul');
-      if (callUl && callUl.children.length > 0) {
-        Array.from(callUl.children).forEach(li => {
-          const a = li.querySelector('a');
-          if (a) {
-            // Add a <br> before CTA if there was address content
-            if (textContent.length > 0) textContent.push(document.createElement('br'));
-            textContent.push(a);
-          }
-        });
-      }
-    }
-    return [img, textContent];
-  }
-
-  // Identify which elements are cards
-  let cards = [];
+  // Determine if 'element' is a single card or a container of cards
+  let cardElements = [];
   if (element.classList.contains('addressSecMain')) {
-    cards = [element];
+    // Single card
+    cardElements = [element];
   } else {
-    cards = Array.from(element.querySelectorAll(':scope > .addressSecMain'));
-    // If none, maybe all direct children are cards
-    if (cards.length === 0) {
-      cards = Array.from(element.children).filter(e => e.classList.contains('addressSecMain'));
-    }
+    // Container: collect all immediate cards
+    cardElements = Array.from(element.querySelectorAll(':scope > .addressSecMain'));
   }
 
-  // Extract card rows
-  cards.forEach(cardEl => {
-    const row = extractCard(cardEl);
-    rows.push(row);
+  cardElements.forEach(card => {
+    // Image cell (mandatory)
+    let img = '';
+    const imgDiv = card.querySelector(':scope > .addressImg');
+    if (imgDiv) {
+      const foundImg = imgDiv.querySelector('img');
+      if (foundImg) img = foundImg;
+    }
+
+    // Text cell (mandatory)
+    const addressDetails = card.querySelector(':scope > .addressDetails');
+    let textFrag = document.createDocumentFragment();
+    if (addressDetails) {
+      const txtSec = addressDetails.querySelector(':scope > .addressTxtSec');
+      // Title: span and h2 if present
+      if (txtSec) {
+        const spanTitle = txtSec.querySelector('span');
+        if (spanTitle && spanTitle.textContent.trim()) {
+          const strong1 = document.createElement('strong');
+          strong1.textContent = spanTitle.textContent.trim();
+          textFrag.appendChild(strong1);
+          textFrag.appendChild(document.createElement('br'));
+        }
+        const h2Title = txtSec.querySelector('h2');
+        if (h2Title && h2Title.textContent.trim()) {
+          const strong2 = document.createElement('strong');
+          strong2.textContent = h2Title.textContent.trim();
+          textFrag.appendChild(strong2);
+          textFrag.appendChild(document.createElement('br'));
+        }
+        // Address/description
+        const descP = txtSec.querySelector('p');
+        if (descP) {
+          // Convert <br> to line breaks for rendering
+          const childNodes = Array.from(descP.childNodes);
+          let block = document.createElement('div');
+          childNodes.forEach(node => {
+            if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'BR') {
+              if (block.textContent.trim() !== '') {
+                textFrag.appendChild(block);
+                block = document.createElement('div');
+              }
+            } else {
+              block.appendChild(node.cloneNode(true));
+            }
+          });
+          if (block.textContent.trim() !== '') {
+            textFrag.appendChild(block);
+          }
+        }
+      }
+      // Phone (call-to-action)
+      const dirCall = addressDetails.querySelector(':scope > .directionCallNumber');
+      if (dirCall) {
+        const telA = dirCall.querySelector('a[href^="tel:"]');
+        if (telA && telA.textContent.trim()) {
+          textFrag.appendChild(document.createElement('br'));
+          const telLink = document.createElement('a');
+          telLink.href = telA.getAttribute('href');
+          telLink.textContent = telA.textContent.trim();
+          textFrag.appendChild(telLink);
+        }
+      }
+    }
+
+    cells.push([
+      img || '',
+      textFrag
+    ]);
   });
 
-  const table = WebImporter.DOMUtils.createTable(rows, document);
+  const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

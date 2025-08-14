@@ -1,58 +1,40 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row as specified
-  const headerRow = ['Cards (cards30)'];
+  // Table header as per block definition
+  const cells = [['Cards (cards30)']];
 
-  // Find the carousel that contains the cards
-  const carousel = element.querySelector('.owl-carousel');
-  if (!carousel) {
-    // If the structure changes or is missing, do nothing
-    return;
-  }
-  // Drill down to .owl-stage-outer > .owl-stage
-  const stageOuter = carousel.querySelector('.owl-stage-outer');
-  if (!stageOuter) return;
-  const stage = stageOuter.querySelector('.owl-stage');
-  if (!stage) return;
-
-  // Get all card elements: .owl-item .item .valueAddedBox
-  const valueAddedBoxes = Array.from(stage.querySelectorAll('.owl-item .item .valueAddedBox'));
-  if (valueAddedBoxes.length === 0) return;
-
-  const rows = valueAddedBoxes.map(box => {
-    // First cell: image or icon (mandatory)
-    let image = null;
+  // Get all the card elements (valueAddedBox) in DOM order
+  const boxes = Array.from(element.querySelectorAll('.owl-item .item .valueAddedBox'));
+  boxes.forEach((box) => {
+    // First cell: image (inside a span > img, reference the original img element)
+    let img = null;
     const span = box.querySelector('span');
     if (span) {
-      const img = span.querySelector('img');
-      if (img) {
-        image = img;
-      }
+      img = span.querySelector('img');
     }
-    // Second cell: text content
+
+    // Second cell: heading and description, keeping DOM references and structure
     const content = box.querySelector('.valueAddBoxContent');
-    const textElements = [];
+    const contentParts = [];
     if (content) {
-      // Heading (h3)
       const heading = content.querySelector('h3');
       if (heading) {
-        textElements.push(heading);
+        contentParts.push(heading);
       }
-      // Description (p)
-      const desc = content.querySelector('p');
-      if (desc) {
-        textElements.push(desc);
+      const para = content.querySelector('p');
+      if (para) {
+        if (contentParts.length > 0) {
+          contentParts.push(document.createElement('br'));
+        }
+        contentParts.push(para);
       }
     }
-    // Always ensure both cells are present, even if empty
-    return [image, textElements];
+    cells.push([
+      img,
+      contentParts
+    ]);
   });
 
-  // Compile the table
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    ...rows
-  ], document);
-
+  const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

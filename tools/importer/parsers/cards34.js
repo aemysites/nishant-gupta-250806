@@ -1,90 +1,64 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row as in example
-  const headerRow = ['Cards (cards34)'];
+  // Locate the carousel stage containing the testimonial items
+  const stage = element.querySelector('.owl-stage');
+  if (!stage) return;
 
-  // Find all unique cards (skip .cloned to avoid duplicates)
-  let items = [];
-  const carousel = element.querySelector('.owl-carousel');
-  if (carousel) {
-    const stage = carousel.querySelector('.owl-stage');
-    if (stage) {
-      items = Array.from(stage.querySelectorAll('.owl-item'))
-        .filter(it => !it.classList.contains('cloned'))
-        .map(it => it.querySelector('.item'))
-        .filter(Boolean);
-    } else {
-      items = Array.from(carousel.querySelectorAll('.item'));
+  // Select all non-cloned owl-items (the true testimonials)
+  const owlItems = Array.from(stage.querySelectorAll(':scope > .owl-item')).filter(item => !item.classList.contains('cloned'));
+
+  // Helper function to extract all meaningful text/HTML except image
+  function getTextCell(txtSec, box) {
+    const nodes = [];
+    // Add all children except .testimonialImg
+    Array.from(txtSec.children).forEach(child => {
+      if (!child.classList.contains('testimonialImg')) {
+        nodes.push(child);
+      }
+    });
+    // If .captionNameLocation not in txtSec, look for it in box
+    if (!txtSec.querySelector('.captionNameLocation')) {
+      const cap = box.querySelector('.captionNameLocation');
+      if (cap) nodes.push(cap);
     }
-  } else {
-    items = Array.from(element.querySelectorAll('.item'));
+    return nodes.length > 0 ? nodes : [document.createTextNode(txtSec.textContent.trim())];
   }
 
-  // Compose each card row
-  const rows = items.map(item => {
-    // IMAGE CELL
-    let imgCell = '';
-    const imgWrap = item.querySelector('.testimonialImg');
-    if (imgWrap) {
-      const img = imgWrap.querySelector('img');
-      if (img) {
-        let src = img.getAttribute('data-src') || img.getAttribute('src') || '';
-        if (src && !src.startsWith('http')) src = 'https:' + src;
-        img.src = src;
-        imgCell = img;
+  // Build each card (row)
+  const cards = owlItems.map(owlItem => {
+    const box = owlItem.querySelector('.testimonialBox');
+    if (!box) return null;
+    const txtSec = box.querySelector('.testimonialTxtSec');
+    if (!txtSec) return null;
+
+    // --- Image cell ---
+    let img = '';
+    const imgDiv = txtSec.querySelector('.testimonialImg');
+    if (imgDiv) {
+      const foundImg = imgDiv.querySelector('img');
+      if (foundImg) {
+        // Make sure 'src' is set
+        if (!foundImg.getAttribute('src') && foundImg.getAttribute('data-src')) {
+          foundImg.setAttribute('src', foundImg.getAttribute('data-src'));
+        }
+        img = foundImg;
       }
     }
-    if (!imgCell) imgCell = '';
 
-    // TEXT CELL: gather all content from .testimonialTxtSec
-    const txtSec = item.querySelector('.testimonialTxtSec');
-    let textCellContents = [];
-    if (txtSec) {
-      // h3 (course)
-      const h3 = txtSec.querySelector('h3');
-      if (h3) textCellContents.push(h3);
-      // h4 (quote)
-      const h4 = txtSec.querySelector('h4');
-      if (h4) textCellContents.push(h4);
-      // All <p> (description)
-      const ps = Array.from(txtSec.querySelectorAll('p'));
-      ps.forEach(p => {
-        if (p.textContent.trim()) textCellContents.push(p);
-      });
-      // captionNameLocation (author/location), preserving formatting
-      const cap = txtSec.querySelector('.captionNameLocation');
-      if (cap) textCellContents.push(cap);
-    } else {
-      // Fallback: all text inside item
-      if (item.textContent.trim()) textCellContents.push(document.createTextNode(item.textContent.trim()));
+    // --- Text cell ---
+    const textCell = getTextCell(txtSec, box);
+    // Only add row if there's meaningful content
+    if (!img && (!textCell || (Array.isArray(textCell) && textCell.length === 1 && !textCell[0].textContent.trim()))) {
+      return null;
     }
-    // If textCellContents is empty, leave blank, else use array
-    const textCell = textCellContents.length > 0 ? textCellContents : '';
+    return [img || '', textCell];
+  }).filter(Boolean);
 
-    return [imgCell, textCell];
-  });
-
-  // Only keep rows with some non-empty cell
-  const filteredRows = rows.filter(row => {
-    return row.some(cell => {
-      if (typeof cell === 'string') {
-        return cell.trim().length > 0;
-      } else if (cell instanceof Element) {
-        return cell.textContent && cell.textContent.trim().length > 0;
-      } else if (Array.isArray(cell)) {
-        // If any of the array's elements has text
-        return cell.some(el => {
-          if (typeof el === 'string') return el.trim().length > 0;
-          if (el instanceof Element) return el.textContent && el.textContent.trim().length > 0;
-          return false;
-        });
-      }
-      return false;
-    });
-  });
-
-  // Compose final table
-  const cells = [headerRow, ...filteredRows];
+  // Construct the table with header as in the example
+  const cells = [
+    ['Cards (cards34)'],
+    ...cards
+  ];
   const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

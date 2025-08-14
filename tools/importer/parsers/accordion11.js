@@ -1,65 +1,57 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row: match example exactly
-  const headerRow = ['Accordion (accordion11)'];
-
-  // --- Title Cell Extraction ---
-  let titleCell = '';
-  const cardHeader = element.querySelector('.card-header');
-  if (cardHeader) {
-    // Find first h3 (should always exist for this accordion)
-    const h3 = cardHeader.querySelector('h3');
-    if (h3) {
-      // The button inside h3 contains the title and icons
-      const btn = h3.querySelector('button');
-      if (btn) {
-        // Only include the text content and inline child nodes except icons
-        // Use all child nodes except <em>
-        const nodes = [];
-        btn.childNodes.forEach(node => {
-          if (!(node.nodeType === Node.ELEMENT_NODE && node.tagName === 'EM')) {
-            nodes.push(node);
-          }
-        });
-        // If result is empty, fallback to btn.textContent
-        titleCell = nodes.length > 0 ? nodes : [btn.textContent.trim()];
-      } else {
-        titleCell = [h3.textContent.trim()];
+  // Extract the title from the header button, stripping icons
+  const headerBtn = element.querySelector('.card-header button');
+  let titleCell;
+  if (headerBtn) {
+    // Remove <i> icons
+    headerBtn.querySelectorAll('i').forEach(i => i.remove());
+    // Collect text and inline elements
+    const titleDiv = document.createElement('div');
+    headerBtn.childNodes.forEach(node => {
+      if (
+        (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length) ||
+        node.nodeType === Node.ELEMENT_NODE
+      ) {
+        titleDiv.appendChild(node.cloneNode(true));
       }
-    } else {
-      titleCell = [cardHeader.textContent.trim()];
-    }
+    });
+    titleCell = titleDiv;
   } else {
-    titleCell = [''];
+    titleCell = document.createTextNode('');
   }
 
-  // --- Content Cell Extraction ---
-  let contentCell = '';
-  const collapse = element.querySelector('.collapse');
-  if (collapse) {
-    const cardBody = collapse.querySelector('.card-body');
-    if (cardBody) {
-      // Include ALL children of card-body, not just paragraphs
-      const children = Array.from(cardBody.childNodes).filter(node => {
-        // Remove empty text nodes
-        return !(node.nodeType === Node.TEXT_NODE && node.textContent.trim() === '');
-      });
-      contentCell = children.length > 0 ? children : [cardBody.textContent.trim()];
-    } else {
-      contentCell = [collapse.textContent.trim()];
-    }
+  // Extract the body/content
+  const cardBody = element.querySelector('.card-body');
+  let contentCell;
+  if (cardBody) {
+    const contentDiv = document.createElement('div');
+    cardBody.childNodes.forEach(n => {
+      if (
+        (n.nodeType === Node.TEXT_NODE && n.textContent.trim().length) ||
+        n.nodeType === Node.ELEMENT_NODE
+      ) {
+        contentDiv.appendChild(n.cloneNode(true));
+      }
+    });
+    contentCell = contentDiv;
   } else {
-    contentCell = [''];
+    contentCell = document.createTextNode('');
   }
 
-  // --- Cells Array Construction ---
-  const cells = [
-    headerRow,
-    [titleCell, contentCell]
-  ];
+  // Create the table with the correct structure
+  const rows = [];
+  // The header row must be a single cell, but must span the full table width (2 columns)
+  // So after table creation, set colspan=2 on the first th
+  rows.push(['Accordion (accordion11)']);
+  rows.push([titleCell, contentCell]);
 
-  // --- Table Creation ---
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  // Replace the original element
-  element.replaceWith(block);
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  // Fix the <th> colspan if table is at least two columns wide
+  const th = table.querySelector('tr th');
+  if (th && table.rows[1] && table.rows[1].cells.length === 2) {
+    th.setAttribute('colspan', '2');
+  }
+
+  element.replaceWith(table);
 }

@@ -1,62 +1,47 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Define header matching the block name from the instructions
-  const headerRow = ['Cards (cards39)'];
-  const rows = [headerRow];
+  // Helper to extract a card row from a .blogRptSec block
+  function extractCard(blogRptSec) {
+    // 1. Image
+    const img = blogRptSec.querySelector('.blogBanner img');
 
-  // Find the main card container
-  const collapseDiv = element.querySelector('.collapse');
-  if (!collapseDiv) return;
-  const cardBody = collapseDiv.querySelector('.card-body');
-  if (!cardBody) return;
-  const blogRptSec = cardBody.querySelector('.blogRptSec');
-  if (!blogRptSec) return;
-
-  // Extract the image for the left cell
-  let imgCell = null;
-  const banner = blogRptSec.querySelector('.blogBanner');
-  if (banner) {
-    const img = banner.querySelector('img');
-    if (img) {
-      // Use src if available, otherwise use data-src
-      if (!img.getAttribute('src') && img.getAttribute('data-src')) {
-        img.setAttribute('src', img.getAttribute('data-src'));
-        img.removeAttribute('data-src');
-      }
-      imgCell = img;
+    // 2. Title (h3/h2), Description, and CTA in order
+    const textSection = blogRptSec.querySelector('.blogTxtSec');
+    const textContent = [];
+    if (textSection) {
+      // Title
+      const title = textSection.querySelector('h3, h2');
+      if (title) textContent.push(title);
+      // Description
+      const desc = textSection.querySelector('.blogcontentSummary, p');
+      if (desc) textContent.push(desc);
+      // CTA (link)
+      // Prefer the direct .readMoreLink, but allow fallback to any <a> in .readNdateSec
+      let cta = textSection.querySelector('.readNdateSec .readMoreLink');
+      if (!cta) cta = textSection.querySelector('.readNdateSec a');
+      if (cta) textContent.push(cta);
     }
+    return [img, textContent];
   }
 
-  // Create the right cell containing title, description, and CTA
-  const txtSec = blogRptSec.querySelector('.blogTxtSec');
-  const cellFragments = [];
-  if (txtSec) {
-    // Title: use the original h3 element for semantic meaning
-    const h3 = txtSec.querySelector('h3');
-    if (h3) {
-      cellFragments.push(h3);
-    }
-    // Description: use the original summary div
-    const summary = txtSec.querySelector('.blogcontentSummary');
-    if (summary && summary.textContent.trim()) {
-      cellFragments.push(summary);
-    }
-    // CTA: use the actual link if present
-    const readSec = txtSec.querySelector('.readNdateSec');
-    if (readSec) {
-      const readLink = readSec.querySelector('a.readMoreLink');
-      if (readLink) {
-        cellFragments.push(readLink);
-      }
-    }
+  // Find all .blogRptSec blocks under this element
+  const blogRptSecs = element.querySelectorAll('.blogRptSec');
+  // If there's nothing found, treat element as a single card section
+  const cardRows = [];
+  if (blogRptSecs.length > 0) {
+    blogRptSecs.forEach((blogRptSec) => {
+      cardRows.push(extractCard(blogRptSec));
+    });
+  } else {
+    cardRows.push(extractCard(element));
   }
 
-  // Only add the row if at least image or text is present
-  if (imgCell || cellFragments.length) {
-    rows.push([imgCell, cellFragments]);
-  }
+  // Compose the final table: header + card rows
+  const cells = [
+    ['Cards (cards39)'],
+    ...cardRows
+  ];
 
-  // Create and replace block table
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(block);
 }

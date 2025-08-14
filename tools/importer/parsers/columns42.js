@@ -1,41 +1,44 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header as required
-  const header = ['Columns (columns42)'];
+  // Find the main .row containing the two columns
+  const row = element.querySelector(':scope > .row');
+  let leftCol = null;
+  let rightCol = null;
 
-  // Helper to safely extract an element, or return empty string if not found
-  function safeQuery(root, selector) {
-    const el = root.querySelector(selector);
-    return el ? el : '';
+  if (row) {
+    // Should have two columns
+    const cols = Array.from(row.children);
+    // Find left and right by class
+    leftCol = cols.find(c => c.classList.contains('col-lg-8')) || cols[0];
+    rightCol = cols.find(c => c.classList.contains('col-lg-4')) || cols[1];
+  } else {
+    // Fallback if structure is different
+    leftCol = element.querySelector('.col-lg-8') || element;
+    rightCol = element.querySelector('.col-lg-4') || null;
   }
 
-  // LEFT COLUMN: Why Choose Section
-  let leftContent = '';
-  const leftCol = element.querySelector('.col-lg-8');
-  if (leftCol) {
-    const whyChooseSec = leftCol.querySelector('.whyChooseSec');
-    if (whyChooseSec) {
-      leftContent = whyChooseSec;
-    }
-  }
+  // For left column: only include the main whyChooseSec block (not any forms below)
+  let leftContent = leftCol ? leftCol.querySelector('.whyChooseSec') : null;
+  // fallback: if .whyChooseSec not found, use the column itself
+  if (!leftContent && leftCol) leftContent = leftCol;
 
-  // RIGHT COLUMN: Ready Drive Section
-  let rightContent = '';
-  const rightCol = element.querySelector('.col-lg-4');
-  if (rightCol) {
-    const readyDriveSec = rightCol.querySelector('.readyDriveSec');
-    if (readyDriveSec) {
-      rightContent = readyDriveSec;
-    }
-  }
+  // For right column: only include the main readyDriveSec block
+  let rightContent = rightCol ? rightCol.querySelector('.readyDriveSec') : null;
+  if (!rightContent && rightCol) rightContent = rightCol;
 
-  // If one of the columns is missing, fallback gracefully
-  const row = [leftContent || '', rightContent || ''];
+  // Edge cases: if columns are missing, fill with empty placeholders
+  const contentRow = [
+    leftContent || document.createElement('div'),
+    rightContent || document.createElement('div')
+  ];
 
-  // Compose the table
-  const cells = [header, row];
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Table header must exactly match block name
+  const headerRow = ['Columns (columns42)'];
 
-  // Replace the element
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    contentRow
+  ], document);
+
   element.replaceWith(table);
 }

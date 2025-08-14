@@ -1,41 +1,31 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find columns: left main/article and right sidebar
+  // Find the main .container
   const container = element.querySelector('.container');
   if (!container) return;
+  // Find the direct row for columns
   const row = container.querySelector('.row');
   if (!row) return;
-  const cols = row.querySelectorAll(':scope > div');
-  if (cols.length < 2) return;
+  const cols = Array.from(row.children);
+  // Identify left (main) and right (sidebar) columns
+  let mainCol = cols.find(col => col.classList.contains('col-lg-8'));
+  let sideCol = cols.find(col => col.classList.contains('col-lg-4'));
+  if (!mainCol || !sideCol) return;
 
-  // Left column: main content (col-lg-8)
-  const mainCol = cols[0];
-  // Right column: sidebar (col-lg-4)
-  const rightCol = cols[1];
+  // 1. LEFT COLUMN: Find main article content (mediaDetailSec)
+  let mainContent = mainCol.querySelector('.mediaDetailSec');
+  if (!mainContent) mainContent = mainCol;
+  // 2. RIGHT COLUMN: sidebar (the entire side column, as content blocks can vary)
+  let sidebarContent = sideCol;
 
-  // For the left, extract the entire .mediaDetailSec (article body)
-  let mainBlock = mainCol.querySelector('.mediaDetailSec');
-  // Fallback: if not found, use mainCol itself
-  if (!mainBlock) mainBlock = mainCol;
-
-  // For the right, gather all block-level children (cards + mediaRecentArticle)
-  // Only direct children to avoid duplication
-  const rightBlocks = [];
-  Array.from(rightCol.children).forEach(child => {
-    // Only include visible blocks (skip empty divs)
-    if (child.textContent.trim() || child.querySelector('img')) {
-      rightBlocks.push(child);
-    }
-  });
-
-  // Table header as per spec, exactly
+  // Build the columns3 block structure
+  // The first row is the block name, per requirements
   const headerRow = ['Columns (columns3)'];
+  const contentRow = [mainContent, sidebarContent];
+  const cells = [headerRow, contentRow];
 
-  // Second row: left (main), right (sidebar blocks)
-  const row2 = [mainBlock, rightBlocks];
-
-  const cells = [headerRow, row2];
-
-  const blockTable = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(blockTable);
+  // Create the table block
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Replace the original element with the block table
+  element.replaceWith(table);
 }

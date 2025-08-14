@@ -1,46 +1,34 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to get immediate child by class
-  function getChildByClass(parent, className) {
-    for (const child of parent.children) {
-      if (child.classList.contains(className)) return child;
-    }
-    return null;
-  }
+  // Find the .row element which contains the columns
+  const row = element.querySelector('.row');
+  if (!row) return;
 
-  // Get .container > .row structure
-  const container = getChildByClass(element, 'container') || element;
-  const row = getChildByClass(container, 'row') || container;
-  const columns = row.querySelectorAll(':scope > div'); // Should be two columns
+  // Get the two columns inside the row
+  const columns = Array.from(row.querySelectorAll(':scope > div'));
+  if (columns.length < 2) return;
 
-  // Defensive: check number of columns
-  let leftCol = columns[0] || row;
-  let rightCol = columns[1] || null;
+  // First column: the main text block
+  let firstContent = columns[0].querySelector('.aboutFirsTxtInn');
+  if (!firstContent) firstContent = columns[0];
 
-  // Left column: Find text block
-  let aboutFirsTxtSec = leftCol.querySelector('.aboutFirsTxtSec') || leftCol;
-  let contentDiv = aboutFirsTxtSec.querySelector('.aboutFirsTxtInn') || aboutFirsTxtSec;
+  // Second column: the image
+  let secondContent = columns[1].querySelector('img');
+  if (!secondContent) secondContent = columns[1];
 
-  // Defensive: If empty, use leftCol
-  if (!contentDiv || !contentDiv.textContent.trim()) contentDiv = leftCol;
-
-  // Right column: Find image
-  let imageElement = null;
-  if (rightCol) {
-    let aboutFirsImgSec = rightCol.querySelector('.aboutFirsImgSec') || rightCol;
-    imageElement = aboutFirsImgSec.querySelector('img');
-  }
-
-  // If no image found, leave cell empty
-  const rightCell = imageElement || '';
-
-  // Fix: Header row should be a single cell (not two!)
-  // Content row has two cells (columns)
+  // Build the cells array so the header row is a single cell, and the second row has both columns
   const cells = [
-    ['Columns (columns46)'], // header row: one cell only!
-    [contentDiv, rightCell]  // content row: as many columns as needed
+    ['Columns (columns46)'],
+    [firstContent, secondContent]
   ];
 
+  // Create the block table
   const table = WebImporter.DOMUtils.createTable(cells, document);
+
+  // If the first row is a single cell, set its th to span all columns
+  const th = table.querySelector('tr:first-child th');
+  if (th) th.setAttribute('colspan', '2');
+
+  // Replace original element
   element.replaceWith(table);
 }
