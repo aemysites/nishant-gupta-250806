@@ -34,10 +34,10 @@
 
 /* fallback fonts */
 @font-face {
-  font-family:"Font Awesome 5 Brands Fallback";
+  font-family:"Font Awesome 5 Free Fallback";
   font-style:normal;
-  font-weight:normal;
-  src:local("Arial");
+  font-weight:900;
+  src:local("Arial Bold");
   ascent-override:87.50%;
   descent-override:12.50%;
   line-gap-override:0.00%;
@@ -45,10 +45,10 @@
 }
 
 @font-face {
-  font-family:"Font Awesome 5 Free Fallback";
+  font-family:"Font Awesome 5 Brands Fallback";
   font-style:normal;
-  font-weight:900;
-  src:local("Arial Bold");
+  font-weight:normal;
+  src:local("Arial");
   ascent-override:87.50%;
   descent-override:12.50%;
   line-gap-override:0.00%;

@@ -1,17 +1,17 @@
 
 @font-face {
-  font-family: "Font Awesome 5 Brands";      
-  src: url('../fonts/font-awesome-5-brands-normal-normal.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "Font Awesome 5 Free";      
+  src: url('../fonts/font-awesome-5-free-900-normal.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
   unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-  font-family: "Font Awesome 5 Free";      
-  src: url('../fonts/font-awesome-5-free-900-normal.woff2') format('woff2');
-  font-weight: 900;
+  font-family: "Font Awesome 5 Brands";      
+  src: url('../fonts/font-awesome-5-brands-normal-normal.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
   unicode-range: U+0-10FFFF;
