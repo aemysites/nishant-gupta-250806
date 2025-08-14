@@ -17,8 +17,8 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --body-font-family: "Roboto", "sans-serif";
-  --heading-font-family: "Roboto", "sans-serif";
+  --body-font-family: "Font Awesome 5 Free", "Roboto", "sans-serif";
+  --heading-font-family: "Font Awesome 5 Brands", "Roboto", "sans-serif";
   --body-font-size-m: 40px;
   --body-font-size-s: 14px;
   --body-font-size-xs: 16px;
@@ -34,7 +34,7 @@
 
 /* fallback fonts */
 @font-face {
-  font-family:"Font Awesome 5 Brands Fallback";
+  font-family:"Font Awesome 5 Brands";
   font-style:normal;
   font-weight:normal;
   src:local("Arial");
@@ -45,7 +45,7 @@
 }
 
 @font-face {
-  font-family:"Font Awesome 5 Free Fallback";
+  font-family:"Font Awesome 5 Free";
   font-style:normal;
   font-weight:900;
   src:local("Arial Bold");
