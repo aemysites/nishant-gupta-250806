@@ -16,7 +16,9 @@
   --dark-color: #505050;
   --text-color: #131313;
   --link-color: #3b63fb;
+  --gray-color: #868686;
   --link-hover-color: #1d3ecf;
+  --footer-color: #7D7D7D;
   --body-font-family: "Font Awesome 5 Free", "Roboto", "sans-serif";
   --heading-font-family: "Font Awesome 5 Brands", "Roboto", "sans-serif";
   --body-font-size-m: 40px;
@@ -146,6 +148,10 @@ pre {
   white-space: pre;
 }
 
+main {
+  margin-top: 0;
+}
+
 main>div {
   margin: 40px 16px;
 }
@@ -260,6 +266,42 @@ main .section.light, main .section.highlight {
 
 .section.section-2 {
   background: rgb(228 228 228) none repeat scroll 0% 0% / auto padding-box border-box;
+  margin: 0;
+
+  .default-content-wrapper {
+    padding: 0;
+  }
+
+  ol {
+    display: flex;
+    flex-direction:row;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: small;
+
+      &:first-child a {
+        color: var(--gray-color);
+      }
+
+      &:not(:first-child):before {
+        content: "/";
+        display: block;
+        width: 10px;
+        height: 20px;
+        padding-left: 10px;
+      }
+    }
+
+    
+  }
 }
 
 .section.section-3 {
@@ -292,4 +334,8 @@ main .section.light, main .section.highlight {
 
 .section.section-10 {
   background: rgb(255 255 255) none repeat scroll 0% 0% / auto padding-box padding-box;
+}
+
+.section.section-black {
+  background: rgb(0 0 0) none repeat scroll 0% 0% / auto padding-box padding-box;
 }

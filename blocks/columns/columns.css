@@ -696,9 +696,9 @@
 
 
 .columns.columns7 {
-  background: #828282;
   padding: 0;
   color: #fff;
+  background-color: var(--footer-color);
   font-family: "Roboto", "sans-serif";
 }
 .columns.columns7 > div {
