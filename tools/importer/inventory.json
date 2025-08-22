@@ -5110,7 +5110,8 @@
           "uuid": "fce45311-04-aca5b1463470f8b5382412b0da78c1ba93b4a840",
           "xpath": "/html[1]/body[1]/div[13]"
         }
-      ]
+      ],
+      "target": "store-locator"
     },
     {
       "name": "Accordion",
